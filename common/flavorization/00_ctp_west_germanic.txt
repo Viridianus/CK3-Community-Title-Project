@@ -6,17 +6,17 @@
 ## West_Germanic_culture_group ##
 ###############################################
 ## English_culture ##
-##
-
 baron_male_english = {
 	type = character
 	gender = male
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { english }
+	name_lists = { name_list_english }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 baron_female_english = {
 	type = character
@@ -24,17 +24,21 @@ baron_female_english = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { english }
+	name_lists = { name_list_english }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
-barony_english = {
+barony_castle_english = {
 	type = title
 	tier = barony
 	priority = 103
-	cultures = { english }
-	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	name_lists = { name_list_english }
+	holding = castle_holding
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_male_english = {
 	type = character
@@ -42,9 +46,11 @@ count_male_english = {
 	special = holder
 	priority = 113
 	tier = county
-	cultures = { english }
+	name_lists = { name_list_english }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_female_english = {
 	type = character
@@ -52,17 +58,21 @@ count_female_english = {
 	special = holder
 	priority = 113
 	tier = county
-	cultures = { english }
+	name_lists = { name_list_english }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 county_english = {
 	type = title
 	priority = 113
 	tier = county
-	cultures = { english }
+	name_lists = { name_list_english }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_male_english = {
 	type = character
@@ -70,9 +80,11 @@ duke_male_english = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { english }
+	name_lists = { name_list_english }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_female_english = {
 	type = character
@@ -80,17 +92,21 @@ duke_female_english = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { english }
+	name_lists = { name_list_english }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duchy_english = {
 	type = title
 	tier = duchy
 	priority = 123
-	cultures = { english }
+	name_lists = { name_list_english }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_male_english_independent = {
 	type = character
@@ -98,10 +114,12 @@ duke_male_english_independent = {
 	special = holder
 	priority = 124
 	tier = duchy
-	cultures = { english }
+	name_lists = { name_list_english }
 	governments = { feudal_government clan_government tribal_government }
 	only_independent = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_female_english_independent = {
 	type = character
@@ -109,19 +127,23 @@ duke_female_english_independent = {
 	special = holder
 	priority = 124
 	tier = duchy
-	cultures = { english }
+	name_lists = { name_list_english }
 	governments = { feudal_government clan_government tribal_government }
 	only_independent = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duchy_english_independent = {
 	type = title
 	priority = 124
 	tier = duchy
-	cultures = { english }
+	name_lists = { name_list_english }
 	governments = { feudal_government clan_government tribal_government }
 	only_independent = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 king_male_english = {
 	type = character
@@ -129,9 +151,11 @@ king_male_english = {
 	special = holder
 	priority = 143
 	tier = kingdom
-	cultures = { english }
+	name_lists = { name_list_english }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 king_female_english = {
 	type = character
@@ -139,28 +163,33 @@ king_female_english = {
 	special = holder
 	priority = 143
 	tier = kingdom
-	cultures = { english }
+	name_lists = { name_list_english }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 kingdom_english = {
 	type = title
 	priority = 143
 	tier = kingdom
-	cultures = { english }
+	name_lists = { name_list_english }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
-
 emperor_male_english = {
 	type = character
 	gender = male
 	special = holder
 	priority = 153
 	tier = empire
-	cultures = { english }
+	name_lists = { name_list_english }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 emperor_female_english = {
 	type = character
@@ -168,17 +197,21 @@ emperor_female_english = {
 	special = holder
 	priority = 153
 	tier = empire
-	cultures = { english }
+	name_lists = { name_list_english }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 empire_english = {
 	type = title
 	priority = 153
 	tier = empire
-	cultures = { english }
+	name_lists = { name_list_english }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_male_english = {
 	type = character
@@ -186,9 +219,11 @@ title_prince_male_english = {
 	special = ruler_child
 	tier = kingdom
 	priority = 130
-	cultures = { english }
+	name_lists = { name_list_english }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_female_english = {
 	type = character
@@ -196,9 +231,11 @@ title_prince_female_english = {
 	special = ruler_child
 	tier = kingdom
 	priority = 130
-	cultures = { english }
+	name_lists = { name_list_english }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_male_english_empire = {
 	type = character
@@ -206,9 +243,11 @@ title_prince_male_english_empire = {
 	special = ruler_child
 	tier = empire
 	priority = 150
-	cultures = { english }
+	name_lists = { name_list_english }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_female_english_empire = {
 	type = character
@@ -216,9 +255,11 @@ title_prince_female_english_empire = {
 	special = ruler_child
 	tier = empire
 	priority = 150
-	cultures = { english }
+	name_lists = { name_list_english }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 queen_mother_english ={
 	type = character
@@ -226,9 +267,11 @@ queen_mother_english ={
 	special = queen_mother
 	tier = kingdom
 	priority = 130
-	cultures = { english }
+	name_lists = { name_list_english }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 queen_mother_english_empire ={
 	type = character
@@ -236,9 +279,11 @@ queen_mother_english_empire ={
 	special = queen_mother
 	tier = empire
 	priority = 150
-	cultures = { english }
+	name_lists = { name_list_english }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 baron_republic_male_english = {
 	type = character
@@ -246,10 +291,12 @@ baron_republic_male_english = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { english } 
+	name_lists = { name_list_english } 
 	governments = { republic_government }
-	only_holder = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 baron_republic_female_english = {
 	type = character
@@ -257,18 +304,22 @@ baron_republic_female_english = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { english }
+	name_lists = { name_list_english }
 	governments = { republic_government }
-	only_holder = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
-barony_republic_english = {
+barony_city_english = {
 	type = title
 	tier = barony
 	priority = 153
-	cultures = { english }
-	governments = { republic_government }
-	top_liege = no
+	name_lists = { name_list_english }
+	holding = city_holding
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_republic_male_english = {
 	type = character
@@ -276,10 +327,12 @@ count_republic_male_english = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { english }
+	name_lists = { name_list_english }
 	governments = { republic_government }
-	only_holder = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 count_republic_female_english = {
 	type = character
@@ -287,18 +340,22 @@ count_republic_female_english = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { english }
+	name_lists = { name_list_english }
 	governments = { republic_government }
-	only_holder = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 county_republic_english = {
 	type = title
 	tier = county
 	priority = 113
-	cultures = { english }
+	name_lists = { name_list_english }
 	governments = { republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_republic_male_english = {
 	type = character
@@ -306,10 +363,12 @@ duke_republic_male_english = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { english }
+	name_lists = { name_list_english }
 	governments = { republic_government }
-	only_holder = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 duke_republic_female_english = {
 	type = character
@@ -317,18 +376,22 @@ duke_republic_female_english = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { english }
+	name_lists = { name_list_english }
 	governments = { republic_government }
-	only_holder = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 duchy_republic_english = {
 	type = title
 	tier = duchy
 	priority = 123
-	cultures = { english }
+	name_lists = { name_list_english }
 	governments = { republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 king_republic_male_english = {
 	type = character
@@ -336,10 +399,12 @@ king_republic_male_english = {
 	special = holder
 	tier = kingdom
 	priority = 143
-	cultures = { english }
+	name_lists = { name_list_english }
 	governments = { republic_government }
-	only_holder = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 king_republic_female_english = {
 	type = character
@@ -347,77 +412,172 @@ king_republic_female_english = {
 	special = holder
 	tier = kingdom
 	priority = 143
-	cultures = { english }
+	name_lists = { name_list_english }
 	governments = { republic_government }
-	only_holder = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 kingdom_republic_english = {
 	type = title
 	tier = kingdom
 	priority = 143
-	cultures = { english }
+	name_lists = { name_list_english }
 	governments = { republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
+}
+barony_tribe_english = {
+	type = title
+	tier = barony
+	priority = 103
+	name_lists = { name_list_english }
+	holding = tribal_holding
+	flavourization_rules = {
+		top_liege = no
+	}
+}
+camp_male_english = {
+	type = character
+	gender = male
+	special = holder
+	priority = 123
+	name_lists = { name_list_english }
+	domicile_type = camp
+}
+camp_female_english = {
+	type = character
+	gender = female
+	special = holder
+	priority = 123
+	name_lists = { name_list_english }
+	domicile_type = camp
+}
+estate_male_english = {
+	type = character
+	gender = male
+	special = holder
+	priority = 123
+	name_lists = { name_list_english }
+	domicile_type = estate
+}
+estate_female_english = {
+	type = character
+	gender = female
+	special = holder
+	priority = 123
+	name_lists = { name_list_english }
+	domicile_type = estate
 }
 ##########################################
 ## Anglo_saxon_culture ##
 ##
-baron_male_anglo_saxon = {
+baron_male_anglo = {
 	type = character
 	gender = male
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
-baron_female_anglo_saxon = {
+baron_female_anglo = {
 	type = character
 	gender = female
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
-barony_feudalclan_anglo_saxon = {
+barony_castle_anglo = {
 	type = title
 	tier = barony
 	priority = 103
-	cultures = { anglo_saxon }
-	governments = { feudal_government clan_government }
-	top_liege = no
+	name_lists = { name_list_anglo_saxon }
+	holding = castle_holding
+	flavourization_rules = {
+		top_liege = no
+	}
 }
-count_feudalclan_male_anglo_saxon = {
+count_feudalclan_male_anglo = {
 	type = character
 	gender = male
 	special = holder
 	priority = 113
 	tier = county
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { feudal_government clan_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
-count_feudalclan_female_anglo_saxon = {
+count_feudalclan_female_anglo = {
 	type = character
 	gender = female
 	special = holder
 	priority = 113
 	tier = county
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { feudal_government clan_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
-county_feudalclan_anglo_saxon = {
+county_feudalclan_anglo = {
 	type = title
 	priority = 113
 	tier = county
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { feudal_government clan_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
+}
+count_feudalclan_male_anglo_independent = {
+	type = character
+	gender = male
+	special = holder
+	priority = 114
+	tier = county
+	name_lists = { name_list_anglo_saxon }
+	governments = { feudal_government clan_government }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
+}
+count_feudalclan_female_anglo_independent = {
+	type = character
+	gender = female
+	special = holder
+	priority = 114
+	tier = county
+	name_lists = { name_list_anglo_saxon }
+	governments = { feudal_government clan_government }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
+}
+county_feudalclan_anglo_independent = {
+	type = title
+	priority = 114
+	tier = county
+	name_lists = { name_list_anglo_saxon }
+	governments = { feudal_government clan_government }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 duke_feudalclan_male_anglo_saxon = {
 	type = character
@@ -425,9 +585,11 @@ duke_feudalclan_male_anglo_saxon = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { feudal_government clan_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_feudalclan_female_anglo_saxon = {
 	type = character
@@ -435,17 +597,21 @@ duke_feudalclan_female_anglo_saxon = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { feudal_government clan_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duchy_feudalclan_anglo_saxon = {
 	type = title
 	tier = duchy
 	priority = 123
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { feudal_government clan_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_feudalclan_male_anglo_saxon_independent = {
 	type = character
@@ -453,10 +619,12 @@ duke_feudalclan_male_anglo_saxon_independent = {
 	special = holder
 	priority = 124
 	tier = duchy
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { feudal_government clan_government }
 	only_independent = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_feudalclan_female_anglo_saxon_independent = {
 	type = character
@@ -464,19 +632,23 @@ duke_feudalclan_female_anglo_saxon_independent = {
 	special = holder
 	priority = 124
 	tier = duchy
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { feudal_government clan_government }
 	only_independent = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duchy_feudalclan_anglo_saxon_independent = {
 	type = title
 	priority = 124
 	tier = duchy
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { feudal_government clan_government }
 	only_independent = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 king_male_anglo_saxon = {
 	type = character
@@ -484,9 +656,11 @@ king_male_anglo_saxon = {
 	special = holder
 	priority = 143
 	tier = kingdom
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 king_female_anglo_saxon = {
 	type = character
@@ -494,17 +668,21 @@ king_female_anglo_saxon = {
 	special = holder
 	priority = 143
 	tier = kingdom
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 kingdom_anglo_saxon = {
 	type = title
 	priority = 143
 	tier = kingdom
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 emperor_male_anglo_saxon = {
 	type = character
@@ -512,9 +690,11 @@ emperor_male_anglo_saxon = {
 	special = holder
 	priority = 153
 	tier = empire
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 emperor_female_anglo_saxon = {
 	type = character
@@ -522,17 +702,21 @@ emperor_female_anglo_saxon = {
 	special = holder
 	priority = 153
 	tier = empire
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 empire_anglo_saxon = {
 	type = title
 	priority = 153
 	tier = empire
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_male_anglo_saxon_county = {
 	type = character
@@ -540,9 +724,11 @@ title_prince_male_anglo_saxon_county = {
 	special = ruler_child
 	tier = county
 	priority = 110
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { feudal_government clan_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_female_anglo_saxon_county = {
 	type = character
@@ -550,9 +736,11 @@ title_prince_female_anglo_saxon_county = {
 	special = ruler_child
 	tier = county
 	priority = 110
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { feudal_government clan_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_male_anglo_saxon_duchy = {
 	type = character
@@ -560,9 +748,11 @@ title_prince_male_anglo_saxon_duchy = {
 	special = ruler_child
 	tier = duchy
 	priority = 120
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { feudal_government clan_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_female_anglo_saxon_duchy = {
 	type = character
@@ -570,9 +760,11 @@ title_prince_female_anglo_saxon_duchy = {
 	special = ruler_child
 	tier = duchy
 	priority = 120
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { feudal_government clan_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_male_anglo_saxon_duchy_independent = {
 	type = character
@@ -580,10 +772,12 @@ title_prince_male_anglo_saxon_duchy_independent = {
 	special = ruler_child
 	tier = duchy
 	priority = 121
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
-	only_independent = yes
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 title_prince_female_anglo_saxon_duchy_independent = {
 	type = character
@@ -591,10 +785,12 @@ title_prince_female_anglo_saxon_duchy_independent = {
 	special = ruler_child
 	tier = duchy
 	priority = 121
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
-	only_independent = yes
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 title_prince_male_anglo_saxon = {
 	type = character
@@ -602,9 +798,11 @@ title_prince_male_anglo_saxon = {
 	special = ruler_child
 	tier = kingdom
 	priority = 130
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_female_anglo_saxon = {
 	type = character
@@ -612,9 +810,11 @@ title_prince_female_anglo_saxon = {
 	special = ruler_child
 	tier = kingdom
 	priority = 130
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_male_anglo_saxon_empire = {
 	type = character
@@ -622,9 +822,11 @@ title_prince_male_anglo_saxon_empire = {
 	special = ruler_child
 	tier = empire
 	priority = 150
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_female_anglo_saxon_empire = {
 	type = character
@@ -632,9 +834,11 @@ title_prince_female_anglo_saxon_empire = {
 	special = ruler_child
 	tier = empire
 	priority = 150
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 queen_mother_anglo_saxon_independent = {
 	type = character
@@ -642,10 +846,12 @@ queen_mother_anglo_saxon_independent = {
 	special = queen_mother
 	tier = duchy
 	priority = 121
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
-	only_independent = yes
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 queen_mother_anglo_saxon = {
 	type = character
@@ -653,9 +859,11 @@ queen_mother_anglo_saxon = {
 	special = queen_mother
 	tier = kingdom
 	priority = 130
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 queen_mother_anglo_saxon_empire = {
 	type = character
@@ -663,9 +871,11 @@ queen_mother_anglo_saxon_empire = {
 	special = queen_mother
 	tier = empire
 	priority = 150
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 baron_republic_male_anglo_saxon = {
 	type = character
@@ -673,10 +883,12 @@ baron_republic_male_anglo_saxon = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { anglo_saxon } 
+	name_lists = { name_list_anglo_saxon } 
 	governments = { republic_government }
-	only_holder = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 baron_republic_female_anglo_saxon = {
 	type = character
@@ -684,18 +896,22 @@ baron_republic_female_anglo_saxon = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { republic_government }
-	only_holder = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
-barony_republic_anglo_saxon = {
+barony_city_anglo_saxon = {
 	type = title
 	tier = barony
 	priority = 103
-	cultures = { anglo_saxon }
-	governments = { republic_government }
-	top_liege = no
+	name_lists = { name_list_anglo_saxon }
+	holding = city_holding
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_republic_male_anglo_saxon = {
 	type = character
@@ -703,10 +919,12 @@ count_republic_male_anglo_saxon = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { republic_government }
-	only_holder = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 count_republic_female_anglo_saxon = {
 	type = character
@@ -714,18 +932,22 @@ count_republic_female_anglo_saxon = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { republic_government }
-	only_holder = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 county_republic_anglo_saxon = {
 	type = title
 	tier = county
 	priority = 113
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_republic_male_anglo_saxon = {
 	type = character
@@ -733,10 +955,12 @@ duke_republic_male_anglo_saxon = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { republic_government }
-	only_holder = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 duke_republic_female_anglo_saxon = {
 	type = character
@@ -744,18 +968,22 @@ duke_republic_female_anglo_saxon = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { republic_government }
-	only_holder = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 duchy_republic_anglo_saxon = {
 	type = title
 	tier = duchy
 	priority = 123
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 king_republic_male_anglo_saxon = {
 	type = character
@@ -763,10 +991,12 @@ king_republic_male_anglo_saxon = {
 	special = holder
 	tier = kingdom
 	priority = 143
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { republic_government }
-	only_holder = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 king_republic_female_anglo_saxon = {
 	type = character
@@ -774,26 +1004,32 @@ king_republic_female_anglo_saxon = {
 	special = holder
 	tier = kingdom
 	priority = 143
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { republic_government }
-	only_holder = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 kingdom_republic_anglo_saxon = {
 	type = title
 	tier = kingdom
 	priority = 143
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
-barony_tribal_anglo_saxon = {
+barony_tribe_anglo_saxon = {
 	type = title
 	tier = barony
 	priority = 103
-	cultures = { anglo_saxon }
-	governments = { tribal_government }
-	top_liege = no
+	name_lists = { name_list_anglo_saxon }
+	holding = tribal_holding
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_tribal_male_anglo_saxon = {
 	type = character
@@ -801,9 +1037,11 @@ count_tribal_male_anglo_saxon = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_tribal_female_anglo_saxon = {
 	type = character
@@ -811,17 +1049,21 @@ count_tribal_female_anglo_saxon = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 county_tribal_anglo_saxon = {
 	type = title
 	tier = county
 	priority = 113
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_tribal_male_anglo_saxon = {
 	type = character
@@ -829,9 +1071,11 @@ duke_tribal_male_anglo_saxon = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_tribal_female_anglo_saxon = {
 	type = character
@@ -839,17 +1083,53 @@ duke_tribal_female_anglo_saxon = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duchy_tribal_anglo_saxon = {
 	type = title
 	tier = duchy
 	priority = 123
-	cultures = { anglo_saxon }
+	name_lists = { name_list_anglo_saxon }
 	governments = { tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
+}
+camp_male_anglo_saxon  = {
+	type = character
+	gender = male
+	special = holder
+	priority = 123
+	name_lists = { name_list_anglo_saxon }
+	domicile_type = camp
+}
+camp_female_anglo_saxon  = {
+	type = character
+	gender = female
+	special = holder
+	priority = 123
+	name_lists = { name_list_anglo_saxon }
+	domicile_type = camp
+}
+estate_male_anglo_saxon  = {
+	type = character
+	gender = male
+	special = holder
+	priority = 123
+	name_lists = { name_list_anglo_saxon }
+	domicile_type = estate
+}
+estate_female_anglo_saxon  = {
+	type = character
+	gender = female
+	special = holder
+	priority = 123
+	name_lists = { name_list_anglo_saxon }
+	domicile_type = estate
 }
 ################################################
 ## Old Saxon Culture (Old Low German)
@@ -861,8 +1141,10 @@ baron_male_old_saxon = {
 	tier = barony
 	priority = 103
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { old_saxon }
-	top_liege = no
+	name_lists = { name_list_old_saxon }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 baron_female_old_saxon = {
 	type = character
@@ -871,16 +1153,20 @@ baron_female_old_saxon = {
 	tier = barony
 	priority = 103
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { old_saxon }
-	top_liege = no
+	name_lists = { name_list_old_saxon }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
-barony_old_saxon = {
+barony_castle_old_saxon = {
 	type = title
 	tier = barony
 	priority = 103
-	governments = { feudal_government clan_government tribal_government }
-	cultures = { old_saxon }
-	top_liege = no
+	holding = castle_holding
+	name_lists = { name_list_old_saxon }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_male_old_saxon = {
 	type = character
@@ -889,8 +1175,10 @@ count_male_old_saxon = {
 	tier = county
 	priority = 113
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { old_saxon }
-	top_liege = no
+	name_lists = { name_list_old_saxon }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_female_old_saxon = {
 	type = character
@@ -899,16 +1187,20 @@ count_female_old_saxon = {
 	tier = county
 	priority = 113
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { old_saxon }
-	top_liege = no
+	name_lists = { name_list_old_saxon }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 county_old_saxon = {
 	type = title
 	tier = county
 	priority = 113
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { old_saxon }
-	top_liege = no
+	name_lists = { name_list_old_saxon }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_male_old_saxon_independent = {
 	type = character
@@ -917,9 +1209,11 @@ count_male_old_saxon_independent = {
 	tier = county
 	priority = 114
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { old_saxon }
-	top_liege = no
-	only_independent = yes
+	name_lists = { name_list_old_saxon }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 count_female_old_saxon_independent = {
 	type = character
@@ -928,18 +1222,22 @@ count_female_old_saxon_independent = {
 	tier = county
 	priority = 114
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { old_saxon }
-	top_liege = no
-	only_independent = yes
+	name_lists = { name_list_old_saxon }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 county_old_saxon_independent = {
 	type = title
 	tier = county
 	priority = 114
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { old_saxon }
-	top_liege = no
-	only_independent = yes
+	name_lists = { name_list_old_saxon }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 duke_male_old_saxon = {
 	type = character
@@ -948,8 +1246,10 @@ duke_male_old_saxon = {
 	tier = duchy
 	priority = 123
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { old_saxon }
-	top_liege = no
+	name_lists = { name_list_old_saxon }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_female_old_saxon = {
 	type = character
@@ -958,16 +1258,20 @@ duke_female_old_saxon = {
 	tier = duchy
 	priority = 123
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { old_saxon }
-	top_liege = no
+	name_lists = { name_list_old_saxon }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duchy_old_saxon = {
 	type = title
 	tier = duchy
 	priority = 123
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { old_saxon }
-	top_liege = no
+	name_lists = { name_list_old_saxon }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_male_old_saxon_independent = {
 	type = character
@@ -976,9 +1280,11 @@ duke_male_old_saxon_independent = {
 	tier = duchy
 	priority = 124
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { old_saxon }
-	top_liege = no
-	only_independent = yes
+	name_lists = { name_list_old_saxon }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 duke_female_old_saxon_independent = {
 	type = character
@@ -987,18 +1293,22 @@ duke_female_old_saxon_independent = {
 	tier = duchy
 	priority = 124
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { old_saxon }
-	top_liege = no
-	only_independent = yes
+	name_lists = { name_list_old_saxon }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 duchy_old_saxon_independent = {
 	type = title
 	tier = duchy
 	priority = 124
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { old_saxon }
-	top_liege = no
-	only_independent = yes
+	name_lists = { name_list_old_saxon }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 king_male_old_saxon = {
 	type = character
@@ -1007,8 +1317,10 @@ king_male_old_saxon = {
 	tier = kingdom
 	priority = 143
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { old_saxon }
-	top_liege = no
+	name_lists = { name_list_old_saxon }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 king_female_old_saxon = {
 	type = character
@@ -1017,16 +1329,20 @@ king_female_old_saxon = {
 	tier = kingdom
 	priority = 143
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { old_saxon }
-	top_liege = no
+	name_lists = { name_list_old_saxon }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 kingdom_old_saxon = {
 	type= title
 	tier = kingdom
 	priority = 143
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { old_saxon }
-	top_liege = no
+	name_lists = { name_list_old_saxon }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 emperor_male_old_saxon = {
 	type = character
@@ -1035,8 +1351,10 @@ emperor_male_old_saxon = {
 	tier = empire
 	priority = 153
 	governments = { feudal_government clan_government tribal_government republic_government }
-	cultures = { old_saxon }
-	top_liege = no
+	name_lists = { name_list_old_saxon }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 emperor_female_old_saxon = {
 	type = character
@@ -1045,16 +1363,20 @@ emperor_female_old_saxon = {
 	tier = empire
 	priority = 153
 	governments = { feudal_government clan_government tribal_government republic_government }
-	cultures = { old_saxon }
-	top_liege = no
+	name_lists = { name_list_old_saxon }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 empire_old_saxon = {
 	type = title
 	tier = empire
 	priority = 153
 	governments = { feudal_government clan_government tribal_government republic_government }
-	cultures = { old_saxon }
-	top_liege = no
+	name_lists = { name_list_old_saxon }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 baron_republic_male_old_saxon = {
 	type = character
@@ -1063,9 +1385,11 @@ baron_republic_male_old_saxon = {
 	tier = barony
 	priority = 103
 	governments = { republic_government }
-	cultures = { old_saxon }
-	top_liege = no
-	only_holder = yes
+	name_lists = { name_list_old_saxon }
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 baron_republic_female_old_saxon = {
 	type = character
@@ -1074,17 +1398,21 @@ baron_republic_female_old_saxon = {
 	tier = barony
 	priority = 103
 	governments = { republic_government }
-	cultures = { old_saxon }
-	top_liege = no
-	only_holder = yes
+	name_lists = { name_list_old_saxon }
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
-barony_republic_old_saxon = {
+barony_city_old_saxon = {
 	type = title
 	tier = barony
 	priority = 103
-	governments = { republic_government }
-	cultures = { old_saxon }
-	top_liege = no
+	holding = city_holding
+	name_lists = { name_list_old_saxon }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_republic_male_old_saxon = {
 	type = character
@@ -1093,9 +1421,11 @@ count_republic_male_old_saxon = {
 	tier = county
 	priority = 113
 	governments = { republic_government }
-	cultures = { old_saxon }
-	top_liege = no
-	only_holder = yes
+	name_lists = { name_list_old_saxon }
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 count_republic_female_old_saxon = {
 	type = character
@@ -1104,33 +1434,51 @@ count_republic_female_old_saxon = {
 	tier = county
 	priority = 113
 	governments = { republic_government }
-	cultures = { old_saxon }
-	top_liege = no
-	only_holder = yes
+	name_lists = { name_list_old_saxon }
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 county_republic_old_saxon = {
 	type = title
 	tier = county
 	priority = 113
 	governments = { republic_government }
-	cultures = { old_saxon }
-	top_liege = no
+	name_lists = { name_list_old_saxon }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duchy_republic_old_saxon = {
 	type = title
 	tier = duchy
 	priority = 123
 	governments = { republic_government }
-	cultures = { old_saxon }
-	top_liege = no
+	name_lists = { name_list_old_saxon }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 kingdom_republic_old_saxon = {
 	type = title
 	tier = kingdom
 	priority = 143
 	governments = { republic_government }
-	cultures = { old_saxon }
-	top_liege = no
+	name_lists = { name_list_old_saxon }
+	flavourization_rules = {
+		top_liege = no
+	}
+}
+barony_tribe_old_saxon = {
+	type = title
+	tier = barony
+	priority = 103
+	holding = tribal_holding
+	name_lists = { name_list_old_saxon }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 ###############################################
 ## Scottish_culture ##
@@ -1141,9 +1489,11 @@ baron_male_scottish = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { scottish }
+	name_lists = { name_list_scottish }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 baron_female_scottish = {
 	type = character
@@ -1151,17 +1501,21 @@ baron_female_scottish = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { scottish }
+	name_lists = { name_list_scottish }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
-barony_scottish = {
+barony_castle_scottish = {
 	type = title
 	tier = barony
 	priority = 103
-	cultures = { scottish }
-	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	name_lists = { name_list_scottish }
+	holding = castle_holding
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_male_scottish = {
 	type = character
@@ -1169,9 +1523,11 @@ count_male_scottish = {
 	special = holder
 	priority = 113
 	tier = county
-	cultures = { scottish }
+	name_lists = { name_list_scottish }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_female_scottish = {
 	type = character
@@ -1179,17 +1535,21 @@ count_female_scottish = {
 	special = holder
 	priority = 113
 	tier = county
-	cultures = { scottish }
+	name_lists = { name_list_scottish }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 county_scottish = {
 	type = title
 	priority = 113
 	tier = county
-	cultures = { scottish }
+	name_lists = { name_list_scottish }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_male_scottish = {
 	type = character
@@ -1197,9 +1557,11 @@ duke_male_scottish = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { scottish }
+	name_lists = { name_list_scottish }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_female_scottish = {
 	type = character
@@ -1207,17 +1569,21 @@ duke_female_scottish = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { scottish }
+	name_lists = { name_list_scottish }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duchy_scottish = {
 	type = title
 	tier = duchy
 	priority = 123
-	cultures = { scottish }
+	name_lists = { name_list_scottish }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_male_scottish_independent = {
 	type = character
@@ -1225,10 +1591,12 @@ duke_male_scottish_independent = {
 	special = holder
 	priority = 124
 	tier = duchy
-	cultures = { scottish }
+	name_lists = { name_list_scottish }
 	governments = { feudal_government clan_government tribal_government }
 	only_independent = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_female_scottish_independent = {
 	type = character
@@ -1236,19 +1604,23 @@ duke_female_scottish_independent = {
 	special = holder
 	priority = 124
 	tier = duchy
-	cultures = { scottish }
+	name_lists = { name_list_scottish }
 	governments = { feudal_government clan_government tribal_government }
 	only_independent = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duchy_scottish_independent = {
 	type = title
 	priority = 124
 	tier = duchy
-	cultures = { scottish }
+	name_lists = { name_list_scottish }
 	governments = { feudal_government clan_government tribal_government }
 	only_independent = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 king_male_scottish = {
 	type = character
@@ -1256,9 +1628,11 @@ king_male_scottish = {
 	special = holder
 	priority = 143
 	tier = kingdom
-	cultures = { scottish }
+	name_lists = { name_list_scottish }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 king_female_scottish = {
 	type = character
@@ -1266,17 +1640,21 @@ king_female_scottish = {
 	special = holder
 	priority = 143
 	tier = kingdom
-	cultures = { scottish }
+	name_lists = { name_list_scottish }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 kingdom_scottish = {
 	type = title
 	priority = 143
 	tier = kingdom
-	cultures = { scottish }
+	name_lists = { name_list_scottish }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 emperor_male_scottish = {
 	type = character
@@ -1284,9 +1662,11 @@ emperor_male_scottish = {
 	special = holder
 	priority = 153
 	tier = empire
-	cultures = { scottish }
+	name_lists = { name_list_scottish }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 emperor_female_scottish = {
 	type = character
@@ -1294,17 +1674,21 @@ emperor_female_scottish = {
 	special = holder
 	priority = 153
 	tier = empire
-	cultures = { scottish }
+	name_lists = { name_list_scottish }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 empire_scottish = {
 	type = title
 	priority = 153
 	tier = empire
-	cultures = { scottish }
+	name_lists = { name_list_scottish }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_male_scottish = {
 	type = character
@@ -1312,9 +1696,11 @@ title_prince_male_scottish = {
 	special = ruler_child
 	tier = kingdom
 	priority = 130
-	cultures = { scottish }
+	name_lists = { name_list_scottish }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_female_scottish = {
 	type = character
@@ -1322,9 +1708,11 @@ title_prince_female_scottish = {
 	special = ruler_child
 	tier = kingdom
 	priority = 130
-	cultures = { scottish }
+	name_lists = { name_list_scottish }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_male_scottish_empire = {
 	type = character
@@ -1332,9 +1720,11 @@ title_prince_male_scottish_empire = {
 	special = ruler_child
 	tier = empire
 	priority = 150
-	cultures = { scottish }
+	name_lists = { name_list_scottish }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_female_scottish_empire = {
 	type = character
@@ -1342,9 +1732,11 @@ title_prince_female_scottish_empire = {
 	special = ruler_child
 	tier = empire
 	priority = 150
-	cultures = { scottish }
+	name_lists = { name_list_scottish }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 queen_mother_scottish = {
 	type = character
@@ -1352,9 +1744,11 @@ queen_mother_scottish = {
 	special = queen_mother
 	tier = kingdom
 	priority = 130
-	cultures = { scottish }
+	name_lists = { name_list_scottish }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 queen_mother_scottish_empire = {
 	type = character
@@ -1362,9 +1756,11 @@ queen_mother_scottish_empire = {
 	special = queen_mother
 	tier = empire
 	priority = 150
-	cultures = { scottish }
+	name_lists = { name_list_scottish }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 baron_republic_male_scottish = {
 	type = character
@@ -1372,10 +1768,12 @@ baron_republic_male_scottish = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { scottish } 
+	name_lists = { name_list_scottish } 
 	governments = { republic_government }
-	only_holder = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 baron_republic_female_scottish = {
 	type = character
@@ -1383,18 +1781,22 @@ baron_republic_female_scottish = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { scottish }
+	name_lists = { name_list_scottish }
 	governments = { republic_government }
-	only_holder = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
-barony_republic_scottish = {
+barony_city_scottish = {
 	type = title
 	tier = barony
 	priority = 103
-	cultures = { scottish }
-	governments = { republic_government }
-	top_liege = no
+	name_lists = { name_list_scottish }
+	holding = city_holding
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_republic_male_scottish = {
 	type = character
@@ -1402,10 +1804,12 @@ count_republic_male_scottish = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { scottish }
+	name_lists = { name_list_scottish }
 	governments = { republic_government }
-	only_holder = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 count_republic_female_scottish = {
 	type = character
@@ -1413,18 +1817,22 @@ count_republic_female_scottish = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { scottish }
+	name_lists = { name_list_scottish }
 	governments = { republic_government }
-	only_holder = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 county_republic_scottish = {
 	type = title
 	tier = county
 	priority = 113
-	cultures = { scottish }
+	name_lists = { name_list_scottish }
 	governments = { republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_republic_male_scottish = {
 	type = character
@@ -1432,10 +1840,12 @@ duke_republic_male_scottish = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { scottish }
+	name_lists = { name_list_scottish }
 	governments = { republic_government }
-	only_holder = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 duke_republic_female_scottish = {
 	type = character
@@ -1443,18 +1853,22 @@ duke_republic_female_scottish = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { scottish }
+	name_lists = { name_list_scottish }
 	governments = { republic_government }
-	only_holder = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 duchy_republic_scottish = {
 	type = title
 	tier = duchy
 	priority = 123
-	cultures = { scottish }
+	name_lists = { name_list_scottish }
 	governments = { republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 kingdom_republic_male_scottish = {
 	type = character
@@ -1462,10 +1876,12 @@ kingdom_republic_male_scottish = {
 	special = holder
 	tier = kingdom
 	priority = 143
-	cultures = { scottish }
+	name_lists = { name_list_scottish }
 	governments = { republic_government }
-	only_holder = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 kingdom_republic_female_scottish = {
 	type = character
@@ -1473,18 +1889,64 @@ kingdom_republic_female_scottish = {
 	special = holder
 	tier = kingdom
 	priority = 143
-	cultures = { scottish }
+	name_lists = { name_list_scottish }
 	governments = { republic_government }
-	only_holder = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 kingdom_republic_scottish = {
 	type = title
 	tier = kingdom
 	priority = 143
-	cultures = { scottish }
+	name_lists = { name_list_scottish }
 	governments = { republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
+}
+barony_tribe_scottish = {
+	type = title
+	tier = barony
+	priority = 103
+	name_lists = { name_list_scottish }
+	holding = tribal_holding
+	flavourization_rules = {
+		top_liege = no
+	}
+}
+camp_male_scottish  = {
+	type = character
+	gender = male
+	special = holder
+	priority = 123
+	name_lists = { name_list_scottish }
+	domicile_type = camp
+}
+camp_female_scottish  = {
+	type = character
+	gender = female
+	special = holder
+	priority = 123
+	name_lists = { name_list_scottish }
+	domicile_type = camp
+}
+estate_male_scottish  = {
+	type = character
+	gender = male
+	special = holder
+	priority = 123
+	name_lists = { name_list_scottish }
+	domicile_type = estate
+}
+estate_female_scottish  = {
+	type = character
+	gender = female
+	special = holder
+	priority = 123
+	name_lists = { name_list_scottish }
+	domicile_type = estate
 }
 ###############################################
 ## End of West_German_culture_group ##

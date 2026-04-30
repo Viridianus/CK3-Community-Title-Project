@@ -94,6 +94,94 @@ QueenMScottish = {
 		localization_key =  king_default_female_scottish
 	}
 }
+PrincePictish = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					exists = father.primary_heir
+					root.father.primary_heir = root
+				}
+				AND = {
+					exists = mother.primary_heir
+					root.mother.primary_heir = root
+				}
+			}
+		}
+		localization_key = piccum_heir_male
+	}
+	text = {
+		fallback = yes
+		localization_key =  prince_default_male_piccum
+	}
+}
+PrincessPictish = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					exists = father.primary_heir
+					root.father.primary_heir = root
+				}
+				AND = {
+					exists = mother.primary_heir
+					root.mother.primary_heir = root
+				}
+			}
+		}
+		localization_key = piccum_heir_female
+	}
+	text = {
+		fallback = yes
+		localization_key =  prince_default_female_piccum
+	}
+}
+PrinceWelsh = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					exists = father.primary_heir
+					root.father.primary_heir = root
+				}
+				AND = {
+					exists = mother.primary_heir
+					root.mother.primary_heir = root
+				}
+			}
+		}
+		localization_key = welsh_heir_male
+	}
+	text = {
+		fallback = yes
+		localization_key =  prince_default_male_welsh
+	}
+}
+PrincessWelsh = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					exists = father.primary_heir
+					root.father.primary_heir = root
+				}
+				AND = {
+					exists = mother.primary_heir
+					root.mother.primary_heir = root
+				}
+			}
+		}
+		localization_key = welsh_heir_female
+	}
+	text = {
+		fallback = yes
+		localization_key =  prince_default_female_welsh
+	}
+}
 QueenMWelsh = {
 	type = character
 	text = {
@@ -107,6 +195,82 @@ QueenMWelsh = {
 	text = {
 		fallback = yes
 		localization_key =  king_default_female_welsh
+	}
+}
+PrinceCornish = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					exists = father.primary_heir
+					root.father.primary_heir = root
+				}
+				AND = {
+					exists = mother.primary_heir
+					root.mother.primary_heir = root
+				}
+			}
+		}
+		localization_key = welsh_heir_male
+	}
+	text = {
+		fallback = yes
+		localization_key =  prince_default_male_cornish
+	}
+}
+PrincessCornish = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					exists = father.primary_heir
+					root.father.primary_heir = root
+				}
+				AND = {
+					exists = mother.primary_heir
+					root.mother.primary_heir = root
+				}
+			}
+		}
+		localization_key = welsh_heir_female
+	}
+	text = {
+		fallback = yes
+		localization_key =  prince_default_female_cornish
+	}
+}
+PrinceFrench = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				has_primary_title = title:c_viennois
+				has_primary_title = title:d_dauphine
+			}
+		}
+		localization_key = dolphin_male_french
+	}
+	text = {
+		fallback = yes
+		localization_key =  prince_default_male_french
+	}
+}
+PrincessFrench = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				has_primary_title = title:c_viennois
+				has_primary_title = title:d_dauphine
+			}
+		}
+		localization_key = dolphin_female_french
+	}
+	text = {
+		fallback = yes
+		localization_key =  prince_default_female_french
 	}
 }
 QueenMBasque = {
@@ -214,244 +378,136 @@ QueenMAragonese = {
 		localization_key =  king_default_female_aragonese
 	}
 }
-PrinceDNorse = {
+PrinceFinnish = {
 	type = character
 	text = {
 		trigger = {
 			OR = {
 				AND = {
-					exists = father
-					root.father = {
-						any_heir = {
-							this = root
-						}
-					}
+					exists = father.primary_heir
+					root.father.primary_heir = root
 				}
 				AND = {
-					exists = mother
-					root.mother = {
-						any_heir = {
-							this = root
-						}
-					}
+					exists = mother.primary_heir
+					root.mother.primary_heir = root
 				}
 			}
 		}
-		localization_key = norse_heir_male
+		localization_key = finnish_heir
 	}
 	text = {
 		fallback = yes
-		localization_key =  prince_d_male_north
+		localization_key =  prince_male_finnish_default
 	}
 }
-PrincessDNorse = {
+PrincessFinnish = {
 	type = character
 	text = {
 		trigger = {
 			OR = {
 				AND = {
-					exists = father
-					root.father = {
-						any_heir = {
-							this = root
-						}
-					}
+					exists = father.primary_heir
+					root.father.primary_heir = root
 				}
 				AND = {
-					exists = mother
-					root.mother = {
-						any_heir = {
-							this = root
-						}
-					}
+					exists = mother.primary_heir
+					root.mother.primary_heir = root
 				}
 			}
 		}
-		localization_key = norse_heir_male
+		localization_key = finnish_heir
 	}
 	text = {
 		fallback = yes
-		localization_key =  prince_d_female_north
+		localization_key =  prince_female_finnish_default
 	}
 }
-PrinceNor = {
+PrinceEFinnish = {
 	type = character
 	text = {
 		trigger = {
 			OR = {
 				AND = {
-					exists = father
-					root.father = {
-						any_heir = {
-							this = root
-						}
-					}
+					exists = father.primary_heir
+					root.father.primary_heir = root
 				}
 				AND = {
-					exists = mother
-					root.mother = {
-						any_heir = {
-							this = root
-						}
-					}
+					exists = mother.primary_heir
+					root.mother.primary_heir = root
 				}
 			}
 		}
-		localization_key = norse_heir_male
+		localization_key = finnish_heir
 	}
 	text = {
 		fallback = yes
-		localization_key =  prince_male_nor
+		localization_key =  prince_e_male_finnish_default
 	}
 }
-PrincessENor = {
+PrincessEFinnish = {
 	type = character
 	text = {
 		trigger = {
 			OR = {
 				AND = {
-					exists = father
-					root.father = {
-						any_heir = {
-							this = root
-						}
-					}
+					exists = father.primary_heir
+					root.father.primary_heir = root
 				}
 				AND = {
-					exists = mother
-					root.mother = {
-						any_heir = {
-							this = root
-						}
-					}
+					exists = mother.primary_heir
+					root.mother.primary_heir = root
 				}
 			}
 		}
-		localization_key = norse_heir_female
+		localization_key = finnish_heir
 	}
 	text = {
 		fallback = yes
-		localization_key =  prince_e_female_nor
+		localization_key =  prince_e_female_finnish_default
 	}
 }
-PrincessKNor = {
+PrinceEstonian = {
 	type = character
 	text = {
 		trigger = {
 			OR = {
 				AND = {
-					exists = father
-					root.father = {
-						any_heir = {
-							this = root
-						}
-					}
+					exists = father.primary_heir
+					root.father.primary_heir = root
 				}
 				AND = {
-					exists = mother
-					root.mother = {
-						any_heir = {
-							this = root
-						}
-					}
+					exists = mother.primary_heir
+					root.mother.primary_heir = root
 				}
 			}
 		}
-		localization_key = norse_heir_female
+		localization_key = estonian_heir
 	}
 	text = {
 		fallback = yes
-		localization_key =  prince_k_female_nor
+		localization_key =  prince_male_estonian_default
 	}
 }
-PrinceSweDan = {
+PrincessEstonian = {
 	type = character
 	text = {
 		trigger = {
 			OR = {
 				AND = {
-					exists = father
-					root.father = {
-						any_heir = {
-							this = root
-						}
-					}
+					exists = father.primary_heir
+					root.father.primary_heir = root
 				}
 				AND = {
-					exists = mother
-					root.mother = {
-						any_heir = {
-							this = root
-						}
-					}
+					exists = mother.primary_heir
+					root.mother.primary_heir = root
 				}
 			}
 		}
-		localization_key = norse_heir_male
+		localization_key = estonian_heir
 	}
 	text = {
 		fallback = yes
-		localization_key =  prince_male_swe_dan
-	}
-}
-PrincessESweDan = {
-	type = character
-	text = {
-		trigger = {
-			OR = {
-				AND = {
-					exists = father
-					root.father = {
-						any_heir = {
-							this = root
-						}
-					}
-				}
-				AND = {
-					exists = mother
-					root.mother = {
-						any_heir = {
-							this = root
-						}
-					}
-				}
-			}
-		}
-		localization_key = norse_heir_female
-	}
-	text = {
-		fallback = yes
-		localization_key =  prince_e_female_swe_dan
-	}
-}
-PrincessKSweDan = {
-	type = character
-	text = {
-		trigger = {
-			OR = {
-				AND = {
-					exists = father
-					root.father = {
-						any_heir = {
-							this = root
-						}
-					}
-				}
-				AND = {
-					exists = mother
-					root.mother = {
-						any_heir = {
-							this = root
-						}
-					}
-				}
-			}
-		}
-		localization_key = norse_heir_female
-	}
-	text = {
-		fallback = yes
-		localization_key =  prince_k_female_swe_dan
+		localization_key =  prince_female_estonian_default
 	}
 }
 QueenMSaxon = {
@@ -512,6 +568,50 @@ QueenMEstonian = {
 	text = {
 		fallback = yes
 		localization_key =  king_default_female_estonian
+	}
+}
+PrinceArabic = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					exists = father.primary_heir
+					root.father.primary_heir = root
+				}
+				AND = {
+					exists = mother.primary_heir
+					root.mother.primary_heir = root
+				}
+			}
+		}
+		localization_key = arabic_primary_heir
+	}
+	text = {
+		fallback = yes
+		localization_key =  prince_default_male_arabic
+	}
+}
+PrincessArabic = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					exists = father.primary_heir
+					root.father.primary_heir = root
+				}
+				AND = {
+					exists = mother.primary_heir
+					root.mother.primary_heir = root
+				}
+			}
+		}
+		localization_key = arabic_primary_heir
+	}
+	text = {
+		fallback = yes
+		localization_key =  prince_default_female_arabic
 	}
 }
 QueenMArabic = {
@@ -586,6 +686,50 @@ PrincessArmenian = {
 		localization_key =  prince_default_female_armenian
 	}
 }
+PrinceBArmenian = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					exists = father.primary_heir
+					root.father.primary_heir = root
+				}
+				AND = {
+					exists = mother.primary_heir
+					root.mother.primary_heir = root
+				}
+			}
+		}
+		localization_key = caeser_armenian_male
+	}
+	text = {
+		fallback = yes
+		localization_key =  title_prince_male_armenian_empire
+	}
+}
+PrincessBArmenian = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					exists = father.primary_heir
+					root.father.primary_heir = root
+				}
+				AND = {
+					exists = mother.primary_heir
+					root.mother.primary_heir = root
+				}
+			}
+		}
+		localization_key = caeser_armenian_female
+	}
+	text = {
+		fallback = yes
+		localization_key =  title_prince_female_armenian_empire
+	}
+}
 QueenMArmenian = {
 	type = character
 	text = {
@@ -599,6 +743,94 @@ QueenMArmenian = {
 	text = {
 		fallback = yes
 		localization_key =  king_default_female_armenian
+	}
+}
+PrinceGreek = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					exists = father.primary_heir
+					root.father.primary_heir = root
+				}
+				AND = {
+					exists = mother.primary_heir
+					root.mother.primary_heir = root
+				}
+			}
+		}
+		localization_key = primary_heir_greek_male
+	}
+	text = {
+		fallback = yes
+		localization_key =  prince_male_greek_default
+	}
+}
+PrincessGreek = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					exists = father.primary_heir
+					root.father.primary_heir = root
+				}
+				AND = {
+					exists = mother.primary_heir
+					root.mother.primary_heir = root
+				}
+			}
+		}
+		localization_key = primary_heir_greek_female
+	}
+	text = {
+		fallback = yes
+		localization_key =  prince_female_greek_default
+	}
+}
+PrinceBGreek = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					exists = father.primary_heir
+					root.father.primary_heir = root
+				}
+				AND = {
+					exists = mother.primary_heir
+					root.mother.primary_heir = root
+				}
+			}
+		}
+		localization_key = caeser_greek_male
+	}
+	text = {
+		fallback = yes
+		localization_key =  prince_male_greek_default
+	}
+}
+PrincessBGreek = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					exists = father.primary_heir
+					root.father.primary_heir = root
+				}
+				AND = {
+					exists = mother.primary_heir
+					root.mother.primary_heir = root
+				}
+			}
+		}
+		localization_key = caeser_greek_female
+	}
+	text = {
+		fallback = yes
+		localization_key =  prince_female_greek_default
 	}
 }
 QueenMGreek = {
@@ -804,6 +1036,12 @@ QueenMSicilian = {
 	}
 	text = {
 		trigger = {
+			has_religion = religion:islam_religion
+		}
+		localization_key = king_default_female_arabic
+	}
+	text = {
+		trigger = {
 			any_child = {
 				OR = {
 					has_primary_title = title:e_byzantium
@@ -816,6 +1054,19 @@ QueenMSicilian = {
 	text = {
 		fallback = yes
 		localization_key =  king_default_female_sicilian
+	}
+}
+EmpressMSicilian = {
+	type = character
+	text = {
+		trigger = {
+			has_religion = religion:islam_religion
+		}
+		localization_key = emperor_default_female_arabic
+	}
+	text = {
+		fallback = yes
+		localization_key =  emperor_female_sicilian
 	}
 }
 QueenMLombard = {
@@ -874,7 +1125,7 @@ QueenMSerbian = {
 	}
 	text = {
 		trigger = {
-			any_child = {
+			top_liege = {
 				OR = {
 					has_primary_title = title:e_byzantium
 					has_primary_title = title:e_roman_empire
@@ -907,6 +1158,26 @@ QueenMMogyer = {
 	type = character
 	text = {
 		trigger = {
+			top_liege = {
+				OR = {
+					has_primary_title = title:e_byzantium
+					has_primary_title = title:e_roman_empire
+				}
+			}
+		}
+		localization_key = ctp_blank
+	}
+	text = {
+		trigger = {
+			any_child = {
+				has_faith = faith:orthodox
+				is_landed = yes
+			} 
+		}
+		localization_key = despot_mother_mogyer
+	}
+	text = {
+		trigger = {
 			root.faith = {
 				has_doctrine = tenet_struggle_submission
 			}
@@ -920,6 +1191,26 @@ QueenMMogyer = {
 }
 QueenMHung = {
 	type = character
+	text = {
+		trigger = {
+			top_liege = {
+				OR = {
+					has_primary_title = title:e_byzantium
+					has_primary_title = title:e_roman_empire
+				}
+			}
+		}
+		localization_key = ctp_blank
+	}
+	text = {
+		trigger = {
+			any_child = {
+				has_faith = faith:orthodox
+				is_landed = yes
+			} 
+		}
+		localization_key = byzantine_king_hung
+	}
 	text = {
 		trigger = {
 			root.faith = {
@@ -1050,6 +1341,72 @@ QueenMPolish = {
 		localization_key =  king_default_female_polish
 	}
 }
+PrinceLithuanian = {
+  type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					exists = father.primary_heir
+					root.father.primary_heir = root
+				}
+				AND = {
+					exists = mother.primary_heir
+					root.mother.primary_heir = root
+				}
+			}
+		}
+		localization_key = lithuanian_primary_heir_male
+	}
+	text = {
+		fallback = yes
+		localization_key =  prince_default_male_lithuanian
+	}
+}
+PrincessLithuanian = {
+  type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					exists = father.primary_heir
+					root.father.primary_heir = root
+				}
+				AND = {
+					exists = mother.primary_heir
+					root.mother.primary_heir = root
+				}
+			}
+		}
+		localization_key = lithuanian_primary_heir_female
+	}
+	text = {
+		fallback = yes
+		localization_key =  prince_default_female_lithuanian
+	}
+}
+PrincePrussian = {
+  type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					exists = father.primary_heir
+					root.father.primary_heir = root
+				}
+				AND = {
+					exists = mother.primary_heir
+					root.mother.primary_heir = root
+				}
+			}
+		}
+		localization_key = prussian_primary_heir
+	}
+	text = {
+		fallback = yes
+		localization_key =  prince_default_male_prussian
+	}
+}
 PrinceRussian = {
   type = character
 	text = {
@@ -1094,11 +1451,45 @@ QueenMRussian = {
 				has_doctrine = tenet_struggle_submission
 			}
 		}
-    localization_key = sultan_qm_russian
+		localization_key = sultan_qm_russian
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_faith = faith:catholic
+				has_faith = faith:cathar
+				has_faith = faith:waldensian
+				has_faith = faith:lollard
+				has_faith = faith:insular_celtic
+			}
+		}
+		localization_key = karl_qm_rus
 	}
 	text = {
 		fallback = yes
 		localization_key =  queen_mother_default_russian
+	}
+}
+PrinceBurman = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					exists = father.primary_heir
+					root.father.primary_heir = root
+				}
+				AND = {
+					exists = mother.primary_heir
+					root.mother.primary_heir = root
+				}
+			}
+		}
+		localization_key = burman_primary_heir
+	}
+	text = {
+		fallback = yes
+		localization_key =  prince_default_male_burman
 	}
 }
 PrinceTamil= {
@@ -1828,5 +2219,170 @@ QueenMNepali = {
 	text = {
 		fallback = yes
 		localization_key =  queen_mother_default_nepali
+	}
+}
+QueenMSomali = {
+	type = character
+	text = {
+		trigger = {
+			faith = {
+				has_doctrine = tenet_struggle_submission
+			}
+		}
+		localization_key = sultan_female_somali
+	}
+	text = {
+		fallback = yes
+		localization_key =  king_default_female_somali
+	}
+}
+QueenMBeja = {
+	type = character
+	text = {
+		trigger = {
+			faith = {
+				has_doctrine = tenet_struggle_submission
+			}
+		}
+		localization_key = sultan_female_beja
+	}
+	text = {
+		fallback = yes
+		localization_key =  king_default_female_beja
+	}
+}
+QueenMTurkishTwo = {
+	type = character
+	text = {
+		trigger = {
+			faith = {
+				has_doctrine = tenet_struggle_submission
+			}
+		}
+		localization_key = sultan_female_turkish_group_two
+	}
+	text = {
+		fallback = yes
+		localization_key =  king_default_female_turkish_group_two
+	}
+}
+QueenMKimek = {
+	type = character
+	text = {
+		trigger = {
+			faith = {
+				has_doctrine = tenet_struggle_submission
+			}
+		}
+		localization_key = sultan_female_turkish_group_two
+	}
+	text = {
+		fallback = yes
+		localization_key =  king_female_khazar
+	}
+}
+QueenMPersian = {
+	type = character
+	text = {
+		trigger = {
+			faith = {
+				has_doctrine = tenet_struggle_submission
+			}
+		}
+		localization_key = sultan_female_persian
+	}
+	text = {
+		fallback = yes
+		localization_key =  king_female_persian
+	}
+}
+QueenMSogdian = {
+	type = character
+	text = {
+		trigger = {
+			faith = {
+				has_doctrine = tenet_struggle_submission
+			}
+		}
+		localization_key = sultan_female_sogdian
+	}
+	text = {
+		fallback = yes
+		localization_key =  king_default_female_sogdian
+	}
+}
+QueenMKurdish = {
+	type = character
+	text = {
+		trigger = {
+			faith = {
+				has_doctrine = tenet_struggle_submission
+			}
+		}
+		localization_key = sultan_female_kurdish
+	}
+	text = {
+		fallback = yes
+		localization_key =  king_default_female_kurdish
+	}
+}
+QueenMAfghan = {
+	type = character
+	text = {
+		trigger = {
+			faith = {
+				has_doctrine = tenet_struggle_submission
+			}
+		}
+		localization_key = sultan_female_afghan
+	}
+	text = {
+		fallback = yes
+		localization_key =  king_default_female_afghan
+	}
+}
+QueenMBaloch = {
+	type = character
+	text = {
+		trigger = {
+			faith = {
+				has_doctrine = tenet_struggle_submission
+			}
+		}
+		localization_key = sultan_female_baloch
+	}
+	text = {
+		fallback = yes
+		localization_key =  king_default_female_baloch
+	}
+}
+QueenMKhwarezmian = {
+	type = character
+	text = {
+		trigger = {
+			faith = {
+				has_doctrine = tenet_struggle_submission
+			}
+		}
+		localization_key = sultan_female_khwarezmian
+	}
+	text = {
+		fallback = yes
+		localization_key =  king_default_female_khwarezmian
+	}
+}
+QueenMTajik = {
+	type = character
+	text = {
+		trigger = {
+			faith = {
+				has_doctrine = tenet_struggle_submission
+			}
+		}
+		localization_key = sultan_female_tajik
+	}
+	text = {
+		fallback = yes
+		localization_key =  king_default_female_tajik
 	}
 }

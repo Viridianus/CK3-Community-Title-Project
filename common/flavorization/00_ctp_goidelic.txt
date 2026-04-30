@@ -5,13 +5,155 @@
 ###############################################
 ## Goidelic_culture_group ## (Irish and Gaelic)
 ###############################################
-barony_goidelic_group = {
+barony_castle_goidelic_group = {
 	type = title
 	tier = barony
 	priority = 102
-	culture_groups = { goidelic_group }
+	heritages = { heritage_goidelic }
+	holding = castle_holding
+	flavourization_rules = {
+		top_liege = no
+	}
+}
+barony_tribe_goidelic_group = {
+	type = title
+	tier = barony
+	priority = 102
+	heritages = { heritage_goidelic }
+	holding = tribal_holding
+	flavourization_rules = {
+		top_liege = no
+	}
+}
+count_feudalclan_male_holder_goidelic_independent = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 115
+	heritages = { heritage_goidelic }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+		only_holder = yes
+	}
+}
+count_feudalclan_male_goidelic_independent = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 114
+	heritages = { heritage_goidelic }
+	governments = { feudal_government clan_government tribal_government }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
+}
+count_feudalclan_female_holder_goidelic_independent = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 115
+	heritages = { heritage_goidelic }
+	governments = { feudal_government clan_government tribal_government }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+		only_holder = yes
+	}
+}
+count_feudalclan_female_goidelic_independent = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 114
+	heritages = { heritage_goidelic }
+	governments = { feudal_government clan_government tribal_government }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
+}
+county_feudalclan_goidelic_independent = {
+	type = title
+	tier = county
+	priority = 114
+	heritages = { heritage_goidelic }
+	governments = { feudal_government clan_government tribal_government }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
+}
+duke_feudalclan_male_goidelic_independent = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 124
+	heritages = { heritage_goidelic }
+	governments = { feudal_government clan_government tribal_government }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
+}
+duke_feudalclan_male_holder_goidelic_independent = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 125
+	heritages = { heritage_goidelic }
+	governments = { feudal_government clan_government tribal_government }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+		only_holder = yes
+	}
+}
+duke_feudalclan_female_holder_goidelic_independent = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 125
+	heritages = { heritage_goidelic }
+	governments = { feudal_government clan_government tribal_government }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+		only_holder = yes
+	}
+}
+duke_feudalclan_female_goidelic_independent = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 124
+	heritages = { heritage_goidelic }
+	governments = { feudal_government clan_government tribal_government }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
+}
+duchy_feudalclan_goidelic_independent = {
+	type = title
+	tier = duchy
+	priority = 124
+	heritages = { heritage_goidelic }
+	governments = { feudal_government clan_government tribal_government }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 king_male_goidelic_group = {
 	type = character
@@ -19,9 +161,11 @@ king_male_goidelic_group = {
 	special = holder
 	priority = 142
 	tier = kingdom
-	culture_groups = { goidelic_group }
+	heritages = { heritage_goidelic }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 king_female_goidelic_group = {
 	type = character
@@ -29,17 +173,21 @@ king_female_goidelic_group = {
 	special = holder
 	priority = 142
 	tier = kingdom
-	culture_groups = { goidelic_group }
+	heritages = { heritage_goidelic }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 kingdom_goidelic_group = {
 	type = title
 	tier = kingdom
 	priority = 142
-	culture_groups = { goidelic_group }
+	heritages = { heritage_goidelic }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 emperor_male_goidelic_group = {
 	type = character
@@ -47,9 +195,11 @@ emperor_male_goidelic_group = {
 	special = holder
 	priority = 152
 	tier = empire
-	culture_groups = { goidelic_group }
+	heritages = { heritage_goidelic }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 emperor_female_goidelic_group = {
 	type = character
@@ -57,17 +207,21 @@ emperor_female_goidelic_group = {
 	special = holder
 	priority = 152
 	tier = empire
-	culture_groups = { goidelic_group }
+	heritages = { heritage_goidelic }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 empire_goidelic_group = {
 	type = title
 	tier = empire
 	priority = 152
-	culture_groups = { goidelic_group }
+	heritages = { heritage_goidelic }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_male_goidelic_group = {
 	type = character
@@ -75,9 +229,11 @@ title_prince_male_goidelic_group = {
 	special = ruler_child
 	tier = kingdom
 	priority = 130
-	culture_groups = { goidelic_group }
+	heritages = { heritage_goidelic }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_female_goidelic_group = {
 	type = character
@@ -85,9 +241,11 @@ title_prince_female_goidelic_group = {
 	special = ruler_child
 	tier = kingdom
 	priority = 130
-	culture_groups = { goidelic_group }
+	heritages = { heritage_goidelic }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_male_goidelic_group_empire = {
 	type = character
@@ -95,9 +253,11 @@ title_prince_male_goidelic_group_empire = {
 	special = ruler_child
 	tier = empire
 	priority = 149
-	culture_groups = { goidelic_group }
+	heritages = { heritage_goidelic }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_female_goidelic_group_empire = {
 	type = character
@@ -105,9 +265,11 @@ title_prince_female_goidelic_group_empire = {
 	special = ruler_child
 	tier = empire
 	priority = 149
-	culture_groups = { goidelic_group }
+	heritages = { heritage_goidelic }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 queen_mother_goidelic_group = {
 	type = character
@@ -115,9 +277,11 @@ queen_mother_goidelic_group = {
 	special = queen_mother
 	tier = kingdom
 	priority = 130
-	culture_groups = { goidelic_group }
+	heritages = { heritage_goidelic }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 queen_mother_goidelic_group_empire = {
 	type = character
@@ -125,9 +289,11 @@ queen_mother_goidelic_group_empire = {
 	special = queen_mother
 	tier = empire
 	priority = 150
-	culture_groups = { goidelic_group }
+	heritages = { heritage_goidelic }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 baron_republic_male_goidelic_group = {
 	type = character
@@ -135,10 +301,12 @@ baron_republic_male_goidelic_group = {
 	gender = male
 	special = holder
 	priority = 102
-	culture_groups = { goidelic_group }
+	heritages = { heritage_goidelic }
 	only_holder = yes
 	governments = { republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 baron_republic_female_goidelic_group = {
 	type = character
@@ -146,18 +314,22 @@ baron_republic_female_goidelic_group = {
 	gender = female
 	special = holder
 	priority = 102
-	culture_groups = { goidelic_group }
+	heritages = { heritage_goidelic }
 	only_holder = yes
 	governments = { republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
-barony_republic_goidelic_group = {
+barony_city_goidelic_group = {
 	type = title
 	tier = barony
 	priority = 102
-	culture_groups = { goidelic_group }
-	governments = { republic_government }
-	top_liege = no
+	heritages = { heritage_goidelic }
+	holding = city_holding
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_republic_male_goidelic_group = {
 	type = character
@@ -165,10 +337,12 @@ count_republic_male_goidelic_group = {
 	gender = male
 	special = holder
 	priority = 113
-	culture_groups = { goidelic_group }
+	heritages = { heritage_goidelic }
 	only_holder = yes
 	governments = { republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_republic_female_goidelic_group = {
 	type = character
@@ -176,18 +350,22 @@ count_republic_female_goidelic_group = {
 	gender = female
 	special = holder
 	priority = 113
-	culture_groups = { goidelic_group }
+	heritages = { heritage_goidelic }
 	only_holder = yes
 	governments = { republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 county_republic_goidelic_group = {
 	type = title
 	tier = county
 	priority = 113
-	culture_groups = { goidelic_group }
+	heritages = { heritage_goidelic }
 	governments = { republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_republic_male_goidelic_group = {
 	type = character
@@ -195,10 +373,12 @@ duke_republic_male_goidelic_group = {
 	gender = male
 	special = holder
 	priority = 122
-	culture_groups = { goidelic_group }
+	heritages = { heritage_goidelic }
 	only_holder = yes
 	governments = { republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_republic_female_goidelic_group = {
 	type = character
@@ -206,18 +386,22 @@ duke_republic_female_goidelic_group = {
 	gender = female
 	special = holder
 	priority = 122
-	culture_groups = { goidelic_group }
+	heritages = { heritage_goidelic }
 	only_holder = yes
 	governments = { republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duchy_republic_goidelic_group = {
 	type = title
 	tier = duchy
 	priority = 122
-	culture_groups = { goidelic_group }
+	heritages = { heritage_goidelic }
 	governments = { republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 king_republic_male_goidelic_group = {
 	type = character
@@ -225,10 +409,12 @@ king_republic_male_goidelic_group = {
 	gender = male
 	special = holder
 	priority = 142
-	culture_groups = { goidelic_group }
+	heritages = { heritage_goidelic }
 	only_holder = yes
 	governments = { republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 king_republic_female_goidelic_group = {
 	type = character
@@ -236,18 +422,22 @@ king_republic_female_goidelic_group = {
 	gender = female
 	special = holder
 	priority = 142
-	culture_groups = { goidelic_group }
+	heritages = { heritage_goidelic }
 	only_holder = yes
 	governments = { republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 kingdom_republic_goidelic_group = {
 	type = title
 	tier = kingdom
 	priority = 142
-	culture_groups = { goidelic_group }
+	heritages = { heritage_goidelic }
 	governments = { republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 #######################################
 ## Irish 
@@ -258,9 +448,11 @@ baron_male_irish = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { irish }
+	name_lists = { name_list_irish }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 baron_female_irish = {
 	type = character
@@ -268,9 +460,11 @@ baron_female_irish = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { irish }
+	name_lists = { name_list_irish }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_male_irish = {
 	type = character
@@ -278,9 +472,11 @@ count_male_irish = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { irish }
+	name_lists = { name_list_irish }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_female_irish = {
 	type = character
@@ -288,17 +484,21 @@ count_female_irish = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { irish }
+	name_lists = { name_list_irish }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 county_irish = {
 	type = title
 	tier = county
 	priority = 113
-	cultures = { irish }
+	name_lists = { name_list_irish }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_male_irish = {
 	type = character
@@ -306,9 +506,11 @@ duke_male_irish = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { irish }
+	name_lists = { name_list_irish }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_female_irish = {
 	type = character
@@ -316,16 +518,20 @@ duke_female_irish = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { irish }
+	name_lists = { name_list_irish }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duchy_irish = {
 	type = title
 	tier = duchy
-	cultures = { irish }
+	name_lists = { name_list_irish }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 	priority = 123
 }
 
@@ -338,9 +544,11 @@ baron_male_gaelic = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { gaelic }
+	name_lists = { name_list_gaelic }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 baron_female_gaelic = {
 	type = character
@@ -348,9 +556,11 @@ baron_female_gaelic = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { gaelic }
+	name_lists = { name_list_gaelic }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_feudalclan_male_gaelic = {
 	type = character
@@ -358,20 +568,11 @@ count_feudalclan_male_gaelic = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { gaelic }
+	name_lists = { name_list_gaelic }
 	governments = { feudal_government clan_government }
-	top_liege = no
-}
-count_feudalclan_female_gaelic_holder = {
-	type = character
-	gender = female
-	special = holder
-	tier = county
-	priority = 114
-	cultures = { gaelic }
-	governments = { feudal_government clan_government }
-	top_liege = no
-	only_holder = yes
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_feudalclan_female_gaelic = {
 	type = character
@@ -379,48 +580,21 @@ count_feudalclan_female_gaelic = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { gaelic }
+	name_lists = { name_list_gaelic }
 	governments = { feudal_government clan_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 county_feudalclan_gaelic = {
 	type = title
 	tier = county
 	priority = 113
-	cultures = { gaelic }
+	name_lists = { name_list_gaelic }
 	governments = { feudal_government clan_government }
-	top_liege = no
-}
-count_feudalclan_male_gaelic_independent = {
-	type = character
-	gender = male
-	special = holder
-	tier = county
-	priority = 114
-	cultures = { gaelic }
-	governments = { feudal_government clan_government }
-	top_liege = no
-	only_independent = yes
-}
-count_feudalclan_female_gaelic_independent = {
-	type = character
-	gender = female
-	special = holder
-	tier = county
-	priority = 114
-	cultures = { gaelic }
-	governments = { feudal_government clan_government }
-	top_liege = no
-	only_independent = yes
-}
-county_feudalclan_gaelic_independent = {
-	type = title
-	tier = county
-	priority = 114
-	cultures = { gaelic }
-	governments = { feudal_government clan_government }
-	top_liege = no
-	only_independent = yes
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_feudalclan_male_gaelic = {
 	type = character
@@ -428,9 +602,11 @@ duke_feudalclan_male_gaelic = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { gaelic }
+	name_lists = { name_list_gaelic }
 	governments = { feudal_government clan_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_feudalclan_female_gaelic = {
 	type = character
@@ -438,48 +614,21 @@ duke_feudalclan_female_gaelic = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { gaelic }
+	name_lists = { name_list_gaelic }
 	governments = { feudal_government clan_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duchy_feudalclan_gaelic = {
 	type = title
 	tier = duchy
-	cultures = { gaelic }
+	name_lists = { name_list_gaelic }
 	governments = { feudal_government clan_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 	priority = 123
-}
-duke_feudalclan_male_gaelic_independent = {
-	type = character
-	gender = male
-	special = holder
-	tier = duchy
-	priority = 124
-	cultures = { gaelic }
-	governments = { feudal_government clan_government }
-	top_liege = no
-	only_independent = yes
-}
-duke_feudalclan_female_gaelic_independent = {
-	type = character
-	gender = female
-	special = holder
-	tier = duchy
-	priority = 124
-	cultures = { gaelic }
-	governments = { feudal_government clan_government }
-	top_liege = no
-	only_independent = yes
-}
-duchy_feudalclan_gaelic_independent = {
-	type = title
-	tier = duchy
-	priority = 124
-	cultures = { gaelic }
-	governments = { feudal_government clan_government }
-	top_liege = no
-	only_independent = yes
 }
 count_tribal_male_gaelic = {
 	type = character
@@ -487,9 +636,11 @@ count_tribal_male_gaelic = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { gaelic }
+	name_lists = { name_list_gaelic }
 	governments = { tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_tribal_female_gaelic = {
 	type = character
@@ -497,17 +648,21 @@ count_tribal_female_gaelic = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { gaelic }
+	name_lists = { name_list_gaelic }
 	governments = { tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 county_tribal_gaelic = {
 	type = title
 	tier = county
 	priority = 113
-	cultures = { gaelic }
+	name_lists = { name_list_gaelic }
 	governments = { tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_tribal_male_gaelic = {
 	type = character
@@ -515,9 +670,11 @@ duke_tribal_male_gaelic = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { gaelic }
+	name_lists = { name_list_gaelic }
 	governments = { tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_tribal_female_gaelic = {
 	type = character
@@ -525,17 +682,53 @@ duke_tribal_female_gaelic = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { gaelic }
+	name_lists = { name_list_gaelic }
 	governments = { tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duchy_tribal_gaelic = {
 	type = title
 	tier = duchy
-	cultures = { gaelic }
+	name_lists = { name_list_gaelic }
 	governments = { tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 	priority = 123
+}
+camp_male_goidelic_group = {
+	type = character
+	gender = male
+	special = holder
+	priority = 123
+	heritages = { heritage_goidelic }
+	domicile_type = camp
+}
+camp_female_goidelic_group = {
+	type = character
+	gender = female
+	special = holder
+	priority = 123
+	heritages = { heritage_goidelic }
+	domicile_type = camp
+}
+estate_male_goidelic_group = {
+	type = character
+	gender = male
+	special = holder
+	priority = 123
+	heritages = { heritage_goidelic }
+	domicile_type = estate
+}
+estate_female_goidelic_group = {
+	type = character
+	gender = female
+	special = holder
+	priority = 123
+	heritages = { heritage_goidelic }
+	domicile_type = estate
 }
 ###############################################
 ## End of Goidelic_culture_group ##

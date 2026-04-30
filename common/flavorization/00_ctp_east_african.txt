@@ -18,9 +18,11 @@ baron_male_ethiopian = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { ethiopian }
+	name_lists = { name_list_ethiopian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 baron_female_ethiopian = {
 	type = character
@@ -28,9 +30,11 @@ baron_female_ethiopian = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { ethiopian }
+	name_lists = { name_list_ethiopian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 baron_female_holder_ethiopian = {
 	type = character
@@ -38,18 +42,22 @@ baron_female_holder_ethiopian = {
 	special = holder
 	tier = barony
 	priority = 104
-	cultures = { ethiopian }
+	name_lists = { name_list_ethiopian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
-	only_holder = yes
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
-barony_ethiopian = {
+barony_castle_ethiopian = {
 	type = title
 	tier = barony
 	priority = 103
-	cultures = { ethiopian }
-	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	name_lists = { name_list_ethiopian }
+	holding = castle_holding
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_feudalclan_male_ethiopian = {
 	type = character
@@ -57,9 +65,11 @@ count_feudalclan_male_ethiopian = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { ethiopian }
+	name_lists = { name_list_ethiopian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_feudalclan_female_ethiopian = {
 	type = character
@@ -67,9 +77,11 @@ count_feudalclan_female_ethiopian = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { ethiopian }
+	name_lists = { name_list_ethiopian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_feudalclan_female_holder_ethiopian = {
 	type = character
@@ -77,18 +89,22 @@ count_feudalclan_female_holder_ethiopian = {
 	special = holder
 	tier = county
 	priority = 114
-	cultures = { ethiopian }
+	name_lists = { name_list_ethiopian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
-	only_holder = yes
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 county_feudalclan_ethiopian = {
 	type = title
 	tier = county
 	priority = 113
-	cultures = { ethiopian }
+	name_lists = { name_list_ethiopian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_feudalclan_male_ethiopian = {
 	type = character
@@ -96,9 +112,11 @@ duke_feudalclan_male_ethiopian = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { ethiopian }
+	name_lists = { name_list_ethiopian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_feudalclan_female_ethiopian = {
 	type = character
@@ -106,17 +124,21 @@ duke_feudalclan_female_ethiopian = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { ethiopian }
+	name_lists = { name_list_ethiopian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duchy_feudalclan_ethiopian = {
 	type = title
 	tier = duchy
 	priority = 123
-	cultures = { ethiopian }
+	name_lists = { name_list_ethiopian }
 	governments = { feudal_government clan_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_feudalclan_male_ethiopian_independent = {
 	type = character
@@ -124,10 +146,12 @@ duke_feudalclan_male_ethiopian_independent = {
 	special = holder
 	tier = duchy
 	priority = 124
-	cultures = { ethiopian }
+	name_lists = { name_list_ethiopian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
-	only_independent = yes
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 duke_feudalclan_female_ethiopian_independent = {
 	type = character
@@ -135,19 +159,23 @@ duke_feudalclan_female_ethiopian_independent = {
 	special = holder
 	tier = duchy
 	priority = 124
-	cultures = { ethiopian }
+	name_lists = { name_list_ethiopian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
-	only_independent = yes
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 duchy_feudalclan_ethiopian_independent = {
 	type = title
 	tier = duchy
 	priority = 124
-	cultures = { ethiopian }
+	name_lists = { name_list_ethiopian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
-	only_independent = yes
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 king_male_ethiopian = {
 	type = character
@@ -155,9 +183,11 @@ king_male_ethiopian = {
 	special = holder
 	tier = kingdom
 	priority = 143
-	cultures = { ethiopian }
+	name_lists = { name_list_ethiopian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 king_female_ethiopian = {
 	type = character
@@ -165,9 +195,11 @@ king_female_ethiopian = {
 	special = holder
 	tier = kingdom
 	priority = 143
-	cultures = { ethiopian }
+	name_lists = { name_list_ethiopian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 king_female_holder_ethiopian = {
 	type = character
@@ -175,18 +207,22 @@ king_female_holder_ethiopian = {
 	special = holder
 	tier = kingdom
 	priority = 144
-	cultures = { ethiopian }
+	name_lists = { name_list_ethiopian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
-	only_holder = yes
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 kingdom_ethiopian = {
 	type = title
 	tier = kingdom
 	priority = 143
-	cultures = { ethiopian }
+	name_lists = { name_list_ethiopian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 emperor_male_ethiopian = {
 	type = character
@@ -194,9 +230,11 @@ emperor_male_ethiopian = {
 	special = holder
 	tier = empire
 	priority = 143
-	cultures = { ethiopian }
+	name_lists = { name_list_ethiopian }
 	governments = { feudal_government clan_government republic_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 emperor_female_ethiopian = {
 	type = character
@@ -204,9 +242,11 @@ emperor_female_ethiopian = {
 	special = holder
 	tier = empire
 	priority = 153
-	cultures = { ethiopian }
+	name_lists = { name_list_ethiopian }
 	governments = { feudal_government clan_government republic_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 emperor_female_holder_ethiopian = {
 	type = character
@@ -214,18 +254,22 @@ emperor_female_holder_ethiopian = {
 	special = holder
 	tier = empire
 	priority = 154
-	cultures = { ethiopian }
+	name_lists = { name_list_ethiopian }
 	governments = { feudal_government clan_government republic_government tribal_government }
-	top_liege = no
-	only_holder = yes
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 empire_ethiopian = {
 	type = title
 	tier = empire
 	priority = 153
-	cultures = { ethiopian }
+	name_lists = { name_list_ethiopian }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_male_ethiopian = {
 	type = character
@@ -233,9 +277,11 @@ title_prince_male_ethiopian = {
 	special = ruler_child
 	tier = kingdom
 	priority = 130
-	cultures = { ethiopian }
+	name_lists = { name_list_ethiopian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_female_ethiopian = {
 	type = character
@@ -243,9 +289,11 @@ title_prince_female_ethiopian = {
 	special = ruler_child
 	tier = kingdom
 	priority = 130
-	cultures = { ethiopian }
+	name_lists = { name_list_ethiopian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_male_ethiopian_empire = {
 	type = character
@@ -253,9 +301,11 @@ title_prince_male_ethiopian_empire = {
 	special = ruler_child
 	tier = empire
 	priority = 150
-	cultures = { ethiopian }
+	name_lists = { name_list_ethiopian }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_female_ethiopian_empire = {
 	type = character
@@ -263,9 +313,11 @@ title_prince_female_ethiopian_empire = {
 	special = ruler_child
 	tier = empire
 	priority = 150
-	cultures = { ethiopian }
+	name_lists = { name_list_ethiopian }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 queen_mother_ethiopian = {
 	type = character
@@ -273,9 +325,11 @@ queen_mother_ethiopian = {
 	special = queen_mother
 	tier = kingdom
 	priority = 130
-	cultures = { ethiopian }
+	name_lists = { name_list_ethiopian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 empress_mother_ethiopian = {
 	type = character
@@ -283,35 +337,53 @@ empress_mother_ethiopian = {
 	special = queen_mother
 	tier = empire
 	priority = 150
-	cultures = { ethiopian }
+	name_lists = { name_list_ethiopian }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 baron_republic_ethiopian = {
 	type = character
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { ethiopian }
+	name_lists = { name_list_ethiopian }
 	governments = { republic_government }
-	top_liege = no
-	only_holder = yes
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
-barony_republic_ethiopian = {
+barony_city_ethiopian = {
 	type = title
 	tier = barony
 	priority = 103
-	cultures = { ethiopian }
-	governments = { republic_government }
-	top_liege = no
+	name_lists = { name_list_ethiopian }
+	holding = city_holding
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duchy_tribal_ethiopian = {
 	type = title
 	tier = duchy
 	priority = 123
-	cultures = { ethiopian }
+	name_lists = { name_list_ethiopian }
 	governments = { tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
+}
+barony_tribe_ethiopian = {
+	type = title
+	tier = barony
+	priority = 103
+	name_lists = { name_list_ethiopian }
+	holding = tribal_holding
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 ###############################################
 ## Nubian ##
@@ -322,9 +394,11 @@ baron_male_nubian = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { nubian }
+	name_lists = { name_list_nubian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 baron_female_nubian = {
 	type = character
@@ -332,9 +406,24 @@ baron_female_nubian = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { nubian }
+	name_lists = { name_list_nubian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
+}
+baron_male_holder_nubian = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 104
+	name_lists = { name_list_nubian }
+	governments = { feudal_government clan_government tribal_government }
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 baron_female_holder_nubian = {
 	type = character
@@ -342,18 +431,22 @@ baron_female_holder_nubian = {
 	special = holder
 	tier = barony
 	priority = 104
-	cultures = { nubian }
+	name_lists = { name_list_nubian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
-	only_holder = yes
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
-barony_feudalclan_nubian = {
+barony_castle_nubian = {
 	type = title
 	tier = barony
 	priority = 103
-	cultures = { nubian }
-	governments = { feudal_government clan_government }
-	top_liege = no
+	name_lists = { name_list_nubian }
+	holding = castle_holding
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_feudalclan_male_nubian = {
 	type = character
@@ -361,19 +454,36 @@ count_feudalclan_male_nubian = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { nubian }
+	name_lists = { name_list_nubian }
 	governments = { feudal_government clan_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
-count_female_nubian = {
+count_feudalclan_female_nubian = {
 	type = character
 	gender = female
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { nubian }
+	name_lists = { name_list_nubian }
 	governments = { feudal_government clan_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
+}
+count_feudalclan_male_holder_nubian = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 114
+	name_lists = { name_list_nubian }
+	governments = { feudal_government clan_government }
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 count_feudalclan_female_holder_nubian = {
 	type = character
@@ -381,18 +491,61 @@ count_feudalclan_female_holder_nubian = {
 	special = holder
 	tier = county
 	priority = 114
-	cultures = { nubian }
+	name_lists = { name_list_nubian }
 	governments = { feudal_government clan_government }
-	top_liege = no
-	only_holder = yes
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 county_feudalclan_nubian = {
 	type = title
 	tier = county
 	priority = 113
-	cultures = { nubian }
+	name_lists = { name_list_nubian }
 	governments = { feudal_government clan_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
+}
+count_feudalclan_male_holder_nubian_independent = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 115
+	name_lists = { name_list_nubian }
+	governments = { feudal_government clan_government }
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
+	only_independent = yes
+}
+count_feudalclan_female_holder_nubian_independent = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 115
+	name_lists = { name_list_nubian }
+	governments = { feudal_government clan_government }
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
+	only_independent = yes
+}
+county_feudalclan_nubian_independent = {
+	type = title
+	tier = county
+	priority = 115
+	name_lists = { name_list_nubian }
+	governments = { feudal_government clan_government }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 duke_feudalclan_male_nubian = {
 	type = character
@@ -400,19 +553,36 @@ duke_feudalclan_male_nubian = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { nubian }
+	name_lists = { name_list_nubian }
 	governments = { feudal_government clan_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
-duke_female_nubian = {
+duke_feudalclan_female_nubian = {
 	type = character
 	gender = female
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { nubian }
+	name_lists = { name_list_nubian }
 	governments = { feudal_government clan_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
+}
+duke_feudalclan_male_holder_nubian = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 124
+	name_lists = { name_list_nubian }
+	governments = { feudal_government clan_government }
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 duke_feudalclan_female_holder_nubian = {
 	type = character
@@ -420,18 +590,22 @@ duke_feudalclan_female_holder_nubian = {
 	special = holder
 	tier = duchy
 	priority = 124
-	cultures = { nubian }
+	name_lists = { name_list_nubian }
 	governments = { feudal_government clan_government }
-	top_liege = no
-	only_holder = yes
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 duchy_feudalclan_nubian = {
 	type = title
 	tier = duchy
 	priority = 123
-	cultures = { nubian }
+	name_lists = { name_list_nubian }
 	governments = { feudal_government clan_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_feudalclan_male_nubian_independent = {
 	type = character
@@ -439,10 +613,12 @@ duke_feudalclan_male_nubian_independent = {
 	special = holder
 	tier = duchy
 	priority = 125
-	cultures = { nubian }
+	name_lists = { name_list_nubian }
 	governments = { feudal_government clan_government }
-	top_liege = no
-	only_independent = yes
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 duke_feudalclan_female_nubian_independent = {
 	type = character
@@ -450,10 +626,12 @@ duke_feudalclan_female_nubian_independent = {
 	special = holder
 	tier = duchy
 	priority = 125
-	cultures = { nubian }
+	name_lists = { name_list_nubian }
 	governments = { feudal_government clan_government }
-	top_liege = no
-	only_independent = yes
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 duke_feudalclan_female_nubian_holder_independent = {
 	type = character
@@ -461,20 +639,24 @@ duke_feudalclan_female_nubian_holder_independent = {
 	special = holder
 	tier = duchy
 	priority = 126
-	cultures = { nubian }
+	name_lists = { name_list_nubian }
 	governments = { feudal_government clan_government }
-	top_liege = no
-	only_independent = yes
-	only_holder = yes
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+		only_holder = yes
+	}
 }
 duchy_feudalclan_nubian_independent = {
 	type = title
 	tier = duchy
 	priority = 125
-	cultures = { nubian }
+	name_lists = { name_list_nubian }
 	governments = { feudal_government clan_government }
-	top_liege = no
-	only_independent = yes
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 king_male_nubian = {
 	type = character
@@ -482,9 +664,11 @@ king_male_nubian = {
 	special = holder
 	tier = kingdom
 	priority = 143
-	cultures = { nubian }
+	name_lists = { name_list_nubian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 king_female_nubian = {
 	type = character
@@ -492,9 +676,11 @@ king_female_nubian = {
 	special = holder
 	tier = kingdom
 	priority = 143
-	cultures = { nubian }
+	name_lists = { name_list_nubian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 king_female_nubian_holder = {
 	type = character
@@ -502,18 +688,22 @@ king_female_nubian_holder = {
 	special = holder
 	tier = kingdom
 	priority = 144
-	cultures = { nubian }
+	name_lists = { name_list_nubian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
-	only_holder = yes
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 kingdom_nubian = {
 	type = title
 	tier = kingdom
 	priority = 143
-	cultures = { nubian }
+	name_lists = { name_list_nubian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 emperor_male_nubian = {
 	type = character
@@ -521,9 +711,11 @@ emperor_male_nubian = {
 	special = holder
 	tier = empire
 	priority = 153
-	cultures = { nubian }
+	name_lists = { name_list_nubian }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 emperor_female_nubian = {
 	type = character
@@ -531,28 +723,34 @@ emperor_female_nubian = {
 	special = holder
 	tier = empire
 	priority = 153
-	cultures = { nubian }
+	name_lists = { name_list_nubian }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 emperor_female_nubian_holder = {
 	type = character
 	gender = female
 	special = holder
 	tier = empire
-	priority = 153
-	cultures = { nubian }
+	priority = 154
+	name_lists = { name_list_nubian }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
-	only_holder = yes
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 empire_nubian = {
 	type = title
 	tier = empire
 	priority = 153
-	cultures = { nubian }
+	name_lists = { name_list_nubian }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_male_nubian = {
 	type = character
@@ -560,9 +758,11 @@ title_prince_male_nubian = {
 	special = ruler_child
 	tier = kingdom
 	priority = 130
-	cultures = { nubian }
+	name_lists = { name_list_nubian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_female_nubian = {
 	type = character
@@ -570,9 +770,11 @@ title_prince_female_nubian = {
 	special = ruler_child
 	tier = kingdom
 	priority = 130
-	cultures = { nubian }
+	name_lists = { name_list_nubian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_male_nubian_empire = {
 	type = character
@@ -580,9 +782,11 @@ title_prince_male_nubian_empire = {
 	special = ruler_child
 	tier = empire
 	priority = 150
-	cultures = { nubian }
+	name_lists = { name_list_nubian }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_female_nubian_empire = {
 	type = character
@@ -590,9 +794,11 @@ title_prince_female_nubian_empire = {
 	special = ruler_child
 	tier = empire
 	priority = 150
-	cultures = { nubian }
+	name_lists = { name_list_nubian }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 queen_mother_nubian = {
 	type = character
@@ -600,9 +806,11 @@ queen_mother_nubian = {
 	special = queen_mother
 	tier = kingdom
 	priority = 130
-	cultures = { nubian }
+	name_lists = { name_list_nubian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 empress_mother_nubian = {
 	type = character
@@ -610,9 +818,11 @@ empress_mother_nubian = {
 	special = queen_mother
 	tier = empire
 	priority = 150
-	cultures = { nubian }
+	name_lists = { name_list_nubian }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 baron_male_republic_nubian = {
 	type = character
@@ -620,10 +830,12 @@ baron_male_republic_nubian = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { nubian }
+	name_lists = { name_list_nubian }
 	governments = { republic_government }
-	top_liege = no
-	only_holder = yes
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 baron_female_republic_nubian = {
 	type = character
@@ -631,26 +843,32 @@ baron_female_republic_nubian = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { nubian }
+	name_lists = { name_list_nubian }
 	governments = { republic_government }
-	top_liege = no
-	only_holder = yes
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
-barony_republic_nubian = {
+barony_city_nubian = {
 	type = title
 	tier = barony
 	priority = 103
-	cultures = { nubian }
-	governments = { republic_government }
-	top_liege = no
+	name_lists = { name_list_nubian }
+	holding = city_holding
+	flavourization_rules = {
+		top_liege = no
+	}
 }
-barony_tribal_nubian = {
+barony_tribe_nubian = {
 	type = title
 	tier = barony
 	priority = 103
-	cultures = { nubian }
-	governments = { tribal_government }
-	top_liege = no
+	name_lists = { name_list_nubian }
+	holding = tribal_holding
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_male_tribal_nubian = {
 	type = character
@@ -658,9 +876,11 @@ count_male_tribal_nubian = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { nubian }
+	name_lists = { name_list_nubian }
 	governments = { tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_female_tribal_holder_nubian = {
 	type = character
@@ -668,18 +888,22 @@ count_female_tribal_holder_nubian = {
 	special = holder
 	tier = county
 	priority = 114
-	cultures = { nubian }
+	name_lists = { name_list_nubian }
 	governments = { tribal_government }
-	top_liege = no
-	only_holder = yes
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 county_tribal_nubian = {
 	type = title
 	tier = county
 	priority = 113
-	cultures = { nubian }
+	name_lists = { name_list_nubian }
 	governments = { tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_male_tribal_nubian = {
 	type = character
@@ -687,9 +911,11 @@ duke_male_tribal_nubian = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { nubian }
+	name_lists = { name_list_nubian }
 	governments = { tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_female_tribal_holder_nubian = {
 	type = character
@@ -697,18 +923,22 @@ duke_female_tribal_holder_nubian = {
 	special = holder
 	tier = duchy
 	priority = 124
-	cultures = { nubian }
+	name_lists = { name_list_nubian }
 	governments = { tribal_government }
-	top_liege = no
-	only_holder = yes
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 duchy_tribal_nubian = {
 	type = title
 	tier = duchy
 	priority = 123
-	cultures = { nubian }
+	name_lists = { name_list_nubian }
 	governments = { tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 ###############################################
 ## Welayta ##
@@ -719,17 +949,21 @@ count_male_welayta = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { welayta }
+	name_lists = { name_list_welayta }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 county_welayta = {
 	type = title
 	tier = county
 	priority = 113
-	cultures = { welayta }
+	name_lists = { name_list_welayta }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_male_welayta_independent = {
 	type = character
@@ -737,10 +971,26 @@ duke_male_welayta_independent = {
 	special = holder
 	tier = duchy
 	priority = 124
-	cultures = { welayta }
+	name_lists = { name_list_welayta }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
-	only_independent = yes
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
+}
+duke_male_welayta_holder_independent = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 125
+	name_lists = { name_list_welayta }
+	governments = { feudal_government clan_government tribal_government }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+		only_holder = yes
+	}
 }
 duke_female_welayta_independent = {
 	type = character
@@ -748,10 +998,12 @@ duke_female_welayta_independent = {
 	special = holder
 	tier = duchy
 	priority = 124
-	cultures = { welayta }
+	name_lists = { name_list_welayta }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
-	only_independent = yes
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 duke_female_welayta_holder_independent = {
 	type = character
@@ -759,11 +1011,13 @@ duke_female_welayta_holder_independent = {
 	special = holder
 	tier = duchy
 	priority = 125
-	cultures = { welayta }
+	name_lists = { name_list_welayta }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
-	only_independent = yes
-	only_holder = yes
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+		only_holder = yes
+	}
 }
 king_male_welayta = {
 	type = character
@@ -771,9 +1025,11 @@ king_male_welayta = {
 	special = holder
 	tier = kingdom
 	priority = 143
-	cultures = { welayta }
+	name_lists = { name_list_welayta }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 king_female_welayta = {
 	type = character
@@ -781,9 +1037,11 @@ king_female_welayta = {
 	special = holder
 	tier = kingdom
 	priority = 143
-	cultures = { welayta }
+	name_lists = { name_list_welayta }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 king_female_welayta_holder = {
 	type = character
@@ -791,18 +1049,22 @@ king_female_welayta_holder = {
 	special = holder
 	tier = kingdom
 	priority = 144
-	cultures = { welayta }
+	name_lists = { name_list_welayta }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
-	only_holder = yes
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 kingdom_welayta = {
 	type = title
 	tier = kingdom
 	priority = 143
-	cultures = { welayta }
+	name_lists = { name_list_welayta }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 emperor_male_welayta = {
 	type = character
@@ -810,9 +1072,24 @@ emperor_male_welayta = {
 	special = holder
 	tier = empire
 	priority = 153
-	cultures = { welayta }
+	name_lists = { name_list_welayta }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
+}
+emperor_male_welayta_holder = {
+	type = character
+	gender = male
+	special = holder
+	tier = empire
+	priority = 154
+	name_lists = { name_list_welayta }
+	governments = { feudal_government clan_government tribal_government republic_government }
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 emperor_female_welayta = {
 	type = character
@@ -820,9 +1097,11 @@ emperor_female_welayta = {
 	special = holder
 	tier = empire
 	priority = 153
-	cultures = { welayta }
+	name_lists = { name_list_welayta }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 emperor_female_welayta_holder = {
 	type = character
@@ -830,10 +1109,12 @@ emperor_female_welayta_holder = {
 	special = holder
 	tier = empire
 	priority = 153
-	cultures = { welayta }
+	name_lists = { name_list_welayta }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
-	only_holder = yes
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 queen_mother_welayta = {
 	type = character
@@ -841,9 +1122,11 @@ queen_mother_welayta = {
 	special = queen_mother
 	tier = kingdom
 	priority = 130
-	cultures = { welayta }
+	name_lists = { name_list_welayta }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 empress_mother_welayta = {
 	type = character
@@ -851,9 +1134,11 @@ empress_mother_welayta = {
 	special = queen_mother
 	tier = empire
 	priority = 150
-	cultures = { welayta }
+	name_lists = { name_list_welayta }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 ###############################################
 ## Daju ##
@@ -864,9 +1149,11 @@ baron_male_daju = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { daju }
+	name_lists = { name_list_daju }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 baron_female_daju = {
 	type = character
@@ -874,17 +1161,21 @@ baron_female_daju = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { daju }
+	name_lists = { name_list_daju }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
-barony_daju = {
+barony_castle_daju = {
 	type = title
 	tier = barony
 	priority = 103
-	cultures = { daju }
-	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	name_lists = { name_list_daju }
+	holding = castle_holding
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_male_daju = {
 	type = character
@@ -892,9 +1183,11 @@ count_male_daju = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { daju }
+	name_lists = { name_list_daju }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_female_daju = {
 	type = character
@@ -902,17 +1195,21 @@ count_female_daju = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { daju }
+	name_lists = { name_list_daju }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 county_daju = {
 	type = title
 	tier = county
 	priority = 113
-	cultures = { daju }
+	name_lists = { name_list_daju }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_male_daju_independent = {
 	type = character
@@ -920,10 +1217,12 @@ count_male_daju_independent = {
 	special = holder
 	tier = county
 	priority = 114
-	cultures = { daju }
+	name_lists = { name_list_daju }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
-	only_independent = yes
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 count_female_daju_independent = {
 	type = character
@@ -931,19 +1230,23 @@ count_female_daju_independent = {
 	special = holder
 	tier = county
 	priority = 114
-	cultures = { daju }
+	name_lists = { name_list_daju }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
-	only_independent = yes
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 county_daju_independent = {
 	type = title
 	tier = county
 	priority = 114
-	cultures = { daju }
+	name_lists = { name_list_daju }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
-	only_independent = yes
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 duke_male_daju = {
 	type = character
@@ -951,9 +1254,11 @@ duke_male_daju = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { daju }
+	name_lists = { name_list_daju }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_female_daju = {
 	type = character
@@ -961,17 +1266,21 @@ duke_female_daju = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { daju }
+	name_lists = { name_list_daju }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duchy_daju = {
 	type = title
 	tier = duchy
 	priority = 123
-	cultures = { daju }
+	name_lists = { name_list_daju }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_male_daju_independent = {
 	type = character
@@ -979,10 +1288,12 @@ duke_male_daju_independent = {
 	special = holder
 	tier = duchy
 	priority = 124
-	cultures = { daju }
+	name_lists = { name_list_daju }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
-	only_independent = yes
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 duke_female_daju_independent = {
 	type = character
@@ -990,19 +1301,23 @@ duke_female_daju_independent = {
 	special = holder
 	tier = duchy
 	priority = 124
-	cultures = { daju }
+	name_lists = { name_list_daju }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
-	only_independent = yes
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 duchy_daju_independent = {
 	type = title
 	tier = duchy
 	priority = 124
-	cultures = { daju }
+	name_lists = { name_list_daju }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
-	only_independent = yes
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 king_male_daju = {
 	type = character
@@ -1010,9 +1325,11 @@ king_male_daju = {
 	special = holder
 	tier = kingdom
 	priority = 143
-	cultures = { daju }
+	name_lists = { name_list_daju }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 king_female_daju = {
 	type = character
@@ -1020,17 +1337,21 @@ king_female_daju = {
 	special = holder
 	tier = kingdom
 	priority = 143
-	cultures = { daju }
+	name_lists = { name_list_daju }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 kingdom_daju = {
 	type = title
 	tier = kingdom
 	priority = 143
-	cultures = { daju }
+	name_lists = { name_list_daju }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 emperor_male_daju = {
 	type = character
@@ -1038,9 +1359,11 @@ emperor_male_daju = {
 	special = holder
 	tier = empire
 	priority = 153
-	cultures = { daju }
+	name_lists = { name_list_daju }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 emperor_female_daju = {
 	type = character
@@ -1048,17 +1371,21 @@ emperor_female_daju = {
 	special = holder
 	tier = empire
 	priority = 153
-	cultures = { daju }
+	name_lists = { name_list_daju }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 empire_daju = {
 	type = title
 	tier = empire
 	priority = 153
-	cultures = { daju }
+	name_lists = { name_list_daju }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 queen_mother_daju = {
 	type = character
@@ -1066,9 +1393,11 @@ queen_mother_daju = {
 	special = queen_mother
 	tier = kingdom
 	priority = 130
-	cultures = { daju }
+	name_lists = { name_list_daju }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 empress_mother_daju = {
 	type = character
@@ -1076,15 +1405,41 @@ empress_mother_daju = {
 	special = queen_mother
 	tier = empire
 	priority = 150
-	cultures = { daju }
+	name_lists = { name_list_daju }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
-barony_republic_daju = {
+baron_republic_daju = {
+	type = character
+	special = holder
+	tier = barony
+	priority = 103
+	name_lists = { name_list_daju }
+	governments = { republic_government }
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
+}
+barony_city_daju = {
 	type = title
 	tier = barony
 	priority = 103
-	cultures = { daju }
-	governments = { republic_government }
-	top_liege = no
+	name_lists = { name_list_daju }
+	holding = city_holding
+	flavourization_rules = {
+		top_liege = no
+	}
+}
+barony_tribe_daju = {
+	type = title
+	tier = barony
+	priority = 103
+	name_lists = { name_list_daju }
+	holding = tribal_holding
+	flavourization_rules = {
+		top_liege = no
+	}
 }

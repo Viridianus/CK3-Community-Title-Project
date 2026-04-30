@@ -11,9 +11,11 @@ baron_male_akan = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { akan }
+	name_lists = { name_list_akan }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 baron_female_akan = {
 	type = character
@@ -21,17 +23,21 @@ baron_female_akan = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { akan }
+	name_lists = { name_list_akan }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
-barony_akan = {
+barony_castle_akan = {
 	type = title
 	tier = barony
 	priority = 103
-	cultures = { akan }
-	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	name_lists = { name_list_akan }
+	holding = castle_holding
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_male_akan = {
 	type = character
@@ -39,9 +45,11 @@ count_male_akan = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { akan }
+	name_lists = { name_list_akan }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_female_akan = {
 	type = character
@@ -49,17 +57,21 @@ count_female_akan = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { akan }
+	name_lists = { name_list_akan }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 county_akan = {
 	type = title
 	tier = county
 	priority = 113
-	cultures = { akan }
+	name_lists = { name_list_akan }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_male_akan = {
 	type = character
@@ -67,9 +79,11 @@ duke_male_akan = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { akan }
+	name_lists = { name_list_akan }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_female_akan = {
 	type = character
@@ -77,17 +91,21 @@ duke_female_akan = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { akan }
+	name_lists = { name_list_akan }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duchy_akan = {
 	type = title
 	tier = duchy
 	priority = 123
-	cultures = { akan }
+	name_lists = { name_list_akan }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_male_akan_independent = {
 	type = character
@@ -95,10 +113,12 @@ duke_male_akan_independent = {
 	special = holder
 	tier = duchy
 	priority = 124
-	cultures = { akan }
+	name_lists = { name_list_akan }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
-	only_independent = yes
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 duke_female_akan_independent = {
 	type = character
@@ -106,10 +126,12 @@ duke_female_akan_independent = {
 	special = holder
 	tier = duchy
 	priority = 124
-	cultures = { akan }
+	name_lists = { name_list_akan }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
-	only_independent = yes
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 duke_male_akan_independent_holder = {
 	type = character
@@ -117,11 +139,13 @@ duke_male_akan_independent_holder = {
 	special = holder
 	tier = duchy
 	priority = 125
-	cultures = { akan }
+	name_lists = { name_list_akan }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
-	only_independent = yes
-	only_holder = yes
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+		only_holder = yes
+	}
 }
 duke_female_akan_independent_holder = {
 	type = character
@@ -129,20 +153,24 @@ duke_female_akan_independent_holder = {
 	special = holder
 	tier = duchy
 	priority = 125
-	cultures = { akan }
+	name_lists = { name_list_akan }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
-	only_independent = yes
-	only_holder = yes
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+		only_holder = yes
+	}
 }
 duchy_akan_independent = {
 	type = title
 	tier = duchy
 	priority = 124
-	cultures = { akan }
+	name_lists = { name_list_akan }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
-	only_independent = yes
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 king_male_akan = {
 	type = character
@@ -150,9 +178,11 @@ king_male_akan = {
 	special = holder
 	tier = kingdom
 	priority = 143
-	cultures = { akan }
+	name_lists = { name_list_akan }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 king_female_akan = {
 	type = character
@@ -160,9 +190,11 @@ king_female_akan = {
 	special = holder
 	tier = kingdom
 	priority = 143
-	cultures = { akan }
+	name_lists = { name_list_akan }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 king_male_akan_holder = {
 	type = character
@@ -170,10 +202,12 @@ king_male_akan_holder = {
 	special = holder
 	tier = kingdom
 	priority = 144
-	cultures = { akan }
+	name_lists = { name_list_akan }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
-	only_holder = yes
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 king_female_akan_holder = {
 	type = character
@@ -181,18 +215,22 @@ king_female_akan_holder = {
 	special = holder
 	tier = kingdom
 	priority = 144
-	cultures = { akan }
+	name_lists = { name_list_akan }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
-	only_holder = yes
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 kingdom_akan = {
 	type = title
 	tier = kingdom
 	priority = 143
-	cultures = { akan }
+	name_lists = { name_list_akan }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 emperor_male_akan = {
 	type = character
@@ -200,9 +238,11 @@ emperor_male_akan = {
 	special = holder
 	tier = empire
 	priority = 153
-	cultures = { akan }
+	name_lists = { name_list_akan }
 	governments = { republic_government feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 emperor_female_akan = {
 	type = character
@@ -210,17 +250,21 @@ emperor_female_akan = {
 	special = holder
 	tier = empire
 	priority = 153
-	cultures = { akan }
+	name_lists = { name_list_akan }
 	governments = { republic_government feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 empire_akan = {
 	type = title
 	tier = empire
 	priority = 153
-	cultures = { akan }
+	name_lists = { name_list_akan }
 	governments = { republic_government feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_male_akan = {
 	type = character
@@ -228,9 +272,11 @@ title_prince_male_akan = {
 	special = ruler_child
 	tier = kingdom
 	priority = 140
-	cultures = { akan }
+	name_lists = { name_list_akan }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_female_akan = {
 	type = character
@@ -238,9 +284,11 @@ title_prince_female_akan = {
 	special = ruler_child
 	tier = kingdom
 	priority = 140
-	cultures = { akan }
+	name_lists = { name_list_akan }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_male_akan_empire = {
 	type = character
@@ -248,9 +296,11 @@ title_prince_male_akan_empire = {
 	special = ruler_child
 	tier = empire
 	priority = 150
-	cultures = { akan }
+	name_lists = { name_list_akan }
 	governments = { republic_government feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_female_akan_empire = {
 	type = character
@@ -258,9 +308,11 @@ title_prince_female_akan_empire = {
 	special = ruler_child
 	tier = empire
 	priority = 150
-	cultures = { akan }
+	name_lists = { name_list_akan }
 	governments = { republic_government feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 queen_mother_akan = {
 	type = character
@@ -268,9 +320,11 @@ queen_mother_akan = {
 	special = queen_mother
 	tier = kingdom
 	priority = 140
-	cultures = { akan }
+	name_lists = { name_list_akan }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 empress_mother_akan = {
 	type = character
@@ -278,9 +332,11 @@ empress_mother_akan = {
 	special = queen_mother
 	tier = empire
 	priority = 150
-	cultures = { akan }
+	name_lists = { name_list_akan }
 	governments = { republic_government feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 baron_republic_akan = {
 	type = character
@@ -288,18 +344,32 @@ baron_republic_akan = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { akan }
+	name_lists = { name_list_akan }
 	governments = { republic_government }
-	top_liege = no
-	only_holder = yes
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
-barony_republic_akan = {
+barony_city_akan = {
 	type = title
 	tier = barony
 	priority = 103
-	cultures = { akan }
-	governments = { republic_government }
-	top_liege = no
+	name_lists = { name_list_akan }
+	holding = city_holding
+	flavourization_rules = {
+		top_liege = no
+	}
+}
+barony_tribe_akan = {
+	type = title
+	tier = barony
+	priority = 103
+	name_lists = { name_list_akan }
+	holding = tribal_holding
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 #############################################
 ## Kru_culture_group ##
@@ -310,9 +380,11 @@ count_male_kru = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { kru }
+	name_lists = { name_list_kru }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 king_female_kru = {
 	type = character
@@ -320,17 +392,21 @@ king_female_kru = {
 	special = holder
 	tier = kingdom
 	priority = 143
-	cultures = { kru }
+	name_lists = { name_list_kru }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 kingdom_kru = {
 	type = title
 	tier = kingdom
 	priority = 143
-	cultures = { kru }
+	name_lists = { name_list_kru }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 #############################################
 ## Guan_culture_group ##
@@ -341,9 +417,33 @@ baron_male_guan = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { guan }
+	name_lists = { name_list_guan }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
+}
+baron_female_guan = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 103
+	name_lists = { name_list_guan }
+	governments = { feudal_government clan_government tribal_government }
+	flavourization_rules = {
+		top_liege = no
+	}
+}
+barony_castle_akan = {
+	type = title
+	tier = barony
+	priority = 103
+	name_lists = { name_list_akan }
+	holding = castle_holding
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_male_guan = {
 	type = character
@@ -351,55 +451,123 @@ count_male_guan = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { guan }
+	name_lists = { name_list_guan }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
+}
+count_female_guan = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 113
+	name_lists = { name_list_guan }
+	governments = { feudal_government clan_government tribal_government }
+	flavourization_rules = {
+		top_liege = no
+	}
+}
+county_guan = {
+	type = title
+	tier = county
+	priority = 113
+	name_lists = { name_list_guan }
+	governments = { feudal_government clan_government tribal_government }
+	flavourization_rules = {
+		top_liege = no
+	}
+}
+duke_guan = {
+	type = character
+	special = holder
+	tier = duchy
+	priority = 124
+	name_lists = { name_list_guan }
+	governments = { feudal_government clan_government tribal_government }
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
+}
+duke_male_guan = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 123
+	name_lists = { name_list_guan }
+	governments = { feudal_government clan_government tribal_government }
+	flavourization_rules = {
+		top_liege = no
+	}
+}
+duke_female_guan = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 123
+	name_lists = { name_list_guan }
+	governments = { feudal_government clan_government tribal_government }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_male_guan_independent = {
 	type = character
 	gender = male
 	special = holder
 	tier = duchy
-	priority = 124
-	cultures = { guan }
+	priority = 125
+	name_lists = { name_list_guan }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
-	only_independent = yes
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 duke_female_guan_independent = {
 	type = character
 	gender = female
 	special = holder
 	tier = duchy
-	priority = 124
-	cultures = { guan }
+	priority = 125
+	name_lists = { name_list_guan }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
-	only_independent = yes
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 duke_male_guan_independent_holder = {
 	type = character
 	gender = male
 	special = holder
 	tier = duchy
-	priority = 125
-	cultures = { guan }
+	priority = 126
+	name_lists = { name_list_guan }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
-	only_independent = yes
-	only_holder = yes
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+		only_holder = yes
+	}
 }
 duke_female_guan_independent_holder = {
 	type = character
 	gender = female
 	special = holder
 	tier = duchy
-	priority = 125
-	cultures = { guan }
+	priority = 126
+	name_lists = { name_list_guan }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
-	only_independent = yes
-	only_holder = yes
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+		only_holder = yes
+	}
 }
 king_male_guan = {
 	type = character
@@ -407,9 +575,11 @@ king_male_guan = {
 	special = holder
 	tier = kingdom
 	priority = 143
-	cultures = { guan }
+	name_lists = { name_list_guan }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 king_female_guan = {
 	type = character
@@ -417,9 +587,11 @@ king_female_guan = {
 	special = holder
 	tier = kingdom
 	priority = 143
-	cultures = { guan }
+	name_lists = { name_list_guan }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 king_male_guan_holder = {
 	type = character
@@ -427,10 +599,12 @@ king_male_guan_holder = {
 	special = holder
 	tier = kingdom
 	priority = 144
-	cultures = { guan }
+	name_lists = { name_list_guan }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
-	only_holder = yes
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 king_female_guan_holder = {
 	type = character
@@ -438,10 +612,12 @@ king_female_guan_holder = {
 	special = holder
 	tier = kingdom
 	priority = 144
-	cultures = { guan }
+	name_lists = { name_list_guan }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
-	only_holder = yes
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 emperor_male_guan = {
 	type = character
@@ -449,9 +625,11 @@ emperor_male_guan = {
 	special = holder
 	tier = empire
 	priority = 153
-	cultures = { guan }
+	name_lists = { name_list_guan }
 	governments = { republic_government feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 emperor_female_guan = {
 	type = character
@@ -459,9 +637,11 @@ emperor_female_guan = {
 	special = holder
 	tier = empire
 	priority = 153
-	cultures = { guan }
+	name_lists = { name_list_guan }
 	governments = { republic_government feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 queen_mother_guan = {
 	type = character
@@ -469,9 +649,11 @@ queen_mother_guan = {
 	special = queen_mother
 	tier = kingdom
 	priority = 140
-	cultures = { guan }
+	name_lists = { name_list_guan }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 empress_mother_guan = {
 	type = character
@@ -479,7 +661,19 @@ empress_mother_guan = {
 	special = queen_mother
 	tier = empire
 	priority = 150
-	cultures = { guan }
+	name_lists = { name_list_guan }
 	governments = { republic_government feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
+}
+barony_tribe_akan = {
+	type = title
+	tier = barony
+	priority = 103
+	name_lists = { name_list_akan }
+	holding = tribal_holding
+	flavourization_rules = {
+		top_liege = no
+	}
 }

@@ -17,8 +17,10 @@ baron_male_tamil = {
 	tier = barony
 	priority = 103
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { tamil }
-	top_liege = no
+	name_lists = { name_list_tamil }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 baron_female_tamil = {
 	type = character
@@ -27,8 +29,10 @@ baron_female_tamil = {
 	tier = barony
 	priority = 103
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { tamil }
-	top_liege = no
+	name_lists = { name_list_tamil }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_male_tamil = {
 	type = character
@@ -37,8 +41,10 @@ count_male_tamil = {
 	tier = county
 	priority = 113
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { tamil }
-	top_liege = no
+	name_lists = { name_list_tamil }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_female_tamil = {
 	type = character
@@ -47,8 +53,10 @@ count_female_tamil = {
 	tier = county
 	priority = 113
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { tamil }
-	top_liege = no
+	name_lists = { name_list_tamil }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_male_tamil_independent = {
 	type = character
@@ -57,9 +65,11 @@ count_male_tamil_independent = {
 	tier = county
 	priority = 114
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { tamil }
-	top_liege = no
-	only_independent = yes
+	name_lists = { name_list_tamil }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 count_female_tamil_independent = {
 	type = character
@@ -68,9 +78,11 @@ count_female_tamil_independent = {
 	tier = county
 	priority = 114
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { tamil }
-	top_liege = no
-	only_independent = yes
+	name_lists = { name_list_tamil }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 duke_male_tamil = {
 	type = character
@@ -79,8 +91,10 @@ duke_male_tamil = {
 	tier = duchy
 	priority = 123
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { tamil }
-	top_liege = no
+	name_lists = { name_list_tamil }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_female_tamil = {
 	type = character
@@ -89,8 +103,10 @@ duke_female_tamil = {
 	tier = duchy
 	priority = 123
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { tamil }
-	top_liege = no
+	name_lists = { name_list_tamil }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_male_tamil_independent = {
 	type = character
@@ -99,9 +115,11 @@ duke_male_tamil_independent = {
 	tier = duchy
 	priority = 124
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { tamil }
-	top_liege = no
-	only_independent = yes
+	name_lists = { name_list_tamil }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 duke_female_tamil_independent = {
 	type = character
@@ -110,18 +128,22 @@ duke_female_tamil_independent = {
 	tier = duchy
 	priority = 124
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { tamil }
-	top_liege = no
-	only_independent = yes
+	name_lists = { name_list_tamil }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 duchy_tamil_independent = {
 	type = title
 	tier = duchy
 	priority = 124
 	governments = { feudal_government clan_government tribal_government}
-	cultures = { tamil }
-	top_liege = no
-	only_independent = yes
+	name_lists = { name_list_tamil }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 king_male_tamil = {
 	type = character
@@ -130,8 +152,10 @@ king_male_tamil = {
 	tier = kingdom
 	priority = 143
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { tamil }
-	top_liege = no
+	name_lists = { name_list_tamil }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 king_female_tamil = {
 	type = character
@@ -140,8 +164,10 @@ king_female_tamil = {
 	tier = kingdom
 	priority = 143
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { tamil }
-	top_liege = no
+	name_lists = { name_list_tamil }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 king_female_tamil_holder = {
 	type = character
@@ -150,9 +176,11 @@ king_female_tamil_holder = {
 	tier = kingdom
 	priority = 143
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { tamil }
-	top_liege = no
-	only_holder = yes
+	name_lists = { name_list_tamil }
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 title_prince_male_tamil = {
 	type = character
@@ -160,7 +188,7 @@ title_prince_male_tamil = {
 	special = ruler_child
 	tier = kingdom
 	priority = 130
-	cultures = { tamil }
+	name_lists = { name_list_tamil }
 	governments = { feudal_government clan_government tribal_government }
 }
 title_prince_female_tamil = {
@@ -169,7 +197,7 @@ title_prince_female_tamil = {
 	special = ruler_child
 	tier = kingdom
 	priority = 130
-	cultures = { tamil }
+	name_lists = { name_list_tamil }
 	governments = { feudal_government clan_government tribal_government }
 }
 emperor_male_tamil = {
@@ -179,8 +207,10 @@ emperor_male_tamil = {
 	tier = empire
 	priority = 153
 	governments = { feudal_government clan_government tribal_government republic_government }
-	cultures = { tamil }
-	top_liege = no
+	name_lists = { name_list_tamil }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 emperor_female_tamil = {
 	type = character
@@ -189,8 +219,10 @@ emperor_female_tamil = {
 	tier = empire
 	priority = 153
 	governments = { feudal_government clan_government tribal_government republic_government }
-	cultures = { tamil }
-	top_liege = no
+	name_lists = { name_list_tamil }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 emperor_female_tamil_holder = {
 	type = character
@@ -199,8 +231,10 @@ emperor_female_tamil_holder = {
 	tier = empire
 	priority = 154
 	governments = { feudal_government clan_government tribal_government republic_government }
-	cultures = { tamil }
-	top_liege = no
+	name_lists = { name_list_tamil }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_male_tamil_empire = {
 	type = character
@@ -208,7 +242,7 @@ title_prince_male_tamil_empire = {
 	special = ruler_child
 	tier = empire
 	priority = 150
-	cultures = { tamil }
+	name_lists = { name_list_tamil }
 	governments = { feudal_government clan_government tribal_government republic_government }
 }
 title_prince_female_tamil_empire = {
@@ -217,7 +251,7 @@ title_prince_female_tamil_empire = {
 	special = ruler_child
 	tier = empire
 	priority = 150
-	cultures = { tamil }
+	name_lists = { name_list_tamil }
 	governments = { feudal_government clan_government tribal_government republic_government }
 }
 queen_mother_tamil = {
@@ -226,7 +260,7 @@ queen_mother_tamil = {
 	special = queen_mother
 	tier = kingdom
 	priority = 130
-	cultures = { tamil }
+	name_lists = { name_list_tamil }
 	governments = { feudal_government clan_government tribal_government }
 }
 empress_mother_tamil = {
@@ -235,57 +269,69 @@ empress_mother_tamil = {
 	special = queen_mother
 	tier = empire
 	priority = 150
-	cultures = { tamil }
+	name_lists = { name_list_tamil }
 	governments = { feudal_government clan_government tribal_government republic_government }
 }
-barony_tamil = {
+barony_castle_tamil = {
 	type = title
 	tier = barony
 	priority = 103
-	governments = { feudal_government clan_government tribal_government}
-	cultures = { tamil }
-	top_liege = no
+	holding = castle_holding
+	name_lists = { name_list_tamil }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 county_tamil = {
 	type = title
 	tier = county
 	priority = 113
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { tamil }
-	top_liege = no
+	name_lists = { name_list_tamil }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 county_tamil_independent = {
 	type = title
 	tier = county
 	priority = 114
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { tamil }
-	top_liege = no
-	only_independent = yes
+	name_lists = { name_list_tamil }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 duchy_tamil = {
 	type = title
 	tier = duchy
 	priority = 123
 	governments = { feudal_government clan_government tribal_government}
-	cultures = { tamil }
-	top_liege = no
+	name_lists = { name_list_tamil }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 kingdom_tamil={
 	type= title
 	tier = kingdom
 	priority = 143
 	governments = { feudal_government clan_government tribal_government}
-	cultures = { tamil }
-	top_liege = no
+	name_lists = { name_list_tamil }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 empire_tamil = {
 	type = title
 	tier = empire
 	priority = 153
 	governments = { feudal_government clan_government tribal_government republic_government } ##I assume theocracy was a typo here.
-	cultures = { tamil }
-	top_liege = no
+	name_lists = { name_list_tamil }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 queen_mother_tamil = {
 	type = character
@@ -293,7 +339,7 @@ queen_mother_tamil = {
 	special = queen_mother
 	tier = kingdom
 	priority = 130
-	cultures = { tamil }
+	name_lists = { name_list_tamil }
 	governments = { feudal_government clan_government tribal_government }
 }
 queen_mother_tamil_empire = {
@@ -302,7 +348,7 @@ queen_mother_tamil_empire = {
 	special = queen_mother
 	tier = empire
 	priority = 150
-	cultures = { tamil }
+	name_lists = { name_list_tamil }
 	governments = { feudal_government clan_government tribal_government republic_government }
 }
 baron_republic_male_tamil = {
@@ -312,9 +358,11 @@ baron_republic_male_tamil = {
 	tier = barony
 	priority = 103
 	governments = { republic_government }
-	cultures = { tamil }
-	top_liege = no
-	only_holder = yes
+	name_lists = { name_list_tamil }
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 baron_republic_female_tamil = {
 	type = character
@@ -323,9 +371,11 @@ baron_republic_female_tamil = {
 	tier = barony
 	priority = 103
 	governments = { republic_government }
-	cultures = { tamil }
-	top_liege = no
-	only_holder = yes
+	name_lists = { name_list_tamil }
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 count_republic_tamil = {
 	type = character
@@ -333,9 +383,11 @@ count_republic_tamil = {
 	tier = county
 	priority = 113
 	governments = { republic_government }
-	cultures = { tamil }
-	top_liege = no
-	only_holder = yes
+	name_lists = { name_list_tamil }
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 duke_republic_tamil = {
 	type = character
@@ -343,9 +395,11 @@ duke_republic_tamil = {
 	tier = duchy
 	priority = 123
 	governments = { republic_government }
-	cultures = { tamil }
-	top_liege = no
-	only_holder = yes
+	name_lists = { name_list_tamil }
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 king_republic_tamil = {
 	type = character
@@ -353,41 +407,61 @@ king_republic_tamil = {
 	tier = kingdom
 	priority = 143
 	governments = { republic_government }
-	cultures = { tamil }
-	top_liege = no
-	only_holder = yes
+	name_lists = { name_list_tamil }
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
-barony_republic_tamil = {
+barony_city_tamil = {
 	type = title
 	tier = barony
 	priority = 103
-	governments = { republic_government }
-	cultures = { tamil }
-	top_liege = no
+	holding = city_holding
+	name_lists = { name_list_tamil }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 county_republic_tamil = {
 	type = title
 	tier = county
 	priority = 113
 	governments = { republic_government }
-	cultures = { tamil }
-	top_liege = no
+	name_lists = { name_list_tamil }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duchy_republic_tamil = {
 	type = title
 	tier = duchy
 	priority = 123
 	governments = { republic_government }
-	cultures = { tamil }
-	top_liege = no
+	name_lists = { name_list_tamil }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 kingdom_republic_tamil = {
 	type = title
 	tier = kingdom
 	priority = 143
 	governments = { republic_government }
-	cultures = { tamil }
-	top_liege = no
+	name_lists = { name_list_tamil }
+	flavourization_rules = {
+		top_liege = no
+	}
+}
+barony_tribe_tamil = {
+	type = title
+	tier = barony
+	priority = 103
+	holding = tribal_holding
+	name_lists = { name_list_tamil }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 ###############################################
 ## Telugu Culture
@@ -399,8 +473,10 @@ baron_male_telugu = {
 	tier = barony
 	priority = 103
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { telugu }
-	top_liege = no
+	name_lists = { name_list_telugu }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 baron_female_telugu = {
 	type = character
@@ -409,8 +485,10 @@ baron_female_telugu = {
 	tier = barony
 	priority = 103
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { telugu }
-	top_liege = no
+	name_lists = { name_list_telugu }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_male_telugu = {
 	type = character
@@ -419,8 +497,10 @@ count_male_telugu = {
 	tier = county
 	priority = 113
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { telugu }
-	top_liege = no
+	name_lists = { name_list_telugu }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_female_telugu = {
 	type = character
@@ -429,8 +509,10 @@ count_female_telugu = {
 	tier = county
 	priority = 113
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { telugu }
-	top_liege = no
+	name_lists = { name_list_telugu }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_male_telugu_independent = {
 	type = character
@@ -439,9 +521,11 @@ count_male_telugu_independent = {
 	tier = county
 	priority = 114
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { telugu }
-	top_liege = no
-	only_independent = yes
+	name_lists = { name_list_telugu }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 count_female_telugu_independent = {
 	type = character
@@ -450,9 +534,11 @@ count_female_telugu_independent = {
 	tier = county
 	priority = 114
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { telugu }
-	top_liege = no
-	only_independent = yes
+	name_lists = { name_list_telugu }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 duke_male_telugu = {
 	type = character
@@ -461,8 +547,10 @@ duke_male_telugu = {
 	tier = duchy
 	priority = 123
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { telugu }
-	top_liege = no
+	name_lists = { name_list_telugu }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_female_telugu = {
 	type = character
@@ -471,8 +559,10 @@ duke_female_telugu = {
 	tier = duchy
 	priority = 123
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { telugu }
-	top_liege = no
+	name_lists = { name_list_telugu }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_male_telugu_independent = {
 	type = character
@@ -481,9 +571,11 @@ duke_male_telugu_independent = {
 	tier = duchy
 	priority = 124
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { telugu }
-	top_liege = no
-	only_independent = yes
+	name_lists = { name_list_telugu }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 duke_female_telugu_independent = {
 	type = character
@@ -492,18 +584,22 @@ duke_female_telugu_independent = {
 	tier = duchy
 	priority = 124
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { telugu }
-	top_liege = no
-	only_independent = yes
+	name_lists = { name_list_telugu }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 duchy_telugu_independent = {
 	type = title
 	tier = duchy
 	priority = 124
 	governments = { feudal_government clan_government tribal_government}
-	cultures = { telugu }
-	top_liege = no
-	only_independent = yes
+	name_lists = { name_list_telugu }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 king_male_telugu = {
 	type = character
@@ -512,8 +608,10 @@ king_male_telugu = {
 	tier = kingdom
 	priority = 143
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { telugu }
-	top_liege = no
+	name_lists = { name_list_telugu }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 king_female_telugu = {
 	type = character
@@ -522,8 +620,10 @@ king_female_telugu = {
 	tier = kingdom
 	priority = 143
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { telugu }
-	top_liege = no
+	name_lists = { name_list_telugu }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 king_female_telugu_holder = {
 	type = character
@@ -532,9 +632,11 @@ king_female_telugu_holder = {
 	tier = kingdom
 	priority = 143
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { telugu }
-	top_liege = no
-	only_holder = yes
+	name_lists = { name_list_telugu }
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 title_prince_male_telugu = {
 	type = character
@@ -542,7 +644,7 @@ title_prince_male_telugu = {
 	special = ruler_child
 	tier = kingdom
 	priority = 130
-	cultures = { telugu }
+	name_lists = { name_list_telugu }
 	governments = { feudal_government clan_government tribal_government }
 }
 title_prince_female_telugu = {
@@ -551,7 +653,7 @@ title_prince_female_telugu = {
 	special = ruler_child
 	tier = kingdom
 	priority = 130
-	cultures = { telugu }
+	name_lists = { name_list_telugu }
 	governments = { feudal_government clan_government tribal_government }
 }
 emperor_male_telugu = {
@@ -561,8 +663,10 @@ emperor_male_telugu = {
 	tier = empire
 	priority = 153
 	governments = { feudal_government clan_government tribal_government republic_government }
-	cultures = { telugu }
-	top_liege = no
+	name_lists = { name_list_telugu }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 emperor_female_telugu = {
 	type = character
@@ -571,8 +675,10 @@ emperor_female_telugu = {
 	tier = empire
 	priority = 153
 	governments = { feudal_government clan_government tribal_government republic_government }
-	cultures = { telugu }
-	top_liege = no
+	name_lists = { name_list_telugu }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 emperor_female_telugu_holder = {
 	type = character
@@ -581,8 +687,10 @@ emperor_female_telugu_holder = {
 	tier = empire
 	priority = 154
 	governments = { feudal_government clan_government tribal_government republic_government }
-	cultures = { telugu }
-	top_liege = no
+	name_lists = { name_list_telugu }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_male_telugu_empire = {
 	type = character
@@ -590,7 +698,7 @@ title_prince_male_telugu_empire = {
 	special = ruler_child
 	tier = empire
 	priority = 150
-	cultures = { telugu }
+	name_lists = { name_list_telugu }
 	governments = { feudal_government clan_government tribal_government republic_government }
 }
 title_prince_female_telugu_empire = {
@@ -599,7 +707,7 @@ title_prince_female_telugu_empire = {
 	special = ruler_child
 	tier = empire
 	priority = 150
-	cultures = { telugu }
+	name_lists = { name_list_telugu }
 	governments = { feudal_government clan_government tribal_government republic_government }
 }
 queen_mother_telugu = {
@@ -608,7 +716,7 @@ queen_mother_telugu = {
 	special = queen_mother
 	tier = kingdom
 	priority = 130
-	cultures = { telugu }
+	name_lists = { name_list_telugu }
 	governments = { feudal_government clan_government tribal_government }
 }
 empress_mother_telugu = {
@@ -617,57 +725,69 @@ empress_mother_telugu = {
 	special = queen_mother
 	tier = empire
 	priority = 150
-	cultures = { telugu }
+	name_lists = { name_list_telugu }
 	governments = { feudal_government clan_government tribal_government republic_government }
 }
-barony_telugu = {
+barony_castle_telugu = {
 	type = title
 	tier = barony
 	priority = 103
-	governments = { feudal_government clan_government tribal_government}
-	cultures = { telugu }
-	top_liege = no
+	holding = castle_holding
+	name_lists = { name_list_telugu }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 county_telugu = {
 	type = title
 	tier = county
 	priority = 113
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { telugu }
-	top_liege = no
+	name_lists = { name_list_telugu }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 county_telugu_independent = {
 	type = title
 	tier = county
 	priority = 114
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { telugu }
-	top_liege = no
-	only_independent = yes
+	name_lists = { name_list_telugu }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 duchy_telugu = {
 	type = title
 	tier = duchy
 	priority = 123
 	governments = { feudal_government clan_government tribal_government}
-	cultures = { telugu }
-	top_liege = no
+	name_lists = { name_list_telugu }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 kingdom_telugu={
 	type= title
 	tier = kingdom
 	priority = 143
 	governments = { feudal_government clan_government tribal_government}
-	cultures = { telugu }
-	top_liege = no
+	name_lists = { name_list_telugu }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 empire_telugu = {
 	type = title
 	tier = empire
 	priority = 153
 	governments = { feudal_government clan_government tribal_government republic_government } ##I assume theocracy was a typo here.
-	cultures = { telugu }
-	top_liege = no
+	name_lists = { name_list_telugu }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 baron_republic_male_telugu = {
 	type = character
@@ -676,9 +796,11 @@ baron_republic_male_telugu = {
 	tier = barony
 	priority = 103
 	governments = { republic_government }
-	cultures = { telugu }
-	top_liege = no
-	only_holder = yes
+	name_lists = { name_list_telugu }
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 baron_republic_female_telugu = {
 	type = character
@@ -687,9 +809,11 @@ baron_republic_female_telugu = {
 	tier = barony
 	priority = 103
 	governments = { republic_government }
-	cultures = { telugu }
-	top_liege = no
-	only_holder = yes
+	name_lists = { name_list_telugu }
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 count_republic_telugu = {
 	type = character
@@ -697,9 +821,11 @@ count_republic_telugu = {
 	tier = county
 	priority = 113
 	governments = { republic_government }
-	cultures = { telugu }
-	top_liege = no
-	only_holder = yes
+	name_lists = { name_list_telugu }
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 duke_republic_telugu = {
 	type = character
@@ -707,9 +833,11 @@ duke_republic_telugu = {
 	tier = duchy
 	priority = 123
 	governments = { republic_government }
-	cultures = { telugu }
-	top_liege = no
-	only_holder = yes
+	name_lists = { name_list_telugu }
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 king_republic_telugu = {
 	type = character
@@ -717,41 +845,61 @@ king_republic_telugu = {
 	tier = kingdom
 	priority = 143
 	governments = { republic_government }
-	cultures = { telugu }
-	top_liege = no
-	only_holder = yes
+	name_lists = { name_list_telugu }
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
-barony_republic_telugu = {
+barony_city_telugu = {
 	type = title
 	tier = barony
 	priority = 103
-	governments = { republic_government }
-	cultures = { telugu }
-	top_liege = no
+	holding = city_holding
+	name_lists = { name_list_telugu }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 county_republic_telugu = {
 	type = title
 	tier = county
 	priority = 113
 	governments = { republic_government }
-	cultures = { telugu }
-	top_liege = no
+	name_lists = { name_list_telugu }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duchy_republic_telugu = {
 	type = title
 	tier = duchy
 	priority = 123
 	governments = { republic_government }
-	cultures = { telugu }
-	top_liege = no
+	name_lists = { name_list_telugu }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 kingdom_republic_telugu = {
 	type = title
 	tier = kingdom
 	priority = 143
 	governments = { republic_government }
-	cultures = { telugu }
-	top_liege = no
+	name_lists = { name_list_telugu }
+	flavourization_rules = {
+		top_liege = no
+	}
+}
+barony_tribe_telugu = {
+	type = title
+	tier = barony
+	priority = 103
+	holding = tribal_holding
+	name_lists = { name_list_telugu }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 ###############################################
 ## Kannada Culture
@@ -763,8 +911,10 @@ baron_male_kannada = {
 	tier = barony
 	priority = 103
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { kannada }
-	top_liege = no
+	name_lists = { name_list_kannada }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 baron_female_kannada = {
 	type = character
@@ -773,8 +923,10 @@ baron_female_kannada = {
 	tier = barony
 	priority = 103
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { kannada }
-	top_liege = no
+	name_lists = { name_list_kannada }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_male_kannada = {
 	type = character
@@ -783,8 +935,10 @@ count_male_kannada = {
 	tier = county
 	priority = 113
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { kannada }
-	top_liege = no
+	name_lists = { name_list_kannada }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_female_kannada = {
 	type = character
@@ -793,8 +947,10 @@ count_female_kannada = {
 	tier = county
 	priority = 113
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { kannada }
-	top_liege = no
+	name_lists = { name_list_kannada }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_male_kannada_independent = {
 	type = character
@@ -803,9 +959,11 @@ count_male_kannada_independent = {
 	tier = county
 	priority = 114
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { kannada }
-	top_liege = no
-	only_independent = yes
+	name_lists = { name_list_kannada }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 count_female_kannada_independent = {
 	type = character
@@ -814,9 +972,11 @@ count_female_kannada_independent = {
 	tier = county
 	priority = 114
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { kannada }
-	top_liege = no
-	only_independent = yes
+	name_lists = { name_list_kannada }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 duke_male_kannada = {
 	type = character
@@ -825,8 +985,10 @@ duke_male_kannada = {
 	tier = duchy
 	priority = 123
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { kannada }
-	top_liege = no
+	name_lists = { name_list_kannada }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_female_kannada = {
 	type = character
@@ -835,8 +997,10 @@ duke_female_kannada = {
 	tier = duchy
 	priority = 123
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { kannada }
-	top_liege = no
+	name_lists = { name_list_kannada }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_male_kannada_independent = {
 	type = character
@@ -845,9 +1009,11 @@ duke_male_kannada_independent = {
 	tier = duchy
 	priority = 124
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { kannada }
-	top_liege = no
-	only_independent = yes
+	name_lists = { name_list_kannada }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 duke_female_kannada_independent = {
 	type = character
@@ -856,18 +1022,22 @@ duke_female_kannada_independent = {
 	tier = duchy
 	priority = 124
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { kannada }
-	top_liege = no
-	only_independent = yes
+	name_lists = { name_list_kannada }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 duchy_kannada_independent = {
 	type = title
 	tier = duchy
 	priority = 124
 	governments = { feudal_government clan_government tribal_government}
-	cultures = { kannada }
-	top_liege = no
-	only_independent = yes
+	name_lists = { name_list_kannada }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 king_male_kannada = {
 	type = character
@@ -876,8 +1046,10 @@ king_male_kannada = {
 	tier = kingdom
 	priority = 143
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { kannada }
-	top_liege = no
+	name_lists = { name_list_kannada }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 king_female_kannada = {
 	type = character
@@ -886,8 +1058,10 @@ king_female_kannada = {
 	tier = kingdom
 	priority = 143
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { kannada }
-	top_liege = no
+	name_lists = { name_list_kannada }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 king_female_kannada_holder = {
 	type = character
@@ -896,9 +1070,11 @@ king_female_kannada_holder = {
 	tier = kingdom
 	priority = 143
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { kannada }
-	top_liege = no
-	only_holder = yes
+	name_lists = { name_list_kannada }
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 title_prince_male_kannada = {
 	type = character
@@ -906,7 +1082,7 @@ title_prince_male_kannada = {
 	special = ruler_child
 	tier = kingdom
 	priority = 130
-	cultures = { kannada }
+	name_lists = { name_list_kannada }
 	governments = { feudal_government clan_government tribal_government }
 }
 title_prince_female_kannada = {
@@ -915,7 +1091,7 @@ title_prince_female_kannada = {
 	special = ruler_child
 	tier = kingdom
 	priority = 130
-	cultures = { kannada }
+	name_lists = { name_list_kannada }
 	governments = { feudal_government clan_government tribal_government }
 }
 emperor_male_kannada = {
@@ -925,8 +1101,10 @@ emperor_male_kannada = {
 	tier = empire
 	priority = 153
 	governments = { feudal_government clan_government tribal_government republic_government }
-	cultures = { kannada }
-	top_liege = no
+	name_lists = { name_list_kannada }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 emperor_female_kannada = {
 	type = character
@@ -935,8 +1113,10 @@ emperor_female_kannada = {
 	tier = empire
 	priority = 153
 	governments = { feudal_government clan_government tribal_government republic_government }
-	cultures = { kannada }
-	top_liege = no
+	name_lists = { name_list_kannada }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 emperor_female_kannada_holder = {
 	type = character
@@ -945,8 +1125,10 @@ emperor_female_kannada_holder = {
 	tier = empire
 	priority = 154
 	governments = { feudal_government clan_government tribal_government republic_government }
-	cultures = { kannada }
-	top_liege = no
+	name_lists = { name_list_kannada }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_male_kannada_empire = {
 	type = character
@@ -954,7 +1136,7 @@ title_prince_male_kannada_empire = {
 	special = ruler_child
 	tier = empire
 	priority = 150
-	cultures = { kannada }
+	name_lists = { name_list_kannada }
 	governments = { feudal_government clan_government tribal_government republic_government }
 }
 title_prince_female_kannada_empire = {
@@ -963,7 +1145,7 @@ title_prince_female_kannada_empire = {
 	special = ruler_child
 	tier = empire
 	priority = 150
-	cultures = { kannada }
+	name_lists = { name_list_kannada }
 	governments = { feudal_government clan_government tribal_government republic_government }
 }
 queen_mother_kannada = {
@@ -972,7 +1154,7 @@ queen_mother_kannada = {
 	special = queen_mother
 	tier = kingdom
 	priority = 130
-	cultures = { kannada }
+	name_lists = { name_list_kannada }
 	governments = { feudal_government clan_government tribal_government }
 }
 empress_mother_kannada = {
@@ -981,57 +1163,69 @@ empress_mother_kannada = {
 	special = queen_mother
 	tier = empire
 	priority = 150
-	cultures = { kannada }
+	name_lists = { name_list_kannada }
 	governments = { feudal_government clan_government tribal_government republic_government }
 }
-barony_kannada = {
+barony_castle_kannada = {
 	type = title
 	tier = barony
 	priority = 103
-	governments = { feudal_government clan_government tribal_government}
-	cultures = { kannada }
-	top_liege = no
+	holding = castle_holding
+	name_lists = { name_list_kannada }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 county_kannada = {
 	type = title
 	tier = county
 	priority = 113
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { kannada }
-	top_liege = no
+	name_lists = { name_list_kannada }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 county_kannada_independent = {
 	type = title
 	tier = county
 	priority = 114
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { kannada }
-	top_liege = no
-	only_independent = yes
+	name_lists = { name_list_kannada }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}
 }
 duchy_kannada = {
 	type = title
 	tier = duchy
 	priority = 123
 	governments = { feudal_government clan_government tribal_government}
-	cultures = { kannada }
-	top_liege = no
+	name_lists = { name_list_kannada }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 kingdom_kannada={
 	type= title
 	tier = kingdom
 	priority = 143
 	governments = { feudal_government clan_government tribal_government}
-	cultures = { kannada }
-	top_liege = no
+	name_lists = { name_list_kannada }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 empire_kannada = {
 	type = title
 	tier = empire
 	priority = 153
 	governments = { feudal_government clan_government tribal_government republic_government } ##I assume theocracy was a typo here.
-	cultures = { kannada }
-	top_liege = no
+	name_lists = { name_list_kannada }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 baron_republic_male_kannada = {
 	type = character
@@ -1040,9 +1234,11 @@ baron_republic_male_kannada = {
 	tier = barony
 	priority = 103
 	governments = { republic_government }
-	cultures = { kannada }
-	top_liege = no
-	only_holder = yes
+	name_lists = { name_list_kannada }
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 baron_republic_female_kannada = {
 	type = character
@@ -1051,9 +1247,11 @@ baron_republic_female_kannada = {
 	tier = barony
 	priority = 103
 	governments = { republic_government }
-	cultures = { kannada }
-	top_liege = no
-	only_holder = yes
+	name_lists = { name_list_kannada }
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 count_republic_kannada = {
 	type = character
@@ -1061,9 +1259,11 @@ count_republic_kannada = {
 	tier = county
 	priority = 113
 	governments = { republic_government }
-	cultures = { kannada }
-	top_liege = no
-	only_holder = yes
+	name_lists = { name_list_kannada }
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 duke_republic_kannada = {
 	type = character
@@ -1071,9 +1271,11 @@ duke_republic_kannada = {
 	tier = duchy
 	priority = 123
 	governments = { republic_government }
-	cultures = { kannada }
-	top_liege = no
-	only_holder = yes
+	name_lists = { name_list_kannada }
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 king_republic_kannada = {
 	type = character
@@ -1081,41 +1283,61 @@ king_republic_kannada = {
 	tier = kingdom
 	priority = 143
 	governments = { republic_government }
-	cultures = { kannada }
-	top_liege = no
-	only_holder = yes
+	name_lists = { name_list_kannada }
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
-barony_republic_kannada = {
+barony_city_kannada = {
 	type = title
 	tier = barony
 	priority = 103
-	governments = { republic_government }
-	cultures = { kannada }
-	top_liege = no
+	holding = city_holding
+	name_lists = { name_list_kannada }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 county_republic_kannada = {
 	type = title
 	tier = county
 	priority = 113
 	governments = { republic_government }
-	cultures = { kannada }
-	top_liege = no
+	name_lists = { name_list_kannada }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duchy_republic_kannada = {
 	type = title
 	tier = duchy
 	priority = 123
 	governments = { republic_government }
-	cultures = { kannada }
-	top_liege = no
+	name_lists = { name_list_kannada }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 kingdom_republic_kannada = {
 	type = title
 	tier = kingdom
 	priority = 143
 	governments = { republic_government }
-	cultures = { kannada }
-	top_liege = no
+	name_lists = { name_list_kannada }
+	flavourization_rules = {
+		top_liege = no
+	}
+}
+barony_tribe_kannada = {
+	type = title
+	tier = barony
+	priority = 103
+	holding = tribal_holding
+	name_lists = { name_list_kannada }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 ###############################################
 ## End of Dravidian_culture_group ##

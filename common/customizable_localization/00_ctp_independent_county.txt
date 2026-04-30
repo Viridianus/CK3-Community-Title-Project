@@ -1,5 +1,63 @@
-﻿GaelicIndepCounty = {
+﻿DynastGoidIndepCountMale = {
 	type = character
+	text = {
+		trigger = {
+			culture = { any_parent_culture_or_above = { has_cultural_pillar = heritage_north_germanic } }
+		}
+		localization_key = king_male_gael_norse
+	}
+	text = {
+		localization_key = indep_count_male_goid
+		fallback = yes
+	}
+}
+IndepCountMaleGoid = {
+	type = character
+	text = {
+		trigger = {
+			has_culture = culture:irish
+		}
+		localization_key = count_default_male_irish
+	}
+	text = {
+		localization_key = count_feudalclan_male_gaelic_independent
+		fallback = yes
+	}
+}
+DynastGoidIndepCountFemale = {
+	type = character
+	text = {
+		trigger = {
+			culture = { any_parent_culture_or_above = { has_cultural_pillar = heritage_north_germanic } }
+		}
+		localization_key = king_female_gael_norse
+	}
+	text = {
+		localization_key = indep_count_female_goid
+		fallback = yes
+	}
+}
+IndepCountFemaleGoid = {
+	type = character
+	text = {
+		trigger = {
+			has_culture = culture:irish
+		}
+		localization_key = count_default_female_irish
+	}
+	text = {
+		localization_key = count_feudalclan_female_gaelic_independent
+		fallback = yes
+	}
+}
+IndepCountyGoid = {
+	type = character
+	text = {
+		trigger = {
+			has_culture = culture:irish
+		}
+		localization_key = county_default_irish
+	}
 	text = {
 		trigger = {
 			highest_held_title_tier >= tier_duchy
@@ -9,6 +67,76 @@
 	text = {
 		fallback = yes
 		localization_key = independent_county_gaelic
+	}
+}
+AngloIndepCountMale = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_male_anglo_saxon
+	}
+	text = {
+		trigger = {
+			is_ruler = yes
+		}
+		localization_key = indep_count_default_male_holder_anglo
+	}
+	text = {
+		fallback = yes
+		localization_key = indep_count_default_male_anglo
+	}
+}
+AngloIndepCountMaleTwo = {
+	type = character
+	text = {
+		trigger = {
+			culture = { any_parent_culture_or_above = { has_cultural_pillar = heritage_north_germanic } }
+		}
+		localization_key = count_feudalclan_male_anglo_norse_independent
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_male_anglo_saxon
+	}
+}
+AngloIndepCounty = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = county_feudalclan_anglo
+	}
+	text = {
+		trigger = {
+			is_independent_ruler = yes
+			root.faith = {
+				has_doctrine = tenet_struggle_submission
+			}
+		}
+		localization_key = sultanate_anglo_saxon
+	}
+	text = {
+		fallback = yes
+		localization_key = kingdom_default_anglo_saxon
 	}
 }
 OldSaxonIndepCounty = {
@@ -71,35 +199,30 @@ CornishIndepCounty = {
 		localization_key = independent_county_cornish
 	}
 }
-NorthGermanicIndepCounty = {
+NorthIndepCounty = {
 	type = character
 	text = {
 		trigger = {
 			highest_held_title_tier >= tier_duchy
-			OR = {
-				has_culture = culture:norse
-				has_culture = culture:norwegian
-			}
 		}
 		localization_key = county_default_norse_norwegian
 	}
 	text = {
-		trigger = {
-			highest_held_title_tier >= tier_duchy
-			has_culture = culture:swedish
-		}
-		localization_key = county_default_swedish
+		fallback = yes
+		localization_key = kingdom_norse_norwegian
 	}
+}
+SwedishIndepCounty = {
+	type = character
 	text = {
 		trigger = {
 			highest_held_title_tier >= tier_duchy
-			has_culture = culture:danish
 		}
-		localization_key = county_default_danish
+		localization_key = county_default_swedish_danish
 	}
 	text = {
 		fallback = yes
-		localization_key = kingdom_north_germanic_group
+		localization_key = kingdom_swedish_danish
 	}
 }
 FinnishIndepCounty = {
@@ -139,6 +262,19 @@ KarelianIndepCounty = {
 	text = {
 		fallback = yes
 		localization_key = independent_county_karelian
+	}
+}
+VepsianIndepCounty = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = county_feudalclan_vepsian
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_county_vepsian
 	}
 }
 SaxonIndepCounty = {
@@ -193,6 +329,19 @@ DutchIndepCounty = {
 		localization_key = independent_county_dutch
 	}
 }
+GeorgianIndepCounty = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = county_georgian
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_duchy_georgian
+	}
+}
 AlanIndepCounty = {
 	type = character
 	text = {
@@ -226,7 +375,7 @@ SardinianIndepCounty = {
 			highest_held_title_tier >= tier_duchy
 			has_government = republic_government
 		}
-		localization_key = judicatu_republic_dependent
+		localization_key = county_republic_sardinian
 	}
 	text = {
 		fallback = yes
@@ -303,8 +452,95 @@ BulgarianIndepCounty = {
 		localization_key = independent_county_bulgarian
 	}
 }
+MogyerIndepCountMale = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier = tier_county
+			OR = {
+				has_primary_title = title:c_cagliari
+				has_primary_title = title:c_arborea
+				has_primary_title = title:c_gallura
+				has_primary_title = title:c_logudoro
+			}
+		}
+		localization_key = judge_mogyer
+	}
+	text = {
+		trigger = {
+			exists = primary_spouse
+			primary_spouse = {
+				highest_held_title_tier = tier_county
+				OR = {
+					has_primary_title = title:c_cagliari
+					has_primary_title = title:c_arborea
+					has_primary_title = title:c_gallura
+					has_primary_title = title:c_logudoro
+				}
+			}
+		}
+		localization_key = ctp_blank
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_count_male_mogyer
+	}
+}
+MogyerIndepCountFemale = {
+	type = character
+	text = {
+		trigger = {
+			exists = primary_spouse
+			primary_spouse = {
+				highest_held_title_tier = tier_county
+				OR = {
+					has_primary_title = title:c_cagliari
+					has_primary_title = title:c_arborea
+					has_primary_title = title:c_gallura
+					has_primary_title = title:c_logudoro
+				}
+			}
+		}
+		localization_key = ctp_blank
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_count_female_mogyer
+	}
+}
+MogyerIndepCountFemaleHolder = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier = tier_county
+			OR = {
+				has_primary_title = title:c_cagliari
+				has_primary_title = title:c_arborea
+				has_primary_title = title:c_gallura
+				has_primary_title = title:c_logudoro
+			}
+		}
+		localization_key = judge_mogyer
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_count_female_holder_mogyer
+	}
+}
 MogyerIndepCounty = {
 	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier = tier_county
+			OR = {
+				has_primary_title = title:c_cagliari
+				has_primary_title = title:c_arborea
+				has_primary_title = title:c_gallura
+				has_primary_title = title:c_logudoro
+			}
+		}
+		localization_key = judgedom_mogyer
+	}
 	text = {
 		trigger = {
 			highest_held_title_tier >= tier_duchy
@@ -316,13 +552,100 @@ MogyerIndepCounty = {
 		localization_key = independent_county_mogyer
 	}
 }
+HungIndepCountMale = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier = tier_county
+			OR = {
+				has_primary_title = title:c_cagliari
+				has_primary_title = title:c_arborea
+				has_primary_title = title:c_gallura
+				has_primary_title = title:c_logudoro
+			}
+		}
+		localization_key = judge_hung
+	}
+	text = {
+		trigger = {
+			exists = primary_spouse
+			primary_spouse = {
+				highest_held_title_tier = tier_county
+				OR = {
+					has_primary_title = title:c_cagliari
+					has_primary_title = title:c_arborea
+					has_primary_title = title:c_gallura
+					has_primary_title = title:c_logudoro
+				}
+			}
+		}
+		localization_key = ctp_blank
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_count_male_hung
+	}
+}
+HungIndepCountFemale = {
+	type = character
+	text = {
+		trigger = {
+			exists = primary_spouse
+			primary_spouse = {
+				highest_held_title_tier = tier_county
+				OR = {
+					has_primary_title = title:c_cagliari
+					has_primary_title = title:c_arborea
+					has_primary_title = title:c_gallura
+					has_primary_title = title:c_logudoro
+				}
+			}
+		}
+		localization_key = ctp_blank
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_count_female_hung
+	}
+}
+HungIndepCountFemaleHolder = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier = tier_county
+			OR = {
+				has_primary_title = title:c_cagliari
+				has_primary_title = title:c_arborea
+				has_primary_title = title:c_gallura
+				has_primary_title = title:c_logudoro
+			}
+		}
+		localization_key = judge_hung
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_count_female_holder_hung
+	}
+}
 HungIndepCounty = {
 	type = character
 	text = {
 		trigger = {
+			highest_held_title_tier = tier_county
+			OR = {
+				has_primary_title = title:c_cagliari
+				has_primary_title = title:c_arborea
+				has_primary_title = title:c_gallura
+				has_primary_title = title:c_logudoro
+			}
+		}
+		localization_key = judgedom_hung
+	}
+	text = {
+		trigger = {
 			highest_held_title_tier >= tier_duchy
 		}
-		localization_key = county_feudalclan_prussian
+		localization_key = county_default_hungarian
 	}
 	text = {
 		fallback = yes
@@ -573,6 +896,33 @@ OldEastSlavicIndepCounty = {
 		localization_key = independent_county_old_east_slavic
 	}
 }
+KanuriIndepCounty = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = county_kanuri
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_county_kanuri
+	}
+}
+HanIndepCounty = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = county_feudalclan_han
+	}
+	text = {
+		fallback = yes
+		localization_key =    duchy_default_han
+
+	}
+}
 TamilIndepCounty = {
 	type = character
 	text = {
@@ -610,6 +960,19 @@ KannadaIndepCounty = {
 	text = {
 		fallback = yes
 		localization_key = independent_county_kannada
+	}
+}
+NubianIndepCounty = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = county_feudalclan_nubian
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_default_nubian
 	}
 }
 DajuIndepCounty = {
@@ -779,5 +1142,96 @@ NepaliIndepCounty = {
 	text = {
 		fallback = yes
 		localization_key = independent_county_nepali
+	}
+}
+SonghaiIndepCounty = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = county_songhai
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_songhai
+	}
+}
+TurkishThreeIndepCounty = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = county_turkish_group_three
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_county_turkish_group_three
+	}
+}
+MordvinIndepCounty = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = county_mordvin
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_county_mordvin
+	}
+}
+KurdishIndepCounty = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = county_kurdish
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_kurdish
+	}
+}
+AfghanIndepCounty = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = county_feudalclan_afghan
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_county_afghan
+	}
+}
+MalinkeIndepCounty = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = county_malinke
+	}
+	text = {
+		fallback = yes
+		localization_key = duchy_malinke
+	}
+}
+KanuriIndepCounty = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_duchy
+		}
+		localization_key = county_kanuri
+	}
+	text = {
+		fallback = yes
+		localization_key = independent_county_kanuri
 	}
 }

@@ -6,13 +6,15 @@
 ###############################################
 ## East_Slavic_culture_group
 ###############################################
-barony_feudalclan_east_slavic_group = {
+barony_castle_east_slavic_group = {
 	type = title
 	tier = barony
 	priority = 103
-	culture_groups = { east_slavic_group }
-	governments = { feudal_government clan_government }
-	top_liege = no
+	heritages = { heritage_east_slavic }
+	holding = castle_holding
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 baron_republic_male_east_slavic_group = {
 	type = character
@@ -20,10 +22,12 @@ baron_republic_male_east_slavic_group = {
 	special = holder
 	tier = barony
 	priority = 103
-	culture_groups = { east_slavic_group }
+	heritages = { heritage_east_slavic }
 	governments = { republic_government }
-	only_holder = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 baron_republic_female_east_slavic_group = {
 	type = character
@@ -31,18 +35,22 @@ baron_republic_female_east_slavic_group = {
 	special = holder
 	tier = barony
 	priority = 103
-	culture_groups = { east_slavic_group }
+	heritages = { heritage_east_slavic }
 	governments = { republic_government }
-	only_holder = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
-barony_republic_east_slavic_group = {
+barony_city_east_slavic_group = {
 	type = title
 	tier = barony
 	priority = 103
-	culture_groups = { east_slavic_group }
-	governments = { republic_government }
-	top_liege = no
+	heritages = { heritage_east_slavic }
+	holding = city_holding
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 ### Russian ###
 baron_male_russian = {
@@ -51,9 +59,11 @@ baron_male_russian = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { russian }
+	name_lists = { name_list_russian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 baron_female_russian = {
 	type = character
@@ -61,9 +71,11 @@ baron_female_russian = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { russian }
+	name_lists = { name_list_russian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_feudalclan_male_russian = {
 	type = character
@@ -71,9 +83,11 @@ count_feudalclan_male_russian = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { russian }
+	name_lists = { name_list_russian }
 	governments = { feudal_government clan_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_feudalclan_female_russian = {
 	type = character
@@ -81,17 +95,21 @@ count_feudalclan_female_russian = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { russian }
+	name_lists = { name_list_russian }
 	governments = { feudal_government clan_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 county_feudalclan_russian = {
 	type = title
 	tier = county
 	priority = 113
-	cultures = { russian }
+	name_lists = { name_list_russian }
 	governments = { feudal_government clan_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_male_feudalclan_russian_independent = {
 	type = character
@@ -99,7 +117,7 @@ count_male_feudalclan_russian_independent = {
 	special = holder
 	priority = 114
 	tier = county
-	cultures = { russian }
+	name_lists = { name_list_russian }
 	governments = { feudal_government clan_government }
 	only_independent = yes
 }
@@ -109,7 +127,7 @@ count_female_feudalclan_russian_independent = {
 	special = holder
 	priority = 114
 	tier = county
-	cultures = { russian }
+	name_lists = { name_list_russian }
 	governments = { feudal_government clan_government }
 	only_independent = yes
 }
@@ -117,7 +135,7 @@ county_feudalclan_russian_independent = {
 	type = title
 	priority = 114
 	tier = county
-	cultures = { russian }
+	name_lists = { name_list_russian }
 	governments = { feudal_government clan_government }
 	only_independent = yes
 }
@@ -128,7 +146,7 @@ duke_male_russian = {
 	tier = duchy
 	priority = 123
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { russian }
+	name_lists = { name_list_russian }
 }
 duke_female_russian = {
 	type = character
@@ -137,14 +155,14 @@ duke_female_russian = {
 	tier = duchy
 	priority = 123
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { russian }
+	name_lists = { name_list_russian }
 }
 duchy_russian = {
 	type = title
 	tier = duchy
 	priority = 123
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { russian }
+	name_lists = { name_list_russian }
 }
 king_male_russian = {
 	type = character
@@ -153,7 +171,7 @@ king_male_russian = {
 	tier = kingdom
 	priority = 143
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { russian }
+	name_lists = { name_list_russian }
 }
 king_female_russian = {
 	type = character
@@ -162,14 +180,14 @@ king_female_russian = {
 	tier = kingdom
 	priority = 143
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { russian }
+	name_lists = { name_list_russian }
 }
 kingdom_russian = {
 	type = title
 	tier = kingdom
 	priority = 143
 	governments = { feudal_government clan_government tribal_government }
-	cultures = { russian }
+	name_lists = { name_list_russian }
 }
 emperor_male_russian = {
 	type = character
@@ -178,7 +196,7 @@ emperor_male_russian = {
 	tier = empire
 	priority = 153
 	governments = { feudal_government clan_government tribal_government republic_government }
-	cultures = { russian }
+	name_lists = { name_list_russian }
 }
 emperor_female_russian = {
 	type = character
@@ -187,34 +205,62 @@ emperor_female_russian = {
 	tier = empire
 	priority = 153
 	governments = { feudal_government clan_government tribal_government republic_government }
-	cultures = { russian }
+	name_lists = { name_list_russian }
 }
 empire_russian = {
 	type = title
 	tier = empire
 	priority = 153
 	governments = { feudal_government clan_government tribal_government republic_government }
-	cultures = { russian }
+	name_lists = { name_list_russian }
 }
-title_prince_female_russian_duchy = {
+title_prince_male_russian_county = {
+	type = character
+	gender = male
+	special = ruler_child
+	tier = county
+	priority = 100
+	name_lists = { name_list_russian }
+	governments = { feudal_government clan_government tribal_government }
+	flavourization_rules = {
+		top_liege = no
+	}
+}
+title_prince_female_russian_county = {
+	type = character
+	gender = female
+	special = ruler_child
+	tier = county
+	priority = 100
+	name_lists = { name_list_russian }
+	governments = { feudal_government clan_government tribal_government }
+	flavourization_rules = {
+		top_liege = no
+	}
+}
+title_prince_male_russian_duchy = {
 	type = character
 	gender = male
 	special = ruler_child
 	tier = duchy
 	priority = 110
-	cultures = { russian }
+	name_lists = { name_list_russian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
-title_prince_male_russian_duchy = {
+title_prince_female_russian_duchy = {
 	type = character
 	gender = female
 	special = ruler_child
 	tier = duchy
 	priority = 110
-	cultures = { russian }
+	name_lists = { name_list_russian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_male_russian = {
 	type = character
@@ -222,9 +268,11 @@ title_prince_male_russian = {
 	special = ruler_child
 	tier = kingdom
 	priority = 110
-	cultures = { russian }
+	name_lists = { name_list_russian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 	only_independent = no
 }
 title_prince_female_russian = {
@@ -233,9 +281,11 @@ title_prince_female_russian = {
 	special = ruler_child
 	tier = kingdom
 	priority = 110
-	cultures = { russian }
+	name_lists = { name_list_russian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 	only_independent = no
 }
 title_prince_male_russian_empire = {
@@ -244,9 +294,11 @@ title_prince_male_russian_empire = {
 	special = ruler_child
 	tier = empire
 	priority = 150
-	cultures = { russian }
+	name_lists = { name_list_russian }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_female_russian_empire = {
 	type = character
@@ -254,36 +306,44 @@ title_prince_female_russian_empire = {
 	special = ruler_child
 	tier = empire
 	priority = 150
-	cultures = { russian }
+	name_lists = { name_list_russian }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_mother_russian = {
 	type = character
 	special = queen_mother
 	tier = duchy
 	priority = 110
-	cultures = { russian }
+	name_lists = { name_list_russian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 queen_mother_russian = {
 	type = character
 	special = queen_mother
 	tier = kingdom
 	priority = 110
-	cultures = { russian }
+	name_lists = { name_list_russian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 empress_mother_russian = {
 	type = character
 	special = queen_mother
 	tier = empire
 	priority = 150
-	cultures = { russian }
+	name_lists = { name_list_russian }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_republic_male_russian = {
 	type = character
@@ -291,10 +351,12 @@ count_republic_male_russian = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { russian }
+	name_lists = { name_list_russian }
 	governments = { republic_government }
-	only_holder = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 count_republic_female_russian = {
 	type = character
@@ -302,18 +364,22 @@ count_republic_female_russian = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { russian }
+	name_lists = { name_list_russian }
 	governments = { republic_government }
-	only_holder = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 county_republic_russian = {
 	type = title
 	tier = county
 	priority = 113
-	cultures = { russian }
+	name_lists = { name_list_russian }
 	governments = { republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_republic_male_russian = {
 	type = character
@@ -321,10 +387,12 @@ duke_republic_male_russian = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { russian }
+	name_lists = { name_list_russian }
 	governments = { republic_government }
-	only_holder = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 duke_republic_female_russian = {
 	type = character
@@ -332,26 +400,32 @@ duke_republic_female_russian = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { russian }
+	name_lists = { name_list_russian }
 	governments = { republic_government }
-	only_holder = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
 duchy_republic_russian = {
 	type = title
 	tier = duchy
 	priority = 123
-	cultures = { russian }
+	name_lists = { name_list_russian }
 	governments = { republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
-barony_tribal_russian = {
+barony_tribe_russian = {
 	type = title
 	tier = barony
 	priority = 103
-	cultures = { russian }
-	governments = { tribal_government }
-	top_liege = no
+	name_lists = { name_list_russian }
+	holding = tribal_holding
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_tribal_male_russian = {
 	type = character
@@ -359,9 +433,11 @@ count_tribal_male_russian = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { russian }
+	name_lists = { name_list_russian }
 	governments = { tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_tribal_female_russian = {
 	type = character
@@ -369,17 +445,21 @@ count_tribal_female_russian = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { russian }
+	name_lists = { name_list_russian }
 	governments = { tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 county_tribal_russian = {
 	type = title
 	priority = 113
 	tier = county
-	cultures = { russian  }
+	name_lists = { name_list_russian  }
 	governments = { tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 
 ### Old East Slavic cultures (obsolete)
@@ -389,9 +469,11 @@ baron_male_ilmenian = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { ilmenian }
+	name_lists = { name_list_ilmenian }
 	governments = { feudal_government clan_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 baron_male_severian = {
 	type = character
@@ -399,9 +481,11 @@ baron_male_severian = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { severian }
+	name_lists = { name_list_severian }
 	governments = { feudal_government clan_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 baron_male_volhynian = {
 	type = character
@@ -409,9 +493,11 @@ baron_male_volhynian = {
 	special = holder
 	tier = barony
 	priority = 103
-	cultures = { volhynian }
+	name_lists = { name_list_volhynian }
 	governments = { feudal_government clan_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 baron_female_old_east_slavic = {
 	type = character
@@ -419,9 +505,11 @@ baron_female_old_east_slavic = {
 	special = holder
 	tier = barony
 	priority = 102
-	cultures = { ilmenian severian volhynian }
+	name_lists = { name_list_ilmenian name_list_severian name_list_volhynian }
 	governments = { feudal_government clan_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_feudalclan_male_ilmenian = {
 	type = character
@@ -429,9 +517,11 @@ count_feudalclan_male_ilmenian = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { ilmenian }
+	name_lists = { name_list_ilmenian }
 	governments = { feudal_government clan_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_feudalclan_male_severian = {
 	type = character
@@ -439,9 +529,11 @@ count_feudalclan_male_severian = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { severian }
+	name_lists = { name_list_severian }
 	governments = { feudal_government clan_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_feudalclan_male_volhynian = {
 	type = character
@@ -449,9 +541,11 @@ count_feudalclan_male_volhynian = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { volhynian }
+	name_lists = { name_list_volhynian }
 	governments = { feudal_government clan_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_feudalclan_female_old_east_slavic = {
 	type = character
@@ -459,25 +553,31 @@ count_feudalclan_female_old_east_slavic = {
 	special = holder
 	tier = county
 	priority = 112
-	cultures = { ilmenian severian volhynian }
+	name_lists = { name_list_ilmenian name_list_severian name_list_volhynian }
 	governments = { feudal_government clan_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 county_feudalclan_ilmenian = {
 	type = title
 	tier = county
 	priority = 113
-	cultures = { ilmenian }
+	name_lists = { name_list_ilmenian }
 	governments = { feudal_government clan_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 county_feudalclan_severian_volhynian = {
 	type = title
 	tier = county
 	priority = 113
-	cultures = { severian volhynian }
+	name_lists = { name_list_severian name_list_volhynian }
 	governments = { feudal_government clan_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_feudalclan_male_ilmenian_independent = {
 	type = character
@@ -485,10 +585,12 @@ count_feudalclan_male_ilmenian_independent = {
 	special = holder
 	tier = county
 	priority = 115
-	cultures = { ilmenian }
+	name_lists = { name_list_ilmenian }
 	governments = { feudal_government clan_government }
 	only_independent = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_feudalclan_male_severian_independent = {
 	type = character
@@ -496,10 +598,12 @@ count_feudalclan_male_severian_independent = {
 	special = holder
 	tier = county
 	priority = 115
-	cultures = { severian }
+	name_lists = { name_list_severian }
 	governments = { feudal_government clan_government }
 	only_independent = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_feudalclan_male_volhynian_independent = {
 	type = character
@@ -507,10 +611,12 @@ count_feudalclan_male_volhynian_independent = {
 	special = holder
 	tier = county
 	priority = 115
-	cultures = { volhynian }
+	name_lists = { name_list_volhynian }
 	governments = { feudal_government clan_government }
 	only_independent = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_feudalclan_female_old_east_slavic_independent = {
 	type = character
@@ -518,19 +624,23 @@ count_feudalclan_female_old_east_slavic_independent = {
 	special = holder
 	tier = county
 	priority = 114
-	cultures = { ilmenian severian volhynian }
+	name_lists = { name_list_ilmenian name_list_severian name_list_volhynian }
 	governments = { feudal_government clan_government }
 	only_independent = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 county_feudalclan_old_east_slavic_independent = {
 	type = title
 	tier = county
 	priority = 115
-	cultures = { ilmenian severian volhynian }
+	name_lists = { name_list_ilmenian name_list_severian name_list_volhynian }
 	governments = { feudal_government clan_government }
 	only_independent = yes
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_male_ilmenian = {
 	type = character
@@ -538,9 +648,11 @@ duke_male_ilmenian = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { ilmenian }
+	name_lists = { name_list_ilmenian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_male_severian_volhynian = {
 	type = character
@@ -548,9 +660,11 @@ duke_male_severian_volhynian = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { severian volhynian }
+	name_lists = { name_list_severian name_list_volhynian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_female_old_east_slavic = {
 	type = character
@@ -558,17 +672,21 @@ duke_female_old_east_slavic = {
 	special = holder
 	tier = duchy
 	priority = 122
-	cultures = { ilmenian severian volhynian }
+	name_lists = { name_list_ilmenian name_list_severian name_list_volhynian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duchy_old_east_slavic = {
 	type = title
 	tier = duchy
 	priority = 122
-	cultures = { ilmenian severian volhynian }
+	name_lists = { name_list_ilmenian name_list_severian name_list_volhynian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 king_male_ilmenian = {
 	type = character
@@ -576,9 +694,11 @@ king_male_ilmenian = {
 	special = holder
 	tier = kingdom
 	priority = 143
-	cultures = { ilmenian }
+	name_lists = { name_list_ilmenian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 king_male_severian = {
 	type = character
@@ -586,9 +706,11 @@ king_male_severian = {
 	special = holder
 	tier = kingdom
 	priority = 143
-	cultures = { severian }
+	name_lists = { name_list_severian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 king_male_volhynian = {
 	type = character
@@ -596,9 +718,11 @@ king_male_volhynian = {
 	special = holder
 	tier = kingdom
 	priority = 143
-	cultures = { volhynian }
+	name_lists = { name_list_volhynian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 king_female_old_east_slavic = {
 	type = character
@@ -606,17 +730,21 @@ king_female_old_east_slavic = {
 	special = holder
 	tier = kingdom
 	priority = 142
-	cultures = { ilmenian severian volhynian }
+	name_lists = { name_list_ilmenian name_list_severian name_list_volhynian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 kingdom_old_east_slavic = {
 	type = title
 	tier = kingdom
 	priority = 142
-	cultures = { ilmenian severian volhynian }
+	name_lists = { name_list_ilmenian name_list_severian name_list_volhynian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 emperor_male_ilmenian = {
 	type = character
@@ -624,7 +752,7 @@ emperor_male_ilmenian = {
 	special = holder
 	tier = empire
 	priority = 153
-	cultures = { ilmenian }
+	name_lists = { name_list_ilmenian }
 	governments = { feudal_government clan_government tribal_government }
 }
 emperor_male_severian_volhynian = {
@@ -633,7 +761,7 @@ emperor_male_severian_volhynian = {
 	special = holder
 	tier = empire
 	priority = 153
-	cultures = { severian volhynian }
+	name_lists = { name_list_severian name_list_volhynian }
 	governments = { feudal_government clan_government tribal_government }
 }
 emperor_female_ilmenian = {
@@ -642,7 +770,7 @@ emperor_female_ilmenian = {
 	special = holder
 	tier = empire
 	priority = 153
-	cultures = { ilmenian }
+	name_lists = { name_list_ilmenian }
 	governments = { feudal_government clan_government tribal_government }
 }
 emperor_female_severian_volhynian = {
@@ -651,7 +779,7 @@ emperor_female_severian_volhynian = {
 	special = holder
 	tier = empire
 	priority = 153
-	cultures = { severian volhynian }
+	name_lists = { name_list_severian name_list_volhynian }
 	governments = { feudal_government clan_government tribal_government }
 }
 empire_ilmenian = {
@@ -659,14 +787,38 @@ empire_ilmenian = {
 	tier = empire
 	priority = 153
 	governments = { feudal_government clan_government tribal_government republic_government }
-	cultures = { ilmenian }
+	name_lists = { name_list_ilmenian }
 }
 empire_severian_volhynian = {
 	type = title
 	tier = empire
 	priority = 153
 	governments = { feudal_government clan_government tribal_government republic_government }
-	cultures = { severian volhynian }
+	name_lists = { name_list_severian name_list_volhynian }
+}
+title_prince_male_old_east_slavic_county = {
+	type = character
+	gender = male
+	special = ruler_child
+	tier = county 
+	priority = 100 ##Князь should not be княжич
+	name_lists = { name_list_ilmenian name_list_severian name_list_volhynian }
+	governments = { feudal_government clan_government tribal_government }
+	flavourization_rules = {
+		top_liege = no
+	}
+}
+title_prince_female_old_east_slavic_county  = {
+	type = character
+	gender = female
+	special = ruler_child
+	tier = county 
+	priority = 100 ##Княгиня should not be княжна
+	name_lists = { name_list_ilmenian name_list_severian name_list_volhynian }
+	governments = { feudal_government clan_government tribal_government }
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_male_old_east_slavic_duchy = {
 	type = character
@@ -674,9 +826,11 @@ title_prince_male_old_east_slavic_duchy = {
 	special = ruler_child
 	tier = duchy
 	priority = 110 ##Князь should not be княжич
-	cultures = { ilmenian severian volhynian }
+	name_lists = { name_list_ilmenian name_list_severian name_list_volhynian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_female_old_east_slavic_duchy = {
 	type = character
@@ -684,9 +838,11 @@ title_prince_female_old_east_slavic_duchy = {
 	special = ruler_child
 	tier = duchy
 	priority = 110 ##Княгиня should not be княжна
-	cultures = { ilmenian severian volhynian }
+	name_lists = { name_list_ilmenian name_list_severian name_list_volhynian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_male_old_east_slavic = {
 	type = character
@@ -694,9 +850,11 @@ title_prince_male_old_east_slavic = {
 	special = ruler_child
 	tier = kingdom
 	priority = 110 ##Князь should not be княжич
-	cultures = { ilmenian severian volhynian }
+	name_lists = { name_list_ilmenian name_list_severian name_list_volhynian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_female_old_east_slavic = {
 	type = character
@@ -704,9 +862,11 @@ title_prince_female_old_east_slavic = {
 	special = ruler_child
 	tier = kingdom
 	priority = 110 ##Княгиня should not be княжна
-	cultures = { ilmenian severian volhynian }
+	name_lists = { name_list_ilmenian name_list_severian name_list_volhynian }
 	governments = { feudal_government clan_government tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_male_ilmenian_empire = {
 	type = character
@@ -714,9 +874,11 @@ title_prince_male_ilmenian_empire = {
 	special = ruler_child
 	tier = empire
 	priority = 150
-	cultures = { ilmenian }
+	name_lists = { name_list_ilmenian }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_male_severian_volhynian_empire = {
 	type = character
@@ -724,9 +886,11 @@ title_prince_male_severian_volhynian_empire = {
 	special = ruler_child
 	tier = empire
 	priority = 150
-	cultures = { severian volhynian }
+	name_lists = { name_list_severian name_list_volhynian }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_female_ilmenian_empire = {
 	type = character
@@ -734,9 +898,11 @@ title_prince_female_ilmenian_empire = {
 	special = ruler_child
 	tier = empire
 	priority = 150
-	cultures = { ilmenian }
+	name_lists = { name_list_ilmenian }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 title_prince_female_severian_volhynian_empire = {
 	type = character
@@ -744,9 +910,11 @@ title_prince_female_severian_volhynian_empire = {
 	special = ruler_child
 	tier = empire
 	priority = 150
-	cultures = { severian volhynian }
+	name_lists = { name_list_severian name_list_volhynian }
 	governments = { feudal_government clan_government tribal_government republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_republic_male_ilmenian = {
 	type = character
@@ -754,9 +922,11 @@ count_republic_male_ilmenian = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { ilmenian }
+	name_lists = { name_list_ilmenian }
 	governments = { republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_republic_male_severian_volhynian = {
 	type = character
@@ -764,9 +934,11 @@ count_republic_male_severian_volhynian = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { severian volhynian }
+	name_lists = { name_list_severian name_list_volhynian }
 	governments = { republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_republic_female_ilmenian = {
 	type = character
@@ -774,9 +946,11 @@ count_republic_female_ilmenian = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { ilmenian }
+	name_lists = { name_list_ilmenian }
 	governments = { republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_republic_female_severian_volhynian = {
 	type = character
@@ -784,25 +958,31 @@ count_republic_female_severian_volhynian = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { severian volhynian }
+	name_lists = { name_list_severian name_list_volhynian }
 	governments = { republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 county_republic_ilmenian = {
 	type = title
 	tier = county
 	priority = 113
-	cultures = { ilmenian }
+	name_lists = { name_list_ilmenian }
 	governments = { republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 county_republic_severian_volhynian = {
 	type = title
 	tier = county
 	priority = 113
-	cultures = { severian volhynian }
+	name_lists = { name_list_severian name_list_volhynian }
 	governments = { republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_republic_male_ilmenian = {
 	type = character
@@ -810,9 +990,11 @@ duke_republic_male_ilmenian = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { ilmenian }
+	name_lists = { name_list_ilmenian }
 	governments = { republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_republic_male_severian = {
 	type = character
@@ -820,9 +1002,11 @@ duke_republic_male_severian = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { severian }
+	name_lists = { name_list_severian }
 	governments = { republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_republic_male_volhynian = {
 	type = character
@@ -830,9 +1014,11 @@ duke_republic_male_volhynian = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { volhynian }
+	name_lists = { name_list_volhynian }
 	governments = { republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_republic_female_ilmenian = {
 	type = character
@@ -840,9 +1026,11 @@ duke_republic_female_ilmenian = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { ilmenian }
+	name_lists = { name_list_ilmenian }
 	governments = { republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duke_republic_female_severian_volhynian = {
 	type = character
@@ -850,25 +1038,31 @@ duke_republic_female_severian_volhynian = {
 	special = holder
 	tier = duchy
 	priority = 123
-	cultures = { severian volhynian }
+	name_lists = { name_list_severian name_list_volhynian }
 	governments = { republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 duchy_republic_old_east_slavic = {
 	type = title
 	tier = duchy
 	priority = 122
-	cultures = { ilmenian severian volhynian }
+	name_lists = { name_list_ilmenian name_list_severian name_list_volhynian }
 	governments = { republic_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
-barony_tribal_old_east_slavic = {
+barony_tribe_old_east_slavic = {
 	type = title
 	tier = barony
 	priority = 103
-	cultures = { severian volhynian ilmenian }
-	governments = { tribal_government }
-	top_liege = no
+	name_lists = { name_list_severian name_list_volhynian name_list_ilmenian }
+	holding = tribal_holding
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_tribal_male_severian_volhynian = {
 	type = character
@@ -876,9 +1070,11 @@ count_tribal_male_severian_volhynian = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { severian volhynian }
+	name_lists = { name_list_severian name_list_volhynian }
 	governments = { tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_tribal_male_ilmenian = {
 	type = character
@@ -886,9 +1082,11 @@ count_tribal_male_ilmenian = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { ilmenian }
+	name_lists = { name_list_ilmenian }
 	governments = { tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_tribal_female_severian_volhynian = {
 	type = character
@@ -896,9 +1094,11 @@ count_tribal_female_severian_volhynian = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { severian volhynian }
+	name_lists = { name_list_severian name_list_volhynian }
 	governments = { tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 count_tribal_female_ilmenian = {
 	type = character
@@ -906,17 +1106,21 @@ count_tribal_female_ilmenian = {
 	special = holder
 	tier = county
 	priority = 113
-	cultures = { ilmenian }
+	name_lists = { name_list_ilmenian }
 	governments = { tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 county_tribal_old_east_slavic = {
 	type = title
 	tier = county
 	priority = 112
-	cultures = { severian volhynian ilmenian }
+	name_lists = { name_list_severian name_list_volhynian name_list_ilmenian }
 	governments = { tribal_government }
-	top_liege = no
+	flavourization_rules = {
+		top_liege = no
+	}
 }
 ###############################################
 ## End of East_Slavic_culture_group ##

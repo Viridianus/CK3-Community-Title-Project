@@ -1,4 +1,4 @@
-﻿KingMaleGoidelic = {
+﻿SultanMaleGoidelic = {
 	type = character
 	text = {
 		trigger = {
@@ -23,11 +23,30 @@
 		localization_key = sultan_male_goidelic
 	}
 	text = {
+		trigger = {
+			is_ruler = yes
+		}
+		localization_key = king_male_holder_goid
+	}
+	text = {
 		fallback = yes
-		localization_key = king_default_male_goidelic
+		localization_key = king_male_non_holder_goid
 	}
 }
-KingFemaleGoidelic = {
+KingMaleGoid = {
+	type = character
+	text = {
+		trigger = {
+			culture = { any_parent_culture_or_above = { has_cultural_pillar = heritage_north_germanic } }
+		}
+		localization_key = high_king_male_gael_norse
+	}
+	text = {
+		localization_key = king_default_male_goidelic
+		fallback = yes
+	}
+}
+SultanFemaleGoidelic = {
 	type = character
 	text = {
 		trigger = {
@@ -52,8 +71,27 @@ KingFemaleGoidelic = {
 		localization_key = sultan_female_goidelic
 	}
 	text = {
+		trigger = {
+			is_ruler = yes
+		}
+		localization_key = king_female_holder_goid
+	}
+	text = {
 		fallback = yes
+		localization_key = king_female_non_holder_goid
+	}
+}
+KingFemaleGoid = {
+	type = character
+	text = {
+		trigger = {
+			culture = { any_parent_culture_or_above = { has_cultural_pillar = heritage_north_germanic } }
+		}
+		localization_key = high_king_female_gael_norse
+	}
+	text = {
 		localization_key = king_default_female_goidelic
+		fallback = yes
 	}
 }
 KingdomGoidelic = {
@@ -146,7 +184,7 @@ KingdomEnglish = {
 		localization_key = kingdom_default_english
 	}
 }
-KingMaleAngloSaxon = {
+SultanMaleAngloSaxon = {
 	type = character
 	text = {
 		trigger = {
@@ -171,11 +209,30 @@ KingMaleAngloSaxon = {
 		localization_key = sultan_male_anglo_saxon
 	}
 	text = {
+		trigger = {
+			is_ruler = yes
+		}
+		localization_key = king_default_male_holder_anglo
+	}
+	text = {
 		fallback = yes
-		localization_key = king_default_male_anglo_saxon
+		localization_key = king_default_male_anglo
 	}
 }
-KingFemaleAngloSaxon = {
+KingMaleAnglo = {
+	type = character
+	text = {
+		trigger = {
+			culture = { any_parent_culture_or_above = { has_cultural_pillar = heritage_north_germanic } }
+		}
+		localization_key = king_default_male_anglo_norse
+	}
+	text = {
+		localization_key = king_default_male_anglo_saxon
+		fallback = yes
+	}
+}
+SultanFemaleAngloSaxon = {
 	type = character
 	text = {
 		trigger = {
@@ -200,8 +257,27 @@ KingFemaleAngloSaxon = {
 		localization_key = sultan_female_anglo_saxon
 	}
 	text = {
+		trigger = {
+			is_ruler = yes
+		}
+		localization_key = king_default_female_holder_anglo
+	}
+	text = {
 		fallback = yes
+		localization_key = king_default_female_anglo
+	}
+}
+KingFemaleAnglo = {
+	type = character
+	text = {
+		trigger = {
+			culture = { any_parent_culture_or_above = { has_cultural_pillar = heritage_north_germanic } }
+		}
+		localization_key = king_default_female_anglo_norse
+	}
+	text = {
 		localization_key = king_default_female_anglo_saxon
+		fallback = yes
 	}
 }
 KingdomAngloSaxon = {
@@ -366,6 +442,154 @@ KingdomWelsh = {
 	text = {
 		fallback = yes
 		localization_key = kingdom_default_welsh
+	}
+}
+KingMaleCornish = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_male_cornish
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_male_cornish
+	}
+}
+KingFemaleCornish = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_female_cornish
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_female_cornish
+	}
+}
+KingdomCornish = {
+	type = character
+	text = {
+		trigger = {
+			is_independent_ruler = yes
+			root.faith = {
+				has_doctrine = tenet_struggle_submission
+			}
+		}
+		localization_key = sultanate_cornish
+	}
+	text = {
+		fallback = yes
+		localization_key = kingdom_default_cornish
+	}
+}
+KingMaleFrench = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_male_french
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_male_french
+	}
+}
+KingFemaleFrench = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_female_french
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_female_french
+	}
+}
+KingdomFrench = {
+	type = character
+	text = {
+		trigger = {
+			is_independent_ruler = yes
+			root.faith = {
+				has_doctrine = tenet_struggle_submission
+			}
+		}
+		localization_key = sultanate_french
+	}
+	text = {
+		fallback = yes
+		localization_key = kingdom_default_french
 	}
 }
 KingMaleBasque = {
@@ -1255,6 +1479,154 @@ KingdomDutch = {
 		localization_key = kingdom_default_dutch
 	}
 }
+KingMaleButr = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_male_butr
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_male_butr
+	}
+}
+KingFemaleButr = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_female_butr
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_female_butr
+	}
+}
+KingdomButr = {
+	type = character
+	text = {
+		trigger = {
+			is_independent_ruler = yes
+			root.faith = {
+				has_doctrine = tenet_struggle_submission
+			}
+		}
+		localization_key = sultanate_butr
+	}
+	text = {
+		fallback = yes
+		localization_key = kingdom_default_butr
+	}
+}
+KingMaleBaranis = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_male_baranis
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_male_baranis
+	}
+}
+KingFemaleBaranis = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_female_baranis
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_female_baranis
+	}
+}
+KingdomBaranis = {
+	type = character
+	text = {
+		trigger = {
+			is_independent_ruler = yes
+			root.faith = {
+				has_doctrine = tenet_struggle_submission
+			}
+		}
+		localization_key = sultanate_baranis
+	}
+	text = {
+		fallback = yes
+		localization_key = kingdom_default_baranis
+	}
+}
 KingMaleArabic = {
 	type = character
 	text = {
@@ -1458,12 +1830,37 @@ KingMaleArmenian = {
 		localization_key = sultan_male_armenian
 	}
 	text = {
+		trigger = {
+			OR = {
+				has_primary_title = title:k_armenian_principality
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						has_primary_title = title:k_armenian_principality
+					}
+				}
+			}
+		}
+		localization_key = armenian_prince_ruler_male
+	}
+	text = {
 		fallback = yes
 		localization_key = king_default_male_armenian
 	}
 }
 KingFemaleArmenian = {
 	type = character
+	text = {
+		trigger = {
+			root.top_liege = {
+				OR = {
+					has_primary_title = title:e_byzantium
+					has_primary_title = title:e_roman_empire
+				}
+			}
+		}
+		localization_key = byzantine_king_female_armenian
+	}
 	text = {
 		trigger = {
 			OR = {
@@ -1487,12 +1884,37 @@ KingFemaleArmenian = {
 		localization_key = sultan_female_armenian
 	}
 	text = {
+		trigger = {
+			OR = {
+				has_primary_title = title:k_armenian_principality
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						has_primary_title = title:k_armenian_principality
+					}
+				}
+			}
+		}
+		localization_key = armenian_prince_ruler_female
+	}
+	text = {
 		fallback = yes
 		localization_key = king_default_female_armenian
 	}
 }
 KingdomArmenian = {
 	type = character
+	text = {
+		trigger = {
+			root.top_liege = {
+				OR = {
+					has_primary_title = title:e_byzantium
+					has_primary_title = title:e_roman_empire
+				}
+			}
+		}
+		localization_key = byzantine_kingdom_armenian
+	}
 	text = {
 		trigger = {
 			is_independent_ruler = yes
@@ -1612,6 +2034,80 @@ KingdomGreek = {
 	text = {
 		fallback = yes
 		localization_key = kingdom_default_greek
+	}
+}
+KingMaleGeorgian = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_georgian
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_male_georgian
+	}
+}
+KingFemaleGeorgian = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_georgian
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_female_georgian
+	}
+}
+KingdomGeorgian = {
+	type = character
+	text = {
+		trigger = {
+			is_independent_ruler = yes
+			root.faith = {
+				has_doctrine = tenet_struggle_submission
+			}
+		}
+		localization_key = sultanate_georgian
+	}
+	text = {
+		fallback = yes
+		localization_key = kingdom_default_georgian
 	}
 }
 KingMaleAlan = {
@@ -3102,6 +3598,30 @@ KingMaleMogyer = {
 	text = {
 		trigger = {
 			OR = {
+				root.top_liege = {
+					OR = {
+					has_primary_title = title:e_byzantium
+					has_primary_title = title:e_roman_empire
+				}
+				}
+				AND = {
+					has_faith = faith:orthodox
+					is_landed = yes
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						has_faith = faith:orthodox
+						is_landed = yes
+					}
+				}
+			}
+		}
+		localization_key = byzantine_king_mogyer
+	}
+	text = {
+		trigger = {
+			OR = {
 				AND = {
 					is_independent_ruler = yes
 					root.faith = {
@@ -3128,6 +3648,30 @@ KingMaleMogyer = {
 }
 KingFemaleMogyer = {
 	type = character
+	text = {
+		trigger = {
+			OR = {
+				root.top_liege = {
+					OR = {
+					has_primary_title = title:e_byzantium
+					has_primary_title = title:e_roman_empire
+				}
+				}
+				AND = {
+					has_faith = faith:orthodox
+					is_landed = yes
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						has_faith = faith:orthodox
+						is_landed = yes
+					}
+				}
+			}
+		}
+		localization_key = byzantine_king_mogyer
+	}
 	text = {
 		trigger = {
 			OR = {
@@ -3159,6 +3703,20 @@ KingdomMogyer = {
 	type = character
 	text = {
 		trigger = {
+			OR = {
+				has_faith = faith:orthodox
+				top_liege = {
+					OR = {
+					has_primary_title = title:e_byzantium
+					has_primary_title = title:e_roman_empire
+				}
+				}
+			}
+		}
+		localization_key = byzantine_kingdom_mogyer
+	}
+	text = {
+		trigger = {
 			is_independent_ruler = yes
 			root.faith = {
 				has_doctrine = tenet_struggle_submission
@@ -3173,6 +3731,33 @@ KingdomMogyer = {
 }
 KingMaleHung = {
 	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					exists = liege
+					top_liege = {
+						OR = {
+							has_primary_title = title:e_byzantium
+							has_primary_title = title:e_roman_empire
+						}
+					}
+				}
+				AND = {
+					has_faith = faith:orthodox
+					is_landed = yes
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						has_faith = faith:orthodox
+						is_landed = yes
+					}
+				}
+			}
+		}
+		localization_key = byzantine_king_hung
+	}
 	text = {
 		trigger = {
 			OR = {
@@ -3205,6 +3790,30 @@ KingFemaleHung = {
 	text = {
 		trigger = {
 			OR = {
+				root.top_liege = {
+					OR = {
+					has_primary_title = title:e_byzantium
+					has_primary_title = title:e_roman_empire
+				}
+				}
+				AND = {
+					has_faith = faith:orthodox
+					is_landed = yes
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						has_faith = faith:orthodox
+						is_landed = yes
+					}
+				}
+			}
+		}
+		localization_key = byzantine_king_hung
+	}
+	text = {
+		trigger = {
+			OR = {
 				AND = {
 					is_independent_ruler = yes
 					root.faith = {
@@ -3234,6 +3843,30 @@ KingFemaleHolderHung = {
 	text = {
 		trigger = {
 			OR = {
+				root.top_liege = {
+					OR = {
+					has_primary_title = title:e_byzantium
+					has_primary_title = title:e_roman_empire
+				}
+				}
+				AND = {
+					has_faith = faith:orthodox
+					is_landed = yes
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						has_faith = faith:orthodox
+						is_landed = yes
+					}
+				}
+			}
+		}
+		localization_key = byzantine_king_hung
+	}
+	text = {
+		trigger = {
+			OR = {
 				AND = {
 					is_independent_ruler = yes
 					root.faith = {
@@ -3260,6 +3893,20 @@ KingFemaleHolderHung = {
 }
 KingdomHung = {
 	type = character
+	text = {
+		trigger = {
+			OR = {
+				has_faith = faith:orthodox
+				root.top_liege = {
+					OR = {
+					has_primary_title = title:e_byzantium
+					has_primary_title = title:e_roman_empire
+				}
+				}
+			}
+		}
+		localization_key = byzantine_kingdom_hung
+	}
 	text = {
 		trigger = {
 			is_independent_ruler = yes
@@ -3299,6 +3946,36 @@ KingMaleRus = {
 		localization_key = sultan_male_rus
 	}
 	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					OR = {
+						has_faith = faith:catholic
+						has_faith = faith:cathar
+						has_faith = faith:waldensian
+						has_faith = faith:lollard
+						has_faith = faith:insular_celtic
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						OR = {
+							has_faith = faith:catholic
+							has_faith = faith:cathar
+							has_faith = faith:waldensian
+							has_faith = faith:lollard
+							has_faith = faith:insular_celtic
+						}
+					}
+				}
+			}
+		}
+		localization_key = karl_male_rus
+	}
+	text = {
 		fallback = yes
 		localization_key = king_default_male_rus
 	}
@@ -3328,6 +4005,36 @@ KingFemaleRus = {
 		localization_key = sultan_female_rus
 	}
 	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					OR = {
+						has_faith = faith:catholic
+						has_faith = faith:cathar
+						has_faith = faith:waldensian
+						has_faith = faith:lollard
+						has_faith = faith:insular_celtic
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						OR = {
+							has_faith = faith:catholic
+							has_faith = faith:cathar
+							has_faith = faith:waldensian
+							has_faith = faith:lollard
+							has_faith = faith:insular_celtic
+						}
+					}
+				}
+			}
+		}
+		localization_key = karl_female_rus
+	}
+	text = {
 		fallback = yes
 		localization_key = king_default_female_rus
 	}
@@ -3342,6 +4049,18 @@ KingdomRus = {
 			}
 		}
 		localization_key = sultanate_rus
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_faith = faith:catholic
+				has_faith = faith:cathar
+				has_faith = faith:waldensian
+				has_faith = faith:lollard
+				has_faith = faith:insular_celtic
+			}
+		}
+		localization_key = karldom_rus
 	}
 	text = {
 		fallback = yes
@@ -3818,6 +4537,35 @@ KingMaleBengali = {
 		localization_key = king_default_male_bengali
 	}
 }
+KingMaleHolderBengali = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_male_bengali
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_male_holder_bengali
+	}
+}
 KingFemaleBengali = {
 	type = character
 	text = {
@@ -3919,6 +4667,35 @@ KingMaleOriya = {
 	text = {
 		fallback = yes
 		localization_key = king_default_male_oriya
+	}
+}
+KingMaleHolderOriya = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_male_oriya
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_male_holder_oriya
 	}
 }
 KingFemaleOriya = {
@@ -4024,6 +4801,35 @@ KingMaleAssamese = {
 		localization_key = king_default_male_assamese
 	}
 }
+KingMaleHolderAssamese = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_male_assamese
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_male_holder_assamese
+	}
+}
 KingFemaleAssamese = {
 	type = character
 	text = {
@@ -4125,6 +4931,35 @@ KingMaleHindustani = {
 	text = {
 		fallback = yes
 		localization_key = king_default_male_hindustani
+	}
+}
+KingMaleHolderHindustani = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_male_hindustani
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_male_holder_hindustani
 	}
 }
 KingFemaleHindustani = {
@@ -4230,6 +5065,35 @@ KingMaleGujarati = {
 		localization_key = king_default_male_gujarati
 	}
 }
+KingMaleHolderGujarati = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_male_gujarati
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_male_holder_gujarati
+	}
+}
 KingFemaleGujarati = {
 	type = character
 	text = {
@@ -4333,6 +5197,35 @@ KingMalePunjabi = {
 		localization_key = king_default_male_punjabi
 	}
 }
+KingMaleHolderPunjabi = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_male_punjabi
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_male_holder_punjabi
+	}
+}
 KingFemalePunjabi = {
 	type = character
 	text = {
@@ -4434,6 +5327,35 @@ KingMaleRajput = {
 	text = {
 		fallback = yes
 		localization_key = king_default_male_rajput
+	}
+}
+KingMaleHolderRajput = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_male_rajput
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_male_holder_rajput
 	}
 }
 KingFemaleRajput = {
@@ -4613,6 +5535,35 @@ KingMaleMarathi = {
 		localization_key = king_default_male_marathi
 	}
 }
+KingMaleHolderMarathi = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_male_marathi
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_male_holder_marathi
+	}
+}
 KingFemaleMarathi = {
 	type = character
 	text = {
@@ -4714,6 +5665,35 @@ KingMaleKashmiri = {
 	text = {
 		fallback = yes
 		localization_key = king_default_male_kashmiri
+	}
+}
+KingMaleHolderKashmiri = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_male_kashmiri
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_male_holder_kashmiri
 	}
 }
 KingFemaleKashmiri = {
@@ -4922,6 +5902,35 @@ KingMaleNepali = {
 		localization_key = king_default_male_nepali
 	}
 }
+KingMaleHolderNepali = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_male_nepali
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_male_holder_nepali
+	}
+}
 KingFemaleNepali = {
 	type = character
 	text = {
@@ -4994,5 +6003,948 @@ KingdomNepali = {
 	text = {
 		fallback = yes
 		localization_key = kingdom_default_nepali
+	}
+}
+KingMaleSomali = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_male_somali
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_male_somali
+	}
+}
+KingFemaleSomali = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_female_somali
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_female_somali
+	}
+}
+KingMaleBeja = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_male_beja
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_male_sbeja
+	}
+}
+KingFemaleBeja = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_female_beja
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_female_beja
+	}
+}
+KingMaleTurkishOne = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_turkish_group_one
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_male_turkish_group_one
+	}
+}
+KingFemaleHolderTurkishOne = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_turkish_group_one
+	}
+	text = {
+		fallback = yes
+		localization_key = king_female_turkish_group_one
+	}
+}
+KingdomTurkishOne = {
+	type = character
+	text = {
+		trigger = {
+			is_independent_ruler = yes
+			root.faith = {
+				has_doctrine = tenet_struggle_submission
+			}
+		}
+		localization_key = sultanate_turkish_group_one
+	}
+	text = {
+		fallback = yes
+		localization_key = kingdom_default_turkish_group_one
+	}
+}
+KingMaleTurkishTwo = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_male_turkish_group_two
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_male_turkish_group_two
+	}
+}
+KingFemaleTurkishTwo = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_female_turkish_group_two
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_female_turkish_group_two
+	}
+}
+KingdomTurkishTwo = {
+	type = character
+	text = {
+		trigger = {
+			is_independent_ruler = yes
+			root.faith = {
+				has_doctrine = tenet_struggle_submission
+			}
+		}
+		localization_key = sultanate_turkish_group_two
+	}
+	text = {
+		fallback = yes
+		localization_key = kingdom_default_turkish_group_two
+	}
+}
+KingMaleKhazar = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_khazar
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_male_turkish_group_two
+	}
+}
+KingFemaleHolderKhazar = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_khazar
+	}
+	text = {
+		fallback = yes
+		localization_key = king_female_khazar
+	}
+}
+KingdomKhazar = {
+	type = character
+	text = {
+		trigger = {
+			is_independent_ruler = yes
+			root.faith = {
+				has_doctrine = tenet_struggle_submission
+			}
+		}
+		localization_key = sultanate_khazar
+	}
+	text = {
+		fallback = yes
+		localization_key = kingdom_default_turkish_group_two
+	}
+}
+KingMaleKimek = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_male_turkish_group_two
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_male_turkish_group_two
+	}
+}
+KingFemaleKimek = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_female_turkish_group_two
+	}
+	text = {
+		fallback = yes
+		localization_key = king_female_khazar
+	}
+}
+KingdomKimek = {
+	type = character
+	text = {
+		trigger = {
+			is_independent_ruler = yes
+			root.faith = {
+				has_doctrine = tenet_struggle_submission
+			}
+		}
+		localization_key = sultanate_turkish_group_two
+	}
+	text = {
+		fallback = yes
+		localization_key = kingdom_default_turkish_group_two
+	}
+}
+IndepKingdomMongol = {
+	type = character
+	text = {
+		trigger = {
+			highest_held_title_tier >= tier_empire
+		}
+		localization_key = kingdom_mongolic_group
+	}
+	text = {
+		fallback = yes
+		localization_key = empire_mongolic_group
+	}
+}
+KingMalePersian = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_male_persian
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_male_persian
+	}
+}
+KingFemalePersian = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_female_persian
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_female_persian
+	}
+}
+KingdomPersian = {
+	type = character
+	text = {
+		trigger = {
+			is_independent_ruler = yes
+			root.faith = {
+				has_doctrine = tenet_struggle_submission
+			}
+		}
+		localization_key = sultanate_persian
+	}
+	text = {
+		fallback = yes
+		localization_key = kingdom_default_persian
+	}
+}
+KingMaleSogdian = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_male_sogdian
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_male_sogdian
+	}
+}
+KingFemaleSogdian = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_female_sogdian
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_female_sogdian
+	}
+}
+KingdomSogdian = {
+	type = character
+	text = {
+		trigger = {
+			is_independent_ruler = yes
+			root.faith = {
+				has_doctrine = tenet_struggle_submission
+			}
+		}
+		localization_key = sultanate_sogdian
+	}
+	text = {
+		fallback = yes
+		localization_key = kingdom_default_sogdian
+	}
+}
+KingMaleKurdish = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_male_kurdish
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_male_kurdish
+	}
+}
+KingFemaleKurdish = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_female_kurdish
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_female_kurdish
+	}
+}
+KingdomKurdish = {
+	type = character
+	text = {
+		trigger = {
+			is_independent_ruler = yes
+			root.faith = {
+				has_doctrine = tenet_struggle_submission
+			}
+		}
+		localization_key = sultanate_kurdish
+	}
+	text = {
+		fallback = yes
+		localization_key = kingdom_default_kurdish
+	}
+}
+KingMaleAfghan = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_male_afghan
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_male_afghan
+	}
+}
+KingFemaleAfghan = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_female_afghan
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_female_afghan
+	}
+}
+KingdomAfghan = {
+	type = character
+	text = {
+		trigger = {
+			is_independent_ruler = yes
+			root.faith = {
+				has_doctrine = tenet_struggle_submission
+			}
+		}
+		localization_key = sultanate_afghan
+	}
+	text = {
+		fallback = yes
+		localization_key = kingdom_default_afghan
+	}
+}
+KingMaleBaloch = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_male_baloch
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_male_baloch
+	}
+}
+KingFemaleBaloch = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_female_baloch
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_female_baloch
+	}
+}
+KingdomBaloch = {
+	type = character
+	text = {
+		trigger = {
+			is_independent_ruler = yes
+			root.faith = {
+				has_doctrine = tenet_struggle_submission
+			}
+		}
+		localization_key = sultanate_baloch
+	}
+	text = {
+		fallback = yes
+		localization_key = kingdom_default_baloch
+	}
+}
+KingMaleKhwarezmian = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_male_khwarezmian
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_male_khwarezmian
+	}
+}
+KingFemaleKhwarezmian = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_female_khwarezmian
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_female_khwarezmian
+	}
+}
+KingdomKhwarezmian = {
+	type = character
+	text = {
+		trigger = {
+			is_independent_ruler = yes
+			root.faith = {
+				has_doctrine = tenet_struggle_submission
+			}
+		}
+		localization_key = sultanate_khwarezmian
+	}
+	text = {
+		fallback = yes
+		localization_key = kingdom_default_khwarezmian
+	}
+}
+KingMaleTajik = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_male_tajik
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_male_tajik
+	}
+}
+KingFemaleTajik = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					root.faith = {
+						has_doctrine = tenet_struggle_submission
+					}
+				}
+				AND = {
+					exists = primary_spouse
+					root.primary_spouse = {
+						is_independent_ruler = yes
+						faith = {
+							has_doctrine = tenet_struggle_submission
+						}
+					}
+				}
+			}
+		}
+		localization_key = sultan_female_tajik
+	}
+	text = {
+		fallback = yes
+		localization_key = king_default_female_tajik
+	}
+}
+KingdomTajik = {
+	type = character
+	text = {
+		trigger = {
+			is_independent_ruler = yes
+			root.faith = {
+				has_doctrine = tenet_struggle_submission
+			}
+		}
+		localization_key = sultanate_tajik
+	}
+	text = {
+		fallback = yes
+		localization_key = kingdom_default_tajik
 	}
 }
